@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   title: 'heshibin',
   tagline: 'Dinosaurs are cool',
   url: 'https://heshibin.github.io',
-  baseUrl: '/',
+  baseUrl: '/website',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
