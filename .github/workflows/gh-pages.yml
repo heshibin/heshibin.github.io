@@ -10,12 +10,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - run: npm install && npm run build
+
     - name: Build and Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
         publish_dir: build
-        BUILD_SCRIPT: npm install && npm run build
         
