@@ -30,3 +30,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .sidebar_a3j0 {
   font-size: 14px;
 }
+
+.menu__link--sublist:after {
+  background: var(--ifm-menu-link-sublist-icon) 50%/2rem 1rem !important;
+}
