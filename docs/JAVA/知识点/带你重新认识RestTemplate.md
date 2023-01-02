@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: [java, 知识小记]
 ---
 
 # 带你重新认识RestTemplate

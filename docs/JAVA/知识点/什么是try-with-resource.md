@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 tags: [java]
+tags: [java, 知识小记]
 ---
 
 # 技巧分享：什么是try-with-resource?
