@@ -14,6 +14,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   organizationName: 'heshibin', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
+  // i18n: {
+  //   // 国际化配置
+  //   defaultLocale: "zh-Hans",
+  //   locales: ["zh-Hans", "ja"],
+  // },
+
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -54,6 +60,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: '文档',
           },
           {to: '/blog', label: '博客', position: 'left'},
+
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
