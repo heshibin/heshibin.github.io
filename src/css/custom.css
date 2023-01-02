@@ -34,3 +34,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .menu__link--sublist:after {
   background: var(--ifm-menu-link-sublist-icon) 50%/2rem 1rem !important;
 }
+.menu__link{
+  word-break: break-all;
+}
