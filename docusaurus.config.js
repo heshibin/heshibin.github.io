@@ -53,7 +53,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '文档',
           },
-          // {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -71,10 +71,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: '文档',
                 to: '/docs/intro',
               },
-              // {
-              //   label: '博客',
-              //   to: '/blog',
-              // },
+              {
+                label: '博客',
+                to: '/blog',
+              },
             ],
           },
           // {
