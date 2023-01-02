@@ -17,9 +17,16 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Word Loading
+            Go-Kitx Tutorial - 5min ⏱️
           </Link>
         </div> */}
+        <img
+          src={require("@site/static/img/hello-world.gif").default}
+          style={{
+            flex: "0 0 auto",
+            borderRadius: 8,
+          }}
+        />
       </div>
     </header>
   );
@@ -33,7 +40,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        {/* <HomepageFeatures /> */}
+        <HomepageFeatures />
       </main>
     </Layout>
   );
