@@ -65,11 +65,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'localeDropdown',
             position: 'right',
           },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            href: 'https://github.com/heshibin',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
