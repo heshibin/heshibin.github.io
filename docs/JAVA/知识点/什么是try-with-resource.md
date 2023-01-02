@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-tags: [java]
 tags: [java, 知识小记]
 ---
 
