@@ -26,6 +26,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         blog: {
           showReadingTime: true,
+          readingTime: ({content, frontMatter, defaultReadingTime}) =>
+            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/main/website/blog/',
