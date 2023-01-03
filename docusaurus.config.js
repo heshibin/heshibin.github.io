@@ -12,7 +12,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'heshibin', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  projectName: 'document notes', // Usually your repo name.
 
   // i18n: {
   //   // 国际化配置
