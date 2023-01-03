@@ -31,7 +31,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           editUrl: 'https://github.com/heshibin/website/edit/main',
         },
         blog: {
-          blogSidebarTitle: 'ALL',
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
