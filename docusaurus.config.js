@@ -32,6 +32,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         blog: {
           blogSidebarTitle: 'ALL',
+          postsPerPage: 'ALL',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
