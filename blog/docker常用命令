@@ -1,3 +1,11 @@
+---
+slug: docker常用命令
+title: docker常用命令
+date: 2023-01-03
+authors: heshibin
+tags: [java, docker]
+---
+
 ##### 上传文件至docker
 
 sudo docker cp /data/heshibin/ssp-main.jar bfededd10227:/opt/seczone/codesec/ssp/bin
