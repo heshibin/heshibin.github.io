@@ -127,6 +127,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        magicComments: [
+          // 要记得复制默认的高亮类！
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: {start: 'highlight-start', end: 'highlight-end'},
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'This will error',
+          },
+        ],
       },
       metadata: [{name: 'keywords', content: 'java, 前端, 后端, 中间件, spring, doc, 博客'}],
     }),
