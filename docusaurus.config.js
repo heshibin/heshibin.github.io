@@ -12,7 +12,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'heshibin', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  projectName: 'document notes', // Usually your repo name.
 
   // i18n: {
   //   // 国际化配置
@@ -64,10 +64,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {to: '/blog', label: '博客', position: 'left'},
 
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
+//           {
+//             type: 'localeDropdown',
+//             position: 'right',
+//           },
           {
             href: 'https://github.com/heshibin',
             label: 'GitHub',
@@ -141,5 +141,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         ],
       },
       metadata: [{name: 'keywords', content: 'java, 前端, 后端, 中间件, spring, doc, 博客'}],
+      // 目录标题级别
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
     }),
 });
