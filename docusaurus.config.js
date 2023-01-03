@@ -141,5 +141,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         ],
       },
       metadata: [{name: 'keywords', content: 'java, 前端, 后端, 中间件, spring, doc, 博客'}],
+      // 目录标题级别
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
     }),
 });
