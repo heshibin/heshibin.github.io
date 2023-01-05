@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 title: 技巧分享：什么是try-with-resource?
-date: 2023-01-02
-tags: [java, 知识小记]
+date: 2023-01-01
+tags: [java, 知识小记, 2023-01]
 ---
 
 # 技巧分享：什么是try-with-resource?
