@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: 带你重新认识RestTemplate
 date: 2023-01-02
-tags: [java, 知识小记, 2023-01]
+tags: [java, 知识小记, spring, 2023-01]
 ---
 
 # 带你重新认识RestTemplate

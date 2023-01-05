@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: 什么是try-with-resource?
 date: 2023-01-01
-tags: [java, 知识小记, 2023-01]
+tags: [java, 知识小记, jdk, 2023-01]
 ---
 
 资源的关闭很多人停留在旧的流程上，jdk7新特性旧有，但是很多人以为是jdk8的。
