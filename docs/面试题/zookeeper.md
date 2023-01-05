@@ -11,7 +11,7 @@ tags: [面试题, zookeeper]
 
 <a name="mzygn"></a>
 # 1、Zookeeper是什么？
-Zookeeper是一个开源的分布式协调服务。它是一个为分布式应用提供一致性服务的软件，分布式应用程序可以基于Zookeeper实现诸如数据发布/订阅、负载均衡、命名服务、分布式协调/通知、集群管理、Master选举、分布式锁和分布式队列等功能。<br />Zookeeper的目标就是封装好复杂易出错的关键服务，将简单易用的接口和性能高效、功能稳定的系统提供给用户。
+Zookeeper是一个开源的分布式协调服务。它是一个为分布式应用提供一致性服务的软件，分布式应用程序可以基于Zookeeper实现诸如数据发布/订阅、负载均衡、命名服务、分布式协调/通知、集群管理、Master选举、分布式锁和分布式队列等功能。Zookeeper的目标就是封装好复杂易出错的关键服务，将简单易用的接口和性能高效、功能稳定的系统提供给用户。
 <a name="HU98o"></a>
 
 # 2、Zookeeper保证了如下分布式一致性特性：
@@ -22,7 +22,7 @@ Zookeeper是一个开源的分布式协调服务。它是一个为分布式应�
 4. 可靠性
 5. 实时性（最终一致性）
 
-客户端的读请求可以被集群中的任意一台机器处理，如果读请求在节点上注册了监听器，这个监听器也是由所连接的zookeeper机器来处理。对于写请求，这些请求会同时发给其他zookeeper机器并达成一致后，请求才返回成功。因此，随着zookeeper的集群机器增多，读请求的吞吐会提高但是写请求的吞吐会下降。<br />有序性是zookeeper中非常重要的一个特性，所有的更新都是全局有序的，每个更新都有唯一的时间戳，这个时间戳称为zxid（Zookeeper Transaction Id）。而读请求只会相对于更新有序，也就是读请求的返回结果中会带有zookeeper最新的zxid。
+客户端的读请求可以被集群中的任意一台机器处理，如果读请求在节点上注册了监听器，这个监听器也是由所连接的zookeeper机器来处理。对于写请求，这些请求会同时发给其他zookeeper机器并达成一致后，请求才返回成功。因此，随着zookeeper的集群机器增多，读请求的吞吐会提高但是写请求的吞吐会下降。有序性是zookeeper中非常重要的一个特性，所有的更新都是全局有序的，每个更新都有唯一的时间戳，这个时间戳称为zxid（Zookeeper Transaction Id）。而读请求只会相对于更新有序，也就是读请求的返回结果中会带有zookeeper最新的zxid。
 <a name="LcAcs"></a>
 # 3、Zookeeper提供了什么？
 
@@ -44,7 +44,7 @@ Zookeeper的核心是原子广播机制，这个机制保证了各个server之�
 一旦leader已经和多数的follower进行了状态同步，它就可以开始广播消息了，即进入广播状态。这时候当一个server加入zookeeper服务中，它会在恢复模式下启动，发现leader，并和leader进行状态同步。待到同步结束，它也参与广播消息。Zookeeper服务一直维持在Broadcast状态，直到leader崩溃了或者leader失去了大部分follower的支持。
 <a name="QvQRy"></a>
 # 6、ZAB协议？
-ZAB协议是为分布式协调服务Zookeeper专门设计的一种支持崩溃恢复的原子广播协议。<br />包括：崩溃恢复和消息广播。<br />当整个Zookeeper集群刚刚启动或者Leader服务器宕机、重启或者网络故障导致不存在过半的服务器与Leader服务器保持正常通信时，所有进程（服务器）进入崩溃恢复模式，首先选举产生新的Leader服务器，然后集群中Follower服务器开始与新的Leader服务器进行数据同步，当集群中超过半数机器与该Leader服务器完成数据同步之后，退出恢复模式进入消息广播模式，Leader服务器开始接收客户端的事务请求生成事务提案来进行事务请求处理。
+ZAB协议是为分布式协调服务Zookeeper专门设计的一种支持崩溃恢复的原子广播协议。 包括：崩溃恢复和消息广播。 当整个Zookeeper集群刚刚启动或者Leader服务器宕机、重启或者网络故障导致不存在过半的服务器与Leader服务器保持正常通信时，所有进程（服务器）进入崩溃恢复模式，首先选举产生新的Leader服务器，然后集群中Follower服务器开始与新的Leader服务器进行数据同步，当集群中超过半数机器与该Leader服务器完成数据同步之后，退出恢复模式进入消息广播模式，Leader服务器开始接收客户端的事务请求生成事务提案来进行事务请求处理。
 <a name="KoxbS"></a>
 # 7、四种类型的数据节点Znode
 
@@ -124,7 +124,7 @@ Zookeeper允许客户端向服务端的某个Znode节点注册一个Watcher监�
 这里process主要就是通过ServerCnxn对应的TCP连接发送Watcher事件通知。
 <a name="NnRsN"></a>
 # 11、客户端回调Watcher
-客户端SendThread线程接收事件通知，交由EventThread线程回调Watcher；<br />客户端的Watcher机制同样是一次性的，一旦被触发，该Watcher就失效了。
+客户端SendThread线程接收事件通知，交由EventThread线程回调Watcher； 客户端的Watcher机制同样是一次性的，一旦被触发，该Watcher就失效了。
 <a name="gftjX"></a>
 # 12、ACL权限控制机制
 <a name="ZH77u"></a>
@@ -139,7 +139,7 @@ Zookeeper允许客户端向服务端的某个Znode节点注册一个Watcher监�
 3. World：最开放的权限控制方式，是一种特殊的digest模式，只有一个权限标识（world:anyone）
 4. Super：超级用户
 
-**授权对象**<br />授权对象指的是权限赋予的用户或一个指定实体，例如IP地址或是机器灯。<br />**权限（Permission）**
+**授权对象** 授权对象指的是权限赋予的用户或一个指定实体，例如IP地址或是机器灯。 **权限（Permission）**
 
 1. **CREATE**：数据节点创建权限，允许授权对象在该Znode下创建子节点；
 2. **DELETE**：子节点删除权限，允许授权对象删除该数据节点的子节点；
@@ -160,7 +160,7 @@ Zookeeper允许客户端向服务端的某个Znode节点注册一个Watcher监�
 <a name="TcgZe"></a>
 ## 计算公式
 :::info
-ExpirationTime = currentTime + sessionTimeout<br />ExpirationTime = (ExpirationTime / ExpirationInterval + 1) * ExpirationInterval<br />ExpirationInterval是指Zookeeper会话超时时间间隔，默认tickTime
+ExpirationTime = currentTime + sessionTimeout ExpirationTime = (ExpirationTime / ExpirationInterval + 1) * ExpirationInterval ExpirationInterval是指Zookeeper会话超时时间间隔，默认tickTime
 :::
 <a name="iVpxy"></a>
 # 15、服务器角色
@@ -206,7 +206,7 @@ ExpirationTime = currentTime + sessionTimeout<br />ExpirationTime = (ExpirationT
 3. 同步确认
 <a name="dSC9q"></a>
 ## Zookeeper的四种数据同步
-在进行数据同步前，Leader服务器会完成数据同步初始化：<br />**peerLastZxid：**<br />从learner服务器注册时发送的ACKEPOCH消息中提取lastZxid（该Learner服务器最后处理的Zxid）<br />**minCommittedLog：**<br />Leader服务器Proposal缓存队列committedLog中最小Zxid；<br />**maxCommittedLog：**<br />Leader服务器Proposal缓存队列committedLog中最大Zxid；
+在进行数据同步前，Leader服务器会完成数据同步初始化： **peerLastZxid：** 从learner服务器注册时发送的ACKEPOCH消息中提取lastZxid（该Learner服务器最后处理的Zxid） **minCommittedLog：** Leader服务器Proposal缓存队列committedLog中最小Zxid； **maxCommittedLog：** Leader服务器Proposal缓存队列committedLog中最大Zxid；
 
 1. **直接差异化同步（DIFF）**
    1. peerLastZxid介于minCommittedLog和maxCommittedLog之间
@@ -225,7 +225,7 @@ Zookeeper采用了全局递增的事务ID来标识，所有的Proposal（提议�
 在分布式环境中，有些业务逻辑只需要集群中的某一台机器进行执行，其他的机器可以共享这个结果，这样可以大大减少重复计算，提高性能，于是就需要进行leader选举。
 <a name="n9kZG"></a>
 # 20、节点宕机如何处理？
-Zookeeper本身也是集群，推荐配置不少于3个服务器。Zookeeper自身也要保证一个节点宕机时，其他节点会继续提供服务。<br />如果是一个Follower宕机，还有2台服务器提供访问，因为Zookeeper上的数据是有多个副本的，数据并不会丢失。<br />如果是一个Leader宕机，Zookeeper会选举出新的Leader。<br />ZK集群的机制是只要超过半数的节点正常，集群就能正常提供服务。只有在ZK节点挂的太多，只剩一般或少于一半节点能工作，集群才失效。<br />所以：<br />3个节点的cluster可以挂掉1个节点（leader可以得到2票>1.5）<br />2个节点的cluster就不能挂掉任何一个节点了（leader可以得到1票<=1）
+Zookeeper本身也是集群，推荐配置不少于3个服务器。Zookeeper自身也要保证一个节点宕机时，其他节点会继续提供服务。 如果是一个Follower宕机，还有2台服务器提供访问，因为Zookeeper上的数据是有多个副本的，数据并不会丢失。 如果是一个Leader宕机，Zookeeper会选举出新的Leader。 ZK集群的机制是只要超过半数的节点正常，集群就能正常提供服务。只有在ZK节点挂的太多，只剩一般或少于一半节点能工作，集群才失效。 所以： 3个节点的cluster可以挂掉1个节点（leader可以得到2票>1.5） 2个节点的cluster就不能挂掉任何一个节点了（leader可以得到1票<=1）
 <a name="kUSgA"></a>
 # 21、Zookeeper负载均衡和nginx负载均衡的区别
 zk的负载均衡是可以调控，nginx只能调权重，其他需要可控的都需要自己写插件；但是nginx的吞吐量比zk大的多，应该说根据业务选择用哪种方式。
@@ -237,16 +237,16 @@ zk的负载均衡是可以调控，nginx只能调权重，其他需要可控的�
 集群规则为：`2N + 1` 台， N>0，即最少3台。
 <a name="cvP1j"></a>
 # 24、集群支持动态添加机器（水平扩容）吗？
-**全部重启**：关闭zookeeper服务，修改配置之后启动，不影响之前客户端的会话；<br />**逐个重启**：在过半存活即可用的原则下，一台机器重启不影响整个集群对外提供服务。这是必要常用的方式。<br />3.5版本开始支持动态扩容。
+**全部重启**：关闭zookeeper服务，修改配置之后启动，不影响之前客户端的会话； **逐个重启**：在过半存活即可用的原则下，一台机器重启不影响整个集群对外提供服务。这是必要常用的方式。 3.5版本开始支持动态扩容。
 <a name="MybWQ"></a>
 # 25、Zookeeper对节点的Watch是永久的吗？为什么？
-**不是。**官方声明：一个Watch事件是一个一次性的触发器，当被设置了Watch的数据发生了改变的时候，则服务器将这个改变发送给设置了Watch的客户端，以便通知他们。<br />为什么不是永久的，举个例子，如果服务端变动频繁，而监听的客户端很多情况下，每次变动都要通知到所有客户端，给网络和服务器造成很大压力。<br />一般是客户端执行`getData("/节点A", true)`，如果节点A发生了变更或删除，客户端就会得到它的watch事件，但是在之后节点A又发生了变更，而客户端又没有设置watch事件，就不再给客户端发送。<br />在实际应用中，很多情况下，我们的客户端不需要知道服务端的每一次变动，我只要最新的数据即可。
+**不是。**官方声明：一个Watch事件是一个一次性的触发器，当被设置了Watch的数据发生了改变的时候，则服务器将这个改变发送给设置了Watch的客户端，以便通知他们。 为什么不是永久的，举个例子，如果服务端变动频繁，而监听的客户端很多情况下，每次变动都要通知到所有客户端，给网络和服务器造成很大压力。 一般是客户端执行`getData("/节点A", true)`，如果节点A发生了变更或删除，客户端就会得到它的watch事件，但是在之后节点A又发生了变更，而客户端又没有设置watch事件，就不再给客户端发送。 在实际应用中，很多情况下，我们的客户端不需要知道服务端的每一次变动，我只要最新的数据即可。
 <a name="erpUy"></a>
 # 26、Zookeeper的java客户端有哪些？
 zk自带的zkClient及Apache开源的Curator。
 <a name="KywcS"></a>
 # 27、chubby是什么？和zookeeper比你怎么看？
-chubby是google的，完全实现paxos算法，不开源。<br />zookeeper是chubby的开源实现，使用zab协议，paxos算法的变种。
+chubby是google的，完全实现paxos算法，不开源。 zookeeper是chubby的开源实现，使用zab协议，paxos算法的变种。
 <a name="eBqGw"></a>
 # 28、Zookeeper常用命令
 `ls get set create delete`等
@@ -258,10 +258,10 @@ chubby是google的，完全实现paxos算法，不开源。<br />zookeeper是chu
 2. Leader进程都会等待超过半数的Follower做出正确的反馈后，才会将一个提案提交。
 3. ZAB协议中，每个Proposal中都包含一个epoch值来代表当前Leader的生命周期，Paxos中名字为Ballot（投票）。
 
-**不同点**：<br />ZAB用来构建高可用的分布式数据主备系统（Zookeeper）；Paxos是用来构建分布式一致性状态机系统。
+**不同点**： ZAB用来构建高可用的分布式数据主备系统（Zookeeper）；Paxos是用来构建分布式一致性状态机系统。
 <a name="HUuze"></a>
 # 30、Zookeeper的典型应用场景
-Zookeeper是一个典型的发布/订阅模式的分布式数据管理与协调框架，开发人员可以使用它来进行分布式数据的发布和订阅。<br />通过对Zookeeper中丰富的数据节点进行交叉使用，配置Watcher事件通知机制，可以非常方便的构建一系列分布式应用中都会涉及的核心功能，如：
+Zookeeper是一个典型的发布/订阅模式的分布式数据管理与协调框架，开发人员可以使用它来进行分布式数据的发布和订阅。 通过对Zookeeper中丰富的数据节点进行交叉使用，配置Watcher事件通知机制，可以非常方便的构建一系列分布式应用中都会涉及的核心功能，如：
 
 1. 数据发布/订阅
 2. 负载均衡
@@ -273,13 +273,13 @@ Zookeeper是一个典型的发布/订阅模式的分布式数据管理与协调�
 8. 分布式队列
 <a name="kpa3W"></a>
 ## 数据发布/订阅
-介绍：<br />数据发布/订阅系统，即所谓的配置中心，顾名思义就是发布者发布数据提供订阅者进行数据订阅。<br />目的：<br />动态获取数据（配置信息）<br />实现数据（配置信息）的集中式管理和数据的动态更新<br />设计模式<br />push模式<br />pull模式<br />数据（配置信息）特性
+介绍： 数据发布/订阅系统，即所谓的配置中心，顾名思义就是发布者发布数据提供订阅者进行数据订阅。 目的： 动态获取数据（配置信息） 实现数据（配置信息）的集中式管理和数据的动态更新 设计模式 push模式 pull模式 数据（配置信息）特性
 
 1. 数据量通常特别小
 2. 数据内容在运行时会发生动态更新
 3. 集群中各机器共享，配置一致。
 
-如：机器列表信息、运行时开关配置、数据库配置信息等<br />基于Zookeeper的实现方式
+如：机器列表信息、运行时开关配置、数据库配置信息等 基于Zookeeper的实现方式
 
 - **数据存储**：将数据（配置信息）存储到Zookeeper上的一个数据节点
 - **数据获取**：应用在启动初始化节点从Zookeeper数据节点读取数据，并在该节点上注册一个数据变更Watcher
@@ -292,16 +292,16 @@ Zookeeper是一个典型的发布/订阅模式的分布式数据管理与协调�
 通过指定的名字来获取资源或者服务的地址，利用zk创建一个全局的路径，即是唯一的路径，这个路径就可以作为一个名字，指向集群中的机器。
 <a name="Uf1OE"></a>
 ## 分布式协调/通知
-对于系统调度来说：操作人员发送通知实际是通过控制台改变某个节点的状态，然后zk将这些变化发送给注册了这个节点的watcher的所有客户端。<br />对于执行情况汇报：每个工作进程都在某个目录下创建一个临时节点。并携带工作的进度数据，这样汇总的进程可以监控目录子节点的变化获得工作进度的实时的全局情况。
+对于系统调度来说：操作人员发送通知实际是通过控制台改变某个节点的状态，然后zk将这些变化发送给注册了这个节点的watcher的所有客户端。 对于执行情况汇报：每个工作进程都在某个目录下创建一个临时节点。并携带工作的进度数据，这样汇总的进程可以监控目录子节点的变化获得工作进度的实时的全局情况。
 <a name="lqLaz"></a>
 ## 集群管理
-Zookeeper可以实现实时监控节点状态变化；<br />可将节点信息写入Zookeeper上的一个Znode。<br />监听这个Znode可获取它的实时状态变化。
+Zookeeper可以实现实时监控节点状态变化； 可将节点信息写入Zookeeper上的一个Znode。 监听这个Znode可获取它的实时状态变化。
 <a name="X0BtH"></a>
 ## Master选举
 在约定目录下创建节点，谁创建成功了谁就是Master，失败的客户端就在该节点注册Watcher用户监控当前Master机器是否存活，一旦挂了，就重新进行Master选举。
 <a name="SlGSI"></a>
 ## 分布式锁
-Zookeeper是根据它的**临时顺序节点**来实现分布式锁。<br />**具体实现步骤：**
+Zookeeper是根据它的**临时顺序节点**来实现分布式锁。 **具体实现步骤：**
 
 1. **创建临时顺序节点**：每一次获取资源的请求，我们都需要使用Zookeeper客户端创建一个临时顺序节点，用这个临时顺序节点在Zookeeper服务端中获取锁。
 2. **获取锁**：这里的锁并不具体指代什么，而是根据Zookeeper的临时顺序节点的顺序来决定是否获取了锁。如果该节点的顺序编号是最小的，则说明该节点是排在最前面的，在它之前无人占领资源，也就可以说该节点获取了锁，具有访问资源的权限。
@@ -314,5 +314,5 @@ Zookeeper是根据它的**临时顺序节点**来实现分布式锁。<br />**�
 1. 同步队列，当一个队列的成员都聚齐时，这个队列才可用，否则一直等待所有成员到达。
 2. 队列按照FIFO方式进行入队和出队操作。
 
-第一类，在约定目录下创建临时目录节点，监听节点数目是否达到我们要求的数目。<br />第二类，和分布式锁服务中的控制时序场景基本原理一致，入列有编号，出列按编号。在特定的目录下创建PERSISTENT_SEQUENTIAL节点，创建成功时Watcher通知等待的队列，队列删除序列号最小的节点用以消费。此场景下Zookeeper的znode用于消息存储，znode存储的数据就是消息队列中的消息内容，SEQUENTIAL序列化就是消息的编号，按序取出。由于创建的节点是持久化的，所以没有消息丢失的问题。
+第一类，在约定目录下创建临时目录节点，监听节点数目是否达到我们要求的数目。 第二类，和分布式锁服务中的控制时序场景基本原理一致，入列有编号，出列按编号。在特定的目录下创建PERSISTENT_SEQUENTIAL节点，创建成功时Watcher通知等待的队列，队列删除序列号最小的节点用以消费。此场景下Zookeeper的znode用于消息存储，znode存储的数据就是消息队列中的消息内容，SEQUENTIAL序列化就是消息的编号，按序取出。由于创建的节点是持久化的，所以没有消息丢失的问题。
 
