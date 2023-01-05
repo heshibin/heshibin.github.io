@@ -41,7 +41,7 @@ function Feature({Svg, title, description}) {
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
-        <p style={{fontFamily: cursive}}>{description}</p>
+        <p style={{fontFamily: 'cursive'}}>{description}</p>
       </div>
     </div>
   );
