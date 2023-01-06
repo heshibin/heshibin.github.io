@@ -1,13 +1,11 @@
 ---
-title: 数据结构与算法
+title: zookeeper
 date: 2023-01-05
 # 显示 h2 到 h5 标题
-toc_min_heading_level: 2
+toc_min_heading_level: 1
 toc_max_heading_level: 6
 tags: [面试题, zookeeper]
 ---
-
-> 背吗，背啊
 
 # 1、Zookeeper是什么？
 Zookeeper是一个开源的分布式协调服务。它是一个为分布式应用提供一致性服务的软件，分布式应用程序可以基于Zookeeper实现诸如数据发布/订阅、负载均衡、命名服务、分布式协调/通知、集群管理、Master选举、分布式锁和分布式队列等功能。
