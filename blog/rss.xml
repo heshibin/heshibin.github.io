@@ -4,15 +4,22 @@
         <title>heshibin的文档 Blog</title>
         <link>https://heshibin.github.io/blog</link>
         <description>heshibin的文档 Blog</description>
-        <lastBuildDate>Sat, 07 Jan 2023 12:24:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Jan 2023 12:42:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>https://heshibin.github.io/blog/字符串匹配问题-KMP算法</link>
             <guid>字符串匹配问题-KMP算法</guid>
-            <pubDate>Sat, 07 Jan 2023 12:24:59 GMT</pubDate>
+            <pubDate>Sat, 07 Jan 2023 12:42:33 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
+        </item>
+        <item>
+            <title><![CDATA[github-pages如何去掉子域名]]></title>
+            <link>https://heshibin.github.io/blog/github-pages如何去掉子域名</link>
+            <guid>github-pages如何去掉子域名</guid>
+            <pubDate>Sat, 07 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[背景]]></description>
         </item>
         <item>
             <title><![CDATA[JSON.stringify保留原有格式]]></title>
