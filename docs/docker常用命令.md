@@ -9,14 +9,14 @@ tags: [java, docker]
 
 ## 上传文件至docker
 
-sudo docker cp /data/heshibin/ssp-main.jar bfededd10227:/opt/seczone/codesec/ssp/bin
+`sudo docker cp /data/heshibin/ssp-main.jar bfededd10227:/opt/seczone/codesec/ssp/bin`
 
 ## 下载docker内的文件
 
-sudo docker cp bfededd10227:/opt/seczone/codesec/ssp/bin/ssp-main.jar /data/heshibin/ssp-main-back.jar
+`sudo docker cp bfededd10227:/opt/seczone/codesec/ssp/bin/ssp-main.jar /data/heshibin/ssp-main-back.jar`
 
 ## Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 
-systemctl daemon-reload
+`systemctl daemon-reload`
 
-systemctl restart docker.service
+`systemctl restart docker.service`
