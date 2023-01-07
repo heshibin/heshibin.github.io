@@ -1,3 +1,14 @@
+---
+slug: NetworkUtil 获取ip、mac地址
+title: NetworkUtil
+date: 2023-01-07
+sidebar_position: 1
+authors: heshibin
+tags: [java, 代码, 工具类]
+---
+
+
+
 ```java
 import java.net.Inet4Address;
 import java.net.InetAddress;
