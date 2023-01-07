@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://heshibin.github.io/website/blog</id>
+    <title>heshibin的文档 Blog</title>
+    <updated>2023-01-07T06:22:00.879Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://heshibin.github.io/website/blog"/>
+    <subtitle>heshibin的文档 Blog</subtitle>
+    <icon>https://heshibin.github.io/website/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[字符串匹配问题-KMP算法]]></title>
+        <id>字符串匹配问题-KMP算法</id>
+        <link href="https://heshibin.github.io/website/blog/字符串匹配问题-KMP算法"/>
+        <updated>2023-01-07T06:22:00.879Z</updated>
+        <summary type="html"><![CDATA[KMP算法]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JSON.stringify保留原有格式]]></title>
+        <id>JSON.stringify保留原有格式</id>
+        <link href="https://heshibin.github.io/website/blog/JSON.stringify保留原有格式"/>
+        <updated>2023-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[`javascript]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[nginx反向代理]]></title>
+        <id>nginx反向代理</id>
+        <link href="https://heshibin.github.io/website/blog/nginx反向代理"/>
+        <updated>2023-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[路由转发]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[报错only_full_group_by的解决办法]]></title>
+        <id>报错only_full_group_by的解决办法</id>
+        <link href="https://heshibin.github.io/website/blog/报错only_full_group_by的解决办法"/>
+        <updated>2023-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[`sql]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[解决jsencrypt加密长文本时解密失败]]></title>
+        <id>解决jsencrypt加密长文本时解密失败</id>
+        <link href="https://heshibin.github.io/website/blog/解决jsencrypt加密长文本时解密失败"/>
+        <updated>2023-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[将下列代码拷贝至jsencrypt.js中，在JSEncrypt.version = "3.1.4";前面加入]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[常用上标下标符号大全]]></title>
+        <id>常用上标下标符号大全</id>
+        <link href="https://heshibin.github.io/website/blog/常用上标下标符号大全"/>
+        <updated>2023-01-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[常用上标 ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ º ˙]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[选中div内文本复制后会多一个换行符]]></title>
+        <id>选中div内文本复制后会多一个换行符</id>
+        <link href="https://heshibin.github.io/website/blog/选中div内文本复制后会多一个换行符"/>
+        <updated>2023-01-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[代码如下]]></summary>
+        <author>
+            <name>heshibin</name>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+    </entry>
+</feed>
