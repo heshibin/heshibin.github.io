@@ -1,6 +1,6 @@
 ---
 slug: NetworkUtil 获取ip、mac地址
-title: NetworkUtil
+title: 获取ip、mac地址
 date: 2023-01-07
 sidebar_position: 1
 authors: heshibin
