@@ -24,7 +24,8 @@
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "react-json-view": "^1.21.3"
   },
   "browserslist": {
     "production": [
@@ -39,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "react-json-view": "^1.21.3"
+    
   }
 }

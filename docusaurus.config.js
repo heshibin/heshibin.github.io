@@ -42,6 +42,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        pages: {
+          path: 'src/pages'
+        }
       }),
     ],
   ],
@@ -63,7 +66,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: '文档',
           },
           {to: '/blog', label: '博客', position: 'left'},
-         
+          {
+            type: 'dropdown',
+            label: '工具',
+            position: 'left',
+            items: [
+              {
+                label: 'JSON在线格式化',
+                to: '/tools/json'
+              },
+            ]
+          },
 
 //           {
 //             type: 'localeDropdown',
