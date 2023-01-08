@@ -46,7 +46,7 @@ export default class ReactJsonView extends React.Component{
                 <Typography style={{margin: '10px'}}>
                     <Title>JSON在线格式化</Title>
                     <Paragraph>
-                        采用<Text code>react-json-view</Text>实现。
+                        采用<Text code>react-json-view</Text>实现。<Link href="https://github.com/heshibin/heshibin.github.io/blob/main/src/pages/tools/json.js">查看源码</Link>
                     </Paragraph>
                 </Typography>
                 {errorMsg.length > 0 && (
