@@ -37,14 +37,15 @@ export default class ReactJsonView extends React.Component{
             errorMsg = e.message;
         }
         return(
-            <Layout
-                title={`JSON在线格式化工具`}
-                description="JSON在线格式化工具">
+            
                 
                 <BrowserOnly>
                 {() => {
                     return (
                         <>
+                        <Layout
+                title={`JSON在线格式化工具`}
+                description="JSON在线格式化工具">
                         <Typography style={{margin: '10px'}}>
                     <Title>JSON在线格式化</Title>
                     <Paragraph>
@@ -79,13 +80,12 @@ export default class ReactJsonView extends React.Component{
                             groupArraysAfterLength={5}//数组为多少个的时候被拆分显示
                             />
                     </Col>
-                </Row>
+                </Row></Layout>
                         </>
                     )
                 }}
                 </BrowserOnly>
                 
-            </Layout>
         )
     }
 }
