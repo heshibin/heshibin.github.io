@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactJson from 'react-json-view';
 import Layout from '@theme/Layout';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import { Col, Input, Row, Alert, Typography  } from 'antd';
 const { TextArea } = Input;
 const { Title, Paragraph, Text, Link } = Typography;
@@ -39,7 +40,12 @@ export default class ReactJsonView extends React.Component{
             <Layout
                 title={`JSON在线格式化工具`}
                 description="JSON在线格式化工具">
-                <Typography style={{margin: '10px'}}>
+                
+                <BrowserOnly>
+                {() => {
+                    return (
+                        <>
+                        <Typography style={{margin: '10px'}}>
                     <Title>JSON在线格式化</Title>
                     <Paragraph>
                         采用<Text code>react-json-view</Text>实现。
@@ -74,6 +80,11 @@ export default class ReactJsonView extends React.Component{
                             />
                     </Col>
                 </Row>
+                        </>
+                    )
+                }}
+                </BrowserOnly>
+                
             </Layout>
         )
     }
