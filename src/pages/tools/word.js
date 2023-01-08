@@ -81,7 +81,7 @@ export default class ReactJsonView extends React.Component{
                     <Typography>
                         <Title>在线字数统计</Title>
                         <Paragraph>
-                            纯js实现。<Link href="https://github.com/heshibin/heshibin.github.io/edit/main/src/pages/tools/word.js">查看源码</Link>
+                            纯js实现。<Link href="https://github.com/heshibin/heshibin.github.io/blob/main/src/pages/tools/word.js">查看源码</Link>
                         </Paragraph>
                     </Typography>
 
