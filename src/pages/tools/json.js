@@ -2,9 +2,9 @@ import React from 'react';
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Layout from '@theme/Layout';
-import { Col, Input, Row, Alert, Typography, Button  } from 'antd';
+import { Col, Input, Row, Alert, Typography, Button, Space  } from 'antd';
 const { TextArea } = Input;
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Paragraph, Text, Link  } = Typography;
 export default class ReactJsonView extends React.Component{
 
     constructor(props){
@@ -15,8 +15,11 @@ export default class ReactJsonView extends React.Component{
             errorMsg:''
         }
 
-        this.handleChange = this.handleChange.bind(this)
-        this.compressJsonStr = this.compressJsonStr.bind(this)
+        this.handleChange = this.handleChange.bind(this);
+        this.compressJsonStr = this.compressJsonStr.bind(this);
+        this.escapeJsonStr = this.escapeJsonStr.bind(this);
+        this.removeEscapeJsonStr = this.removeEscapeJsonStr.bind(this);
+        this.clearJsonStr = this.clearJsonStr.bind(this);
     }
     
     //改变textarea内容
@@ -28,10 +31,35 @@ export default class ReactJsonView extends React.Component{
         })
     }
 
+    // 压缩
     compressJsonStr() {
         var str = JSON.stringify(JSON.parse(this.state.text));
         this.setState({
             text: str
+        })
+    }
+
+    // 转义
+    escapeJsonStr() {
+        var str = JSON.stringify(JSON.parse(this.state.text)).replace(/\"/g, '\\');
+        this.setState({
+            text: str
+        })
+    }
+
+    // 去除转义
+    removeEscapeJsonStr() {
+        var str = this.state.text.replace(/\\/g, '');
+        this.setState({
+            text: str
+        })
+    }
+
+    // 清空
+    clearJsonStr() {
+        this.setState({
+            text: '',
+            mockJson: ''
         })
     }
 
@@ -63,7 +91,17 @@ export default class ReactJsonView extends React.Component{
                     <Alert message={errorMsg} type="error" showIcon banner />
                 )}
 
-                <Button type="primary" onClick={this.compressJsonStr}>压缩</Button>
+                <Space wrap>
+                    <Button type="primary" onClick={this.compressJsonStr}>压缩</Button>
+
+                    <Button type="primary" onClick={this.escapeJsonStr}>转义</Button>
+
+                    <Button type="primary" onClick={this.removeEscapeJsonStr}>去除转义</Button>
+
+                    <Button type="primary" onClick={this.clearJsonStr}>清空</Button>
+
+                    
+                </Space>
 
                 <Row style={{marginTop: '10px'}}>
                     <Col flex={2}>
