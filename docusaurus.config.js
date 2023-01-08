@@ -70,7 +70,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'JSON在线格式化',
-                to: '/tools/json'
+                to: 'tools/json'
               },
             ]
           },
