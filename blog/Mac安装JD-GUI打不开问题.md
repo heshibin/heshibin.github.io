@@ -1,3 +1,11 @@
+---
+slug: Mac安装JD-GUI打不开问题
+title: Mac安装JD-GUI打不开问题
+date: 2023-01-09
+authors: heshibin
+tags: [mac, jd-gui]
+---
+
 下载地址: http://java-decompiler.github.io/
 
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/49633468/211228055-b0de0093-7f61-44e0-92ab-a5b3517acd11.png"></img>
