@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
 title: java程序运行产生OOM的几种情况
-date: 2023-01-07
+date: 2023-01-09
 tags: [java, 知识小记, OOM, 2023-01]
 ---
 
