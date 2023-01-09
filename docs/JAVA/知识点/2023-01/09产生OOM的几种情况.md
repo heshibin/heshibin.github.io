@@ -11,4 +11,4 @@ tags: [java, 知识小记, OOM, 2023-01]
 `java.lang.StackOverflowError`存在死循环或者深度递归，`-Xss`来设置栈大小
 
 ## 永久代溢出
-`java.lang.OutOfMemoryError: PermGen space`大量class或者cglib等反射产生，`-XX:permSize`等修改
+`java.lang.OutOfMemoryError: PermGen space`大量class或者cglib等反射产生，`-XX:permSize(非堆区初始内存分配大小)`等修改
