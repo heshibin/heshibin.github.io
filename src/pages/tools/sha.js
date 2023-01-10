@@ -26,6 +26,24 @@ export default class ReactJsonView extends React.Component{
                         <Text code>SHA</Text>散列函数由美国国家安全局 (NSA) 设计。 <Text code>SHA-1</Text>是现有<Text code>SHA</Text>散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，<Text code>SHA-1</Text>的抗攻击能力一直在减弱。
                         <p><Text code>var hash = CryptoJS.SHA1("Message");</Text></p>
                     </>
+                )},
+                {key: 'SHA-2', label: `SHA-2`, children: (
+                    <>
+                        <Paragraph>
+                            <Text code>SHA-224、SHA-256、SHA-384</Text>，和<Text code>SHA-512</Text>合称为SHA-2</Text>。
+                        </Paragraph>
+                        <Paragraph>
+                            <Text code>SHA-256</Text>是<Text code>SHA-2</Text>集合中的四个变体之一。虽然它提供了更好的安全性，但是它的应用不如<Text code>SHA-1</Text>广泛。
+                        </Paragraph>    
+                        <p><Text code>var hash = CryptoJS.SHA256("Message");</Text></p>
+                        <Paragraph>
+                            <Text code>SHA-512</Text>在很大程度上与<Text code>SHA-256</Text>相同，但在64位计算机上<Text code>SHA-512</Text>比<Text code>SHA-256</Text>更快(因为它们在内部使用64位算术)；在8位，16位和32位计算机上，<Text code>SHA-256比<Text code>SHA-512</Text>更快。
+                        </Paragraph>
+                        <p><Text code>var hash = CryptoJS.SHA512("Message");</Text></p>
+                        <Paragraph>
+                            <Text code>CryptoJS</Text>还支持<Text code>SHA-224</Text>和<Text code>SHA-384</Text>，这两个版本大致相同，分别是<Text code>SHA-256</Text>和<Text code>SHA-512</Text>的删减版本。
+                        </Paragraph>
+                    </>
                 )}
             ]
         }
