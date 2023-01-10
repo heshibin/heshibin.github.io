@@ -30,7 +30,7 @@ export default class ReactJsonView extends React.Component{
                 {key: 'SHA-2', label: `SHA-2`, children: (
                     <>
                         <Paragraph>
-                            <Text code>SHA-224、SHA-256、SHA-384</Text>，和<Text code>SHA-512</Text>合称为SHA-2</Text>。
+                            <Text code>SHA-224、SHA-256、SHA-384</Text>，和<Text code>SHA-512</Text>合称为<Text code>SHA-2</Text>。
                         </Paragraph>
                         <Paragraph>
                             <Text code>SHA-256</Text>是<Text code>SHA-2</Text>集合中的四个变体之一。虽然它提供了更好的安全性，但是它的应用不如<Text code>SHA-1</Text>广泛。
