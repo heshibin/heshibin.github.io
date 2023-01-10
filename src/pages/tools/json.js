@@ -65,7 +65,7 @@ export default class ReactJsonView extends React.Component{
         }
         
         this.setState({
-            text: JSON.stringify(obj);
+            text: JSON.stringify(obj)
         })
     }
 
