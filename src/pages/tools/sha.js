@@ -115,7 +115,7 @@ export default class ReactJsonView extends React.Component{
                   
                     <TextArea placeholder="加密后数据..." value={result} />
                      
-                    <Title level={4}>介绍</Title>    
+                    <Title level={4} style={{marginTop: '10px'}}>介绍</Title>    
 
                     <Paragraph>
                         <Text code>CryptoJS</Text>是一个JavaScript的加解密的工具包。它支持多种的算法：<Text code>MD5、SHA1、SHA2、SHA3、RIPEMD-160</Text> 哈希散列，进行 <Text code>AES、DES、Rabbit、RC4、Triple DES</Text> 加解密。
