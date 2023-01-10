@@ -80,6 +80,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
                 label: '字数统计',
                 to: '/tools/word'
               },
+              {
+                label: '在线加解密工具',
+                to: '/tools/sha'
+              },
             ]
           },
 

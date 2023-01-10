@@ -94,7 +94,7 @@ export default class ReactJsonView extends React.Component{
                         字符总数：{numwords} 个字符<br/>
                         小贴士：汉字和中文标点算两个字符，数字、空格、英文字母，英文标点算做一个字符。
                     </p>
-                    <TextArea showCount maxLength={100} onChange={this.handleChange} />
+                    <TextArea showCount onChange={this.handleChange} />
                 </div>
             </Layout>
         )
