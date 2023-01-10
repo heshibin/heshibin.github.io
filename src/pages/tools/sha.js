@@ -17,19 +17,19 @@ export default class ReactJsonView extends React.Component{
             introduces: [
                 {key: 'sanlie', label: `散列算法`, children: (
                     <>
-                        <Title level={6}>MD5</Title>
+                        <b>MD5</b>
                         <Paragraph>
                              <Text code>MD5</Text>是一种广泛使用的散列函数。它被用于各种安全应用，也通常用于校验文件的完整性。但<Text code>MD5</Text>不耐碰撞攻击，因此不适用于<Text code>SSL</Text>证书或数字签名。
                             <p><Text code>var hash = CryptoJS.MD5("Message");</Text></p>
                         </Paragraph>
             
-                        <Title level={6}>SHA-1</Title>
+                        <b>SHA-1</b>
                         <Paragraph>
                             <Text code>SHA</Text>散列函数由美国国家安全局 (NSA) 设计。 <Text code>SHA-1</Text>是现有<Text code>SHA</Text>散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，<Text code>SHA-1</Text>的抗攻击能力一直在减弱。
                             <p><Text code>var hash = CryptoJS.SHA1("Message");</Text></p>
                         </Paragraph>
         
-                        <Title level={6}>SHA-2</Title>
+                        <b level={6}>SHA-2</b>
                         <Paragraph>
                             <Text code>SHA-224、SHA-256、SHA-384</Text>，和<Text code>SHA-512</Text>合称为<Text code>SHA-2</Text>。
                         </Paragraph>
@@ -44,6 +44,24 @@ export default class ReactJsonView extends React.Component{
                         <Paragraph>
                             <Text code>CryptoJS</Text>还支持<Text code>SHA-224</Text>和<Text code>SHA-384</Text>，这两个版本大致相同，分别是<Text code>SHA-256</Text>和<Text code>SHA-512</Text>的删减版本。
                         </Paragraph>
+        
+                        <b level={6}>SHA-3</b>
+                        <Paragraph>
+                            <Text code>SHA-3</Text>是第三代安全散列算法(Secure Hash Algorithm 3)。
+                            <Text code>var hash = CryptoJS.SHA3("Message");</Text>
+                            <Text code>SHA-3</Text>可以配置输出散列长度为224，256，384或512位，默认为512位。
+                            <Text code>
+                                <pre>
+                                    var hash = CryptoJS.SHA3("Message", { outputLength: 512 });
+                                    var hash = CryptoJS.SHA3("Message", { outputLength: 384 });
+                                    var hash = CryptoJS.SHA3("Message", { outputLength: 256 });
+                                    var hash = CryptoJS.SHA3("Message", { outputLength: 224 });
+                                </pre>
+                            </Text>
+                        </Paragraph>
+        
+                        <Title level={6}>RIPEMD-160</Title>
+                        <Text code>var hash = CryptoJS.RIPEMD160("Message");</Text>
                     </>
                 )},
                 
