@@ -19,6 +19,7 @@ export default class ReactJsonView extends React.Component{
         this.compressJsonStr = this.compressJsonStr.bind(this);
         this.escapeJsonStr = this.escapeJsonStr.bind(this);
         this.removeEscapeJsonStr = this.removeEscapeJsonStr.bind(this);
+        this.mapToJson = this.mapToJson.bind(this);
         this.clearJsonStr = this.clearJsonStr.bind(this);
     }
     
@@ -52,6 +53,19 @@ export default class ReactJsonView extends React.Component{
         var str = this.state.text.replace(/\\/g, '');
         this.setState({
             text: str
+        })
+    }
+    
+    // map转json
+    mapToJson() {
+        var strMap = this.state.text;
+        let obj= Object.create(null);
+        for (let[k,v] of strMap) {
+          obj[k] = v;
+        }
+        
+        this.setState({
+            text: JSON.stringify(obj);
         })
     }
 
@@ -97,6 +111,8 @@ export default class ReactJsonView extends React.Component{
                     <Button type="primary" onClick={this.escapeJsonStr}>转义</Button>
 
                     <Button type="primary" onClick={this.removeEscapeJsonStr}>去除转义</Button>
+
+                    <Button type="primary" onClick={this.mapToJson}>map字符串转json</Button>
 
                     <Button type="primary" onClick={this.clearJsonStr}>清空</Button>
 
