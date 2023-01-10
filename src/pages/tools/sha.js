@@ -29,7 +29,7 @@ export default class ReactJsonView extends React.Component{
                             <p><Text code>var hash = CryptoJS.SHA1("Message");</Text></p>
                         </Paragraph>
         
-                        <b level={6}>SHA-2</b>
+                        <b>SHA-2</b>
                         <Paragraph>
                             <Text code>SHA-224、SHA-256、SHA-384</Text>，和<Text code>SHA-512</Text>合称为<Text code>SHA-2</Text>。
                         </Paragraph>
@@ -45,7 +45,7 @@ export default class ReactJsonView extends React.Component{
                             <Text code>CryptoJS</Text>还支持<Text code>SHA-224</Text>和<Text code>SHA-384</Text>，这两个版本大致相同，分别是<Text code>SHA-256</Text>和<Text code>SHA-512</Text>的删减版本。
                         </Paragraph>
         
-                        <b level={6}>SHA-3</b>
+                        <b>SHA-3</b>
                         <Paragraph>
                             <Text code>SHA-3</Text>是第三代安全散列算法(Secure Hash Algorithm 3)。
                             <Text code>var hash = CryptoJS.SHA3("Message");</Text>
@@ -60,7 +60,7 @@ export default class ReactJsonView extends React.Component{
                             </Text>
                         </Paragraph>
         
-                        <Title level={6}>RIPEMD-160</Title>
+                        <b>RIPEMD-160</b>
                         <Text code>var hash = CryptoJS.RIPEMD160("Message");</Text>
                     </>
                 )},
@@ -72,6 +72,7 @@ export default class ReactJsonView extends React.Component{
         this.SHA1 = this.SHA1.bind(this);
         this.SHA256 = this.SHA256.bind(this);
         this.SHA512 = this.SHA512.bind(this);
+        this.RIPEMD160 = this.RIPEMD160.bind(this);
     }
 
     handleChange(e){    
@@ -109,6 +110,13 @@ export default class ReactJsonView extends React.Component{
       })
     }
 
+    RIPEMD160() {
+      console.log(this.state.text);
+      this.setState({
+        result: CryptoJS.RIPEMD160(this.state.text)
+      })
+    }
+
     render() {
         let { text, result,introduces } = this.state;
 
@@ -131,6 +139,7 @@ export default class ReactJsonView extends React.Component{
                       <Button type="primary" onClick={this.SHA1}>SHA1</Button>
                       <Button type="primary" onClick={this.SHA256}>SHA256</Button>
                       <Button type="primary" onClick={this.SHA512}>SHA512</Button>
+                      <Button type="primary" onClick={this.RIPEMD160}>RIPEMD-160</Button>
                     </Space>
                   
                     <TextArea placeholder="加密后数据..." value={result} />
