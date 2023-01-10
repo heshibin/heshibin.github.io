@@ -92,7 +92,7 @@ export default class ReactJsonView extends React.Component{
         return (
             <Layout
                 title={`JSON在线格式化工具`}
-                description="JSON在线格式化工具 压缩 转义 map字符串转json">
+                description="JSON在线格式化工具 压缩 转义 map字符串转json react-json-view">
 
                 <div style={{margin: '10px'}}>
                 <Typography>
