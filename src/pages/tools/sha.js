@@ -2,7 +2,7 @@ import React from 'react';
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Layout from '@theme/Layout';
-import { Col, Input, Row, Alert, Typography, Button, Space  } from 'antd';
+import { Col, Input, Row, Alert, Typography, Button, Space, Tabs  } from 'antd';
 const { TextArea } = Input;
 const { Title, Paragraph, Text, Link  } = Typography;
 const CryptoJS = require("crypto-js");
@@ -13,7 +13,11 @@ export default class ReactJsonView extends React.Component{
         super(props)
         this.state = {
             text: '',
-            result: ''
+            result: '',
+            introduces: [
+                {key: 'md5', label: `MD5`, children: `MD5是一种广泛使用的散列函数。它被用于各种安全应用，也通常用于校验文件的完整性。但MD5不耐碰撞攻击，因此不适用于SSL证书或数字签名。`},
+                {key: 'SHA-1', label: `SHA-1`, children: `SHA 散列函数由美国国家安全局 (NSA) 设计。SHA-1 是现有 SHA 散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，SHA-1 的抗攻击能力一直在减弱。`}
+            ]
         }
         this.handleChange = this.handleChange.bind(this);
         this.md5 = this.md5.bind(this);
@@ -58,7 +62,7 @@ export default class ReactJsonView extends React.Component{
     }
 
     render() {
-        let { text, result } = this.state;
+        let { text, result,introduces } = this.state;
 
         return (
             <Layout
@@ -82,6 +86,8 @@ export default class ReactJsonView extends React.Component{
                     </Space>
                   
                     <TextArea maxLength={100} value={result} />
+                        
+                    <Tabs defaultActiveKey="md5" items={introduces} />
                 </div>
             </Layout>
         )
