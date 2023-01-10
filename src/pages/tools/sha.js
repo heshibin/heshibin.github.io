@@ -44,7 +44,7 @@ export default class ReactJsonView extends React.Component{
                             <Text code>SHA-3</Text>是第三代安全散列算法(Secure Hash Algorithm 3)。
                             <Text code>var hash = CryptoJS.SHA3("Message");</Text>
                             <Text code>SHA-3</Text>可以配置输出散列长度为224，256，384或512位，默认为512位。
-                            <Text code>var hash = CryptoJS.SHA3("Message", {outputLength：512});</Text>
+                            <Text code>var hash = CryptoJS.SHA3("Message", {outputLength:512});</Text>
                         </Paragraph>
         
                         <b>RIPEMD-160</b>
