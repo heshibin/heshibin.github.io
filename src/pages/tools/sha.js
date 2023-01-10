@@ -17,6 +17,9 @@ export default class ReactJsonView extends React.Component{
         }
         this.handleChange = this.handleChange.bind(this);
         this.md5 = this.md5.bind(this);
+        this.SHA1 = this.SHA1.bind(this);
+        this.SHA256 = this.SHA256.bind(this);
+        this.SHA512 = this.SHA512.bind(this);
     }
 
     handleChange(e){    
@@ -32,7 +35,27 @@ export default class ReactJsonView extends React.Component{
         result: CryptoJS.MD5(this.state.text)
       })
     }
-
+    
+    SHA1() {
+      console.log(this.state.text);
+      this.setState({
+        result: CryptoJS.SHA1(this.state.text)
+      })
+    }
+    
+    SHA256() {
+      console.log(this.state.text);
+      this.setState({
+        result: CryptoJS.SHA256(this.state.text)
+      })
+    }
+    
+    SHA512() {
+      console.log(this.state.text);
+      this.setState({
+        result: CryptoJS.SHA512(this.state.text)
+      })
+    }
 
     render() {
         let { text, result } = this.state;
@@ -53,6 +76,9 @@ export default class ReactJsonView extends React.Component{
 
                     <Space wrap style={{marginTop: 10, marginBottom: 10}}>
                       <Button type="primary" onClick={this.md5}>MD5</Button>
+                      <Button type="primary" onClick={this.SHA1}>SHA1</Button>
+                      <Button type="primary" onClick={this.SHA256}>SHA256</Button>
+                      <Button type="primary" onClick={this.SHA512}>SHA512</Button>
                     </Space>
                   
                     <TextArea maxLength={100} value={result} />
