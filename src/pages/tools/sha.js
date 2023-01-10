@@ -15,7 +15,11 @@ export default class ReactJsonView extends React.Component{
             text: '',
             result: '',
             introduces: [
-                {key: 'md5', label: `MD5`, children: `MD5是一种广泛使用的散列函数。它被用于各种安全应用，也通常用于校验文件的完整性。但MD5不耐碰撞攻击，因此不适用于SSL证书或数字签名。`},
+                {key: 'md5', label: `MD5`, children: (
+                    <>
+                        <Text code>MD5</Text>是一种广泛使用的散列函数。它被用于各种安全应用，也通常用于校验文件的完整性。但<Text code>MD5</Text>不耐碰撞攻击，因此不适用于<Text code>SSL</Text>证书或数字签名。
+                    </>
+                )},
                 {key: 'SHA-1', label: `SHA-1`, children: `SHA 散列函数由美国国家安全局 (NSA) 设计。SHA-1 是现有 SHA 散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，SHA-1 的抗攻击能力一直在减弱。`}
             ]
         }
@@ -76,7 +80,7 @@ export default class ReactJsonView extends React.Component{
                         <Text code>crypto-js</Text>实现。<Link href="https://github.com/heshibin/heshibin.github.io/blob/main/src/pages/tools/sha.js">查看源码</Link>
                         </Paragraph>
                     </Typography>
-                    <TextArea maxLength={100} placeholder="请输入待加密数据..." onChange={this.handleChange}></TextArea>
+                    <TextArea placeholder="请输入待加密数据..." onChange={this.handleChange}></TextArea>
 
                     <Space wrap style={{marginTop: 10, marginBottom: 10}}>
                       <Button type="primary" onClick={this.md5}>MD5</Button>
@@ -85,7 +89,7 @@ export default class ReactJsonView extends React.Component{
                       <Button type="primary" onClick={this.SHA512}>SHA512</Button>
                     </Space>
                   
-                    <TextArea maxLength={100} value={result} />
+                    <TextArea placeholder="加密后数据..." value={result} />
                         
                     <Tabs defaultActiveKey="md5" items={introduces} />
                 </div>
