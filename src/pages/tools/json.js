@@ -59,13 +59,15 @@ export default class ReactJsonView extends React.Component{
     // map转json
     mapToJson() {
         var strMap = this.state.text;
-        let obj= Object.create(null);
-        for (let[k,v] of strMap) {
-          obj[k] = v;
+        var subStr = strMap.substring(1,strMap.length-1);
+        var arr = subStr.split(",");
+        var newJson = {};
+        for(var i in arr){
+        var tmpObj = arr[i].split("=");
+            newJson[tmpObj[0].trim()] = tmpObj[1];
         }
-        
         this.setState({
-            text: JSON.stringify(obj)
+            text: JSON.stringify(newJson)
         })
     }
 
