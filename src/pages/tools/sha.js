@@ -18,9 +18,15 @@ export default class ReactJsonView extends React.Component{
                 {key: 'md5', label: `MD5`, children: (
                     <>
                         <Text code>MD5</Text>是一种广泛使用的散列函数。它被用于各种安全应用，也通常用于校验文件的完整性。但<Text code>MD5</Text>不耐碰撞攻击，因此不适用于<Text code>SSL</Text>证书或数字签名。
+                        <p><Text code>var hash = CryptoJS.MD5("Message");</Text></p>
                     </>
                 )},
-                {key: 'SHA-1', label: `SHA-1`, children: `SHA 散列函数由美国国家安全局 (NSA) 设计。SHA-1 是现有 SHA 散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，SHA-1 的抗攻击能力一直在减弱。`}
+                {key: 'SHA-1', label: `SHA-1`, children: (
+                    <>
+                        <Text code>SHA</Text>散列函数由美国国家安全局 (NSA) 设计。 <Text code>SHA-1</Text>是现有<Text code>SHA</Text>散列函数中最成熟的，它用于各种安全应用程序和协议。但随着新攻击的发现或改进，<Text code>SHA-1</Text>的抗攻击能力一直在减弱。
+                        <p><Text code>var hash = CryptoJS.SHA1("Message");</Text></p>
+                    </>
+                )}
             ]
         }
         this.handleChange = this.handleChange.bind(this);
@@ -90,6 +96,12 @@ export default class ReactJsonView extends React.Component{
                     </Space>
                   
                     <TextArea placeholder="加密后数据..." value={result} />
+                     
+                    <Title level={4}>介绍</Title>    
+
+                    <Paragraph>
+                        <Text code>CryptoJS</Text>是一个JavaScript的加解密的工具包。它支持多种的算法：<Text code>MD5、SHA1、SHA2、SHA3、RIPEMD-160</Text> 哈希散列，进行 <Text code>AES、DES、Rabbit、RC4、Triple DES</Text> 加解密。
+                    </Paragraph>
                         
                     <Tabs defaultActiveKey="md5" items={introduces} />
                 </div>
