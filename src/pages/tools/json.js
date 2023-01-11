@@ -114,8 +114,6 @@ export default class ReactJsonView extends React.Component{
 
                     <Button type="primary" onClick={this.removeEscapeJsonStr}>去除转义</Button>
 
-//                     <Button type="primary" onClick={this.mapToJson}>map字符串转json</Button>
-
                     <Button type="primary" onClick={this.clearJsonStr}>清空</Button>
 
                     
