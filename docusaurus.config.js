@@ -19,7 +19,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   //   defaultLocale: "zh-Hans",
   //   locales: ["zh-Hans", "ja"],
   // },
-
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
