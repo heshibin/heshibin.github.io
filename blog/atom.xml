@@ -2,16 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://heshibin.github.io/blog</id>
     <title>heshibin的文档 Blog</title>
-    <updated>2023-01-11T01:09:18.380Z</updated>
+    <updated>2023-01-11T03:14:41.446Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://heshibin.github.io/blog"/>
     <subtitle>heshibin的文档 Blog</subtitle>
     <icon>https://heshibin.github.io/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[GET和POST的区别]]></title>
+        <id>GET和POST的区别</id>
+        <link href="https://heshibin.github.io/blog/GET和POST的区别"/>
+        <updated>2023-01-11T03:14:41.446Z</updated>
+        <summary type="html"><![CDATA[get请求和post请求本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[字符串匹配问题-KMP算法]]></title>
         <id>字符串匹配问题-KMP算法</id>
         <link href="https://heshibin.github.io/blog/字符串匹配问题-KMP算法"/>
-        <updated>2023-01-11T01:09:18.380Z</updated>
+        <updated>2023-01-11T03:14:41.446Z</updated>
         <summary type="html"><![CDATA[KMP算法]]></summary>
     </entry>
     <entry>

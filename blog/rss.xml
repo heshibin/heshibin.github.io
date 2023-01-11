@@ -4,14 +4,21 @@
         <title>heshibin的文档 Blog</title>
         <link>https://heshibin.github.io/blog</link>
         <description>heshibin的文档 Blog</description>
-        <lastBuildDate>Wed, 11 Jan 2023 01:09:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Jan 2023 03:14:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[GET和POST的区别]]></title>
+            <link>https://heshibin.github.io/blog/GET和POST的区别</link>
+            <guid>GET和POST的区别</guid>
+            <pubDate>Wed, 11 Jan 2023 03:14:41 GMT</pubDate>
+            <description><![CDATA[get请求和post请求本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。]]></description>
+        </item>
         <item>
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>https://heshibin.github.io/blog/字符串匹配问题-KMP算法</link>
             <guid>字符串匹配问题-KMP算法</guid>
-            <pubDate>Wed, 11 Jan 2023 01:09:18 GMT</pubDate>
+            <pubDate>Wed, 11 Jan 2023 03:14:41 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
         </item>
         <item>
