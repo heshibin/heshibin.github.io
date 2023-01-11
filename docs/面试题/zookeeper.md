@@ -2,8 +2,8 @@
 title: zookeeper
 date: 2023-01-05
 # 显示 h2 到 h5 标题
-toc_min_heading_level: 1
-toc_max_heading_level: 6
+toc_min_heading_level: 2
+toc_max_heading_level: 5
 tags: [面试题, zookeeper]
 ---
 
