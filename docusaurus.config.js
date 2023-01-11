@@ -19,10 +19,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   //   defaultLocale: "zh-Hans",
   //   locales: ["zh-Hans", "ja"],
   // },
-  plugins: [
-    // require('path').resolve(__dirname, '../../docusaurus-search-local'),
-    require.resolve('@cmfcmf/docusaurus-search-local')
-  ],
+  // plugins: [
+  //   // require('path').resolve(__dirname, '../../docusaurus-search-local'),
+  //   require.resolve('@cmfcmf/docusaurus-search-local')
+  // ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -51,7 +51,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       }),
     ],
   ],
-
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        language: ["en", "zh"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
