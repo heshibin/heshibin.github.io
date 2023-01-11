@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[6412],{7025:s=>{s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/nginx","name":"nginx","count":1,"permalink":"/blog/tags/nginx"}')}}]);
