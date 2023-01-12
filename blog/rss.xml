@@ -4,7 +4,7 @@
         <title>Exc Blog</title>
         <link>https://heshibin.github.io/blog</link>
         <description>Exc Blog</description>
-        <lastBuildDate>Thu, 12 Jan 2023 06:31:30 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 08:11:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>https://heshibin.github.io/blog/字符串匹配问题-KMP算法</link>
             <guid>/字符串匹配问题-KMP算法</guid>
-            <pubDate>Thu, 12 Jan 2023 06:31:30 GMT</pubDate>
+            <pubDate>Thu, 12 Jan 2023 08:11:30 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content:encoded>
         </item>
