@@ -14,15 +14,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   organizationName: 'heshibin', // Usually your GitHub org/user name.
   projectName: 'document notes', // Usually your repo name.
 
-  i18n: {
-    defaultLocale: 'zh',
-    locales: ['en', 'zh'],
-    localeConfigs: {
-      en: {
-        htmlLang: 'en-GB',
-      },
-    },
-  },
   // plugins: [
   //   // require('path').resolve(__dirname, '../../docusaurus-search-local'),
   //   require.resolve('@cmfcmf/docusaurus-search-local')
