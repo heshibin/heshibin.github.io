@@ -4,7 +4,7 @@
         <title>Exc Blog</title>
         <link>https://heshibin.github.io/blog</link>
         <description>Exc Blog</description>
-        <lastBuildDate>Thu, 12 Jan 2023 08:41:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Jan 2023 08:42:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>https://heshibin.github.io/blog/字符串匹配问题-KMP算法</link>
             <guid>/字符串匹配问题-KMP算法</guid>
-            <pubDate>Thu, 12 Jan 2023 08:41:13 GMT</pubDate>
+            <pubDate>Thu, 12 Jan 2023 08:42:55 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content:encoded>
         </item>
@@ -39,7 +39,7 @@
         <item>
             <title><![CDATA[Mac安装JD-GUI打不开问题]]></title>
             <link>https://heshibin.github.io/blog/Mac安装JD-GUI打不开问题</link>
-            <guid>Mac安装JD-GUI打不开问题</guid>
+            <guid>/Mac安装JD-GUI打不开问题</guid>
             <pubDate>Mon, 09 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[下载地址//java-decompiler.github.io/]]></description>
             <content:encoded><![CDATA[<p>下载地址: <a href="http://java-decompiler.github.io/" target="_blank" rel="noopener noreferrer">http://java-decompiler.github.io/</a></p><img loading="lazy" width="440" alt="image" src="https://user-images.githubusercontent.com/49633468/211228055-b0de0093-7f61-44e0-92ab-a5b3517acd11.png" class="img_ev3q"><h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决办法">解决办法<a class="hash-link" href="#解决办法" title="Direct link to heading">​</a></h2><img loading="lazy" width="519" alt="image" src="https://user-images.githubusercontent.com/49633468/211228140-4722afc7-7d63-4746-8150-4f21f191a962.png" class="img_ev3q"><p>在230行处增加<code>JVMVersion="1.8.0_202"</code></p><img loading="lazy" width="810" alt="image" src="https://user-images.githubusercontent.com/49633468/211228085-c3b06594-6e32-4335-91ce-9e1347d4f7d0.png" class="img_ev3q">]]></content:encoded>
