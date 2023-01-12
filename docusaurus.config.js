@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Exc',
   tagline: 'A collection of document notes',
-  url: 'https://heshibin.github.io',
+  url: 'http://doc.machu.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
