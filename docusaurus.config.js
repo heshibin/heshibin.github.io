@@ -128,23 +128,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
             ],
           },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: '工具',
+            items: [
+              {
+                label: 'JSON在线格式化',
+                to: '/tools/json'
+              },
+              {
+                label: '字数统计',
+                to: '/tools/word'
+              },
+              {
+                label: '在线加解密工具',
+                to: '/tools/sha'
+              },
+            ],
+          },
           // {
           //   title: 'More',
           //   items: [
