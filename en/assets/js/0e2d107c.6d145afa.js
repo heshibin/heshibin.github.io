@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2506],{2272:e=>{e.exports=JSON.parse('{"label":"jd-gui","permalink":"/en/blog/tags/jd-gui","allTagsPath":"/en/blog/tags","count":1}')}}]);
