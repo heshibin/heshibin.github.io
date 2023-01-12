@@ -1,5 +1,4 @@
 ---
-slug: Mac安装JD-GUI打不开问题
 title: Mac安装JD-GUI打不开问题
 date: 2023-01-09
 authors: heshibin
