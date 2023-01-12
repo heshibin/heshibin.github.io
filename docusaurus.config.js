@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'heshibin的文档',
+  title: 'Exc',
   tagline: 'A collection of document notes',
   url: 'https://heshibin.github.io',
   baseUrl: '/',
@@ -67,7 +67,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'heshibin的文档',
+        title: 'Exc',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
