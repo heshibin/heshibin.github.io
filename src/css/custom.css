@@ -35,8 +35,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   border-left: 3px solid #ff000080;
 }
 
-.theme-doc-sidebar-container sidebar_a3j0 {
-  font-size: 14px;
+.theme-doc-sidebar-container .sidebar_a3j0 {
+  font-size: 14px !important;
 }
 
 .menu__link--sublist:after {
