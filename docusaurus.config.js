@@ -1,7 +1,10 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
-const vsLight = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
+const vsLight = require('prism-react-renderer/themes/vsLight');
+const vsDark = require('prism-react-renderer/themes/vsDark');
+const duotoneLight = require('prism-react-renderer/themes/duotoneLight');
+const duotoneDark = require('prism-react-renderer/themes/duotoneDark');
+const vsDark = require('prism-react-renderer/themes/vsDark'); 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
@@ -164,8 +167,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: vsLight,
-        darkTheme: darkCodeTheme,
+        theme: duotoneLight,
+        darkTheme: vsDark,
         magicComments: [
           // 要记得复制默认的高亮类！
           {
