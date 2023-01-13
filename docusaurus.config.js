@@ -1,4 +1,5 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
+const vsLight = require('prism-react-renderer/themes/vsLight');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
@@ -163,7 +164,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: vsLight,
         darkTheme: darkCodeTheme,
         magicComments: [
           // 要记得复制默认的高亮类！
