@@ -31,7 +31,7 @@ export default function DocCardList() {
         </Col>
       </Row>
 
-      <Row gutter={16}>
+      <Row gutter={16} style={{marginTop: '10px'}}>
         <Col span={8}>
           <Card title="面试题" bordered={false}>
             java基础面试题...<Link href="/docs/面试题/zookeeper">
