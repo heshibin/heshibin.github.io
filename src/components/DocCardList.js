@@ -8,7 +8,7 @@ export default function DocCardList() {
       <Row gutter={16}>
         <Col span={8}>
           <Card title=(
-              <>
+              return <>
                 JAVA
                 <Link> href="/JAVA/知识点/2023-01/01什么是try-with-resource">
                   前往
@@ -19,14 +19,49 @@ export default function DocCardList() {
           </Card>
         </Col>
         <Col span={8}>
-          <Card title="前端" bordered={false}>
+          <Card title=(
+              return <>
+                前端
+                <Link> href="/前端/react相关">
+                  前往
+                </Link>
+              </>
+            ) bordered={false}>
             javascript、jquery、html、react等
           </Card>
         </Col>
         <Col span={8}>
-          <Card title="工具" bordered={false}>
+          <Card title=(
+              return <>
+                工具
+                <Link> href="/download">
+                  前往
+                </Link>
+              </>
+            ) bordered={false}>
             一些开发工具等
           </Card>
+        </Col>
+      </Row>
+
+      <Row gutter={16}>
+        <Col span={8}>
+          <Card title=(
+              return <>
+                面试题
+                <Link> href="/面试题/zookeeper">
+                  前往
+                </Link>
+              </>
+            ) bordered={false}>
+            java基础面试题...
+          </Card>
+        </Col>
+        <Col span={8}>
+          
+        </Col>
+        <Col span={8}>
+          
         </Col>
       </Row>
     </div>
