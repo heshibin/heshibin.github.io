@@ -111,26 +111,22 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
 //             type: 'localeDropdown',
 //             position: 'right',
 //           },
-          {
-            href: 'https://github.com/heshibin',
-            label: 'GitHub',
-            position: 'right',
-          },
+//           {
+//             href: 'https://github.com/heshibin',
+//             label: 'GitHub',
+//             position: 'right',
+//           },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '帮助',
             items: [
               {
-                label: '文档',
-                to: '/docs/welcome',
-              },
-              {
-                label: '博客',
-                to: '/blog',
+                label: '标签',
+                to: '/docs/tags',
               },
             ],
           },
@@ -151,19 +147,15 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
               },
             ],
           },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: '更多',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/heshibin/heshibin.github.io',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
