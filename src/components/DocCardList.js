@@ -9,7 +9,7 @@ export default function DocCardList() {
         <Col span={8}>
           <Card title="JAVA" bordered={false}>
             常用java工具类，知识点等
-                 <Link href="/docs/JAVA/知识点/2023-01/01什么是try-with-resource">
+                 <Link href="/docs/JAVA/小记/2023-01/01什么是try-with-resource">
                   前往
                 </Link>
           </Card>
