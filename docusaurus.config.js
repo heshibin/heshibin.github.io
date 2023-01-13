@@ -4,7 +4,7 @@ const vsLight = require('prism-react-renderer/themes/vsLight');
 const vsDark = require('prism-react-renderer/themes/vsDark');
 const duotoneLight = require('prism-react-renderer/themes/duotoneLight');
 const duotoneDark = require('prism-react-renderer/themes/duotoneDark');
-const vsDark = require('prism-react-renderer/themes/vsDark'); 
+
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
