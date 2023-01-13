@@ -40,7 +40,7 @@ export default function DocCardList() {
 
       <Row gutter={16}>
         <Col span={8}>
-          <Card title={()=(<>
+          <Card title={()=>(<>
                 面试题
                 <Link> href="/面试题/zookeeper">
                   前往
