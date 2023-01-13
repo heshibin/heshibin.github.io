@@ -42,7 +42,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         },
         pages: {
           path: 'src/pages'
-        }
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
