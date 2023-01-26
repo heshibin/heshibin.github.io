@@ -1,3 +1,8 @@
+---
+title: mysql基本语句或命令
+tags: [mysql]
+---
+
 ##### 启动或停止mysql
 `net start/stop mysql`
 ##### 进入mysql
