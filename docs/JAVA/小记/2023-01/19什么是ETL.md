@@ -1,6 +1,6 @@
 ---
 title: 什么是ETL
-description: 什么是ETL
+description: 什么是ETL？抽取（extract）、转换（transform）、加载（load）
 date: 2023-01-19
 tags: [java, 知识小记, 2023-01]
 ---
