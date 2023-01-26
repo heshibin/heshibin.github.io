@@ -1,6 +1,6 @@
 ---
 title: 什么是商业智能BI（Business Intelligence）
-description: 什么是商业智能BI（Business Intelligence）
+description: 什么是商业智能BI（Business Intelligence）？为了提升数据价值、辅助企业决策
 date: 2023-01-18
 tags: [java, 知识小记, 2023-01]
 ---
