@@ -1,3 +1,8 @@
+---
+title: mysql的操作语句分类
+tags: [mysql]
+---
+
 1. **DDL 数据定义语言(Data Definition Language)**  
     例如: 建库、建表
 2. **DML 数据操作语言(Data Manipulation Language)**  
