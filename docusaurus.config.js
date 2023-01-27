@@ -11,7 +11,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
 (module.exports = {
   title: 'Exec',
   tagline: 'A collection of document notes',
-  url: 'https://doc.machu.top',
+  url: 'https://machu.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
