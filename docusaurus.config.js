@@ -73,7 +73,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Exc',
+        title: 'Exec',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
