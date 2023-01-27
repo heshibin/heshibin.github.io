@@ -4,7 +4,7 @@
         <title>Exec Blog</title>
         <link>https://machu.top/blog</link>
         <description>Exec Blog</description>
-        <lastBuildDate>Fri, 27 Jan 2023 14:29:10 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Jan 2023 14:34:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[vscode下载速度过慢解决办法]]></title>
             <link>https://machu.top/blog/vscode下载速度过慢解决办法</link>
             <guid>/vscode下载速度过慢解决办法</guid>
-            <pubDate>Fri, 27 Jan 2023 14:29:10 GMT</pubDate>
+            <pubDate>Fri, 27 Jan 2023 14:34:30 GMT</pubDate>
             <description><![CDATA[下载地址的域名改成 vscode.cdn.azure.cn]]></description>
             <content:encoded><![CDATA[<p>下载地址的域名改成 <code>vscode.cdn.azure.cn</code></p>]]></content:encoded>
         </item>
@@ -20,9 +20,21 @@
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>https://machu.top/blog/字符串匹配问题-KMP算法</link>
             <guid>/字符串匹配问题-KMP算法</guid>
-            <pubDate>Fri, 27 Jan 2023 14:29:10 GMT</pubDate>
+            <pubDate>Fri, 27 Jan 2023 14:34:30 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[github-page dns解析失败]]></title>
+            <link>https://machu.top/blog/github-page dns解析失败</link>
+            <guid>/github-page dns解析失败</guid>
+            <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[给解析添加A类型]]></description>
+            <content:encoded><![CDATA[<p>给解析添加A类型，以下地址任选一</p><p>185.199.108.153<br>
+<!-- -->185.199.109.153<br>
+<!-- -->185.199.110.153<br>
+<!-- -->185.199.111.153  </p><p><img loading="lazy" src="https://user-images.githubusercontent.com/49633468/215111496-14560083-35f7-4673-9fb8-584b2594cda7.png" alt="image" class="img_ev3q"></p>]]></content:encoded>
+            <author>17608484341@163.com (heshibin)</author>
         </item>
         <item>
             <title><![CDATA[Integer比较相等问题]]></title>
