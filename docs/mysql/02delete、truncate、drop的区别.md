@@ -1,5 +1,6 @@
 ---
 title: delete、truncate、drop的区别
+description: delete、truncate、drop的区别
 tags: [mysql]
 ---
 

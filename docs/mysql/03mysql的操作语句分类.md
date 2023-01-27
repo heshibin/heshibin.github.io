@@ -1,5 +1,6 @@
 ---
 title: mysql的操作语句分类
+description: mysql的操作语句分类
 tags: [mysql]
 ---
 
