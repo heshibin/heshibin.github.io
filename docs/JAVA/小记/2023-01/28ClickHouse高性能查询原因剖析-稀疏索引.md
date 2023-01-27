@@ -1,6 +1,6 @@
 ---
 title: ClickHouse高性能查询原因剖析-稀疏索引
-description: 表引擎选择一般都是MergeTree系列引擎，没有最好，根据业务选择最合适的。
+description: 不会为每个关键字创建索引记录，而是为数据记录未见的每个存储块设一个键-指针对，存储块意味着块内存储单元连续。
 date: 2023-01-28
 tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
