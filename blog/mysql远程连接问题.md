@@ -3,6 +3,7 @@ title: mysql远程连接问题
 description: is not allowed to connect to this MySQL server  
 date: 2023-01-29
 tags: [java, mysql]
+
 ---
 
 message from server: "Host '192.168.7.233' is not allowed to connect to this MySQL server  
