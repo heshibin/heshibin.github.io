@@ -1,9 +1,4 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const vsLight = require('prism-react-renderer/themes/vsLight');
 const vsDark = require('prism-react-renderer/themes/vsDark');
-const duotoneLight = require('prism-react-renderer/themes/duotoneLight');
-const duotoneDark = require('prism-react-renderer/themes/duotoneDark');
 const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
@@ -23,6 +18,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
   //   // require('path').resolve(__dirname, '../../docusaurus-search-local'),
   //   require.resolve('@cmfcmf/docusaurus-search-local')
   // ],
+  clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -69,6 +65,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
       }),
     ],
   ],
+  // clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
