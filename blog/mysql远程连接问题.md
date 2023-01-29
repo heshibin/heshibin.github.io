@@ -1,4 +1,10 @@
-
+---
+title: mysql远程连接问题 is not allowed to connect to this MySQL server
+description: message from server: "Host '192.168.7.233' is not allowed to connect to this MySQL server  
+date: 2023-01-29
+authors: heshibin
+tags: [mysql]
+---
 
 message from server: "Host '192.168.7.233' is not allowed to connect to this MySQL server  
 远程连接数据库时报错  
@@ -16,4 +22,4 @@ update user set host = '%' where user = 'root';
 flush privileges;
 ```
 
-<img width="752" alt="image" src="https://user-images.githubusercontent.com/49633468/215310377-78b16008-e0f4-4848-a175-4e206566441a.png">
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/49633468/215310377-78b16008-e0f4-4848-a175-4e206566441a.png"><img>
