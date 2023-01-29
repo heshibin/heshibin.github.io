@@ -22,4 +22,4 @@ update user set host = '%' where user = 'root';
 flush privileges;
 ```
 
-<img width="752" alt="image" src="https://user-images.githubusercontent.com/49633468/215310377-78b16008-e0f4-4848-a175-4e206566441a.png"><img>
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/49633468/215310377-78b16008-e0f4-4848-a175-4e206566441a.png"></img>
