@@ -11,7 +11,7 @@ export const Comment = () => {
         category="Announcements"
         categoryId="DIC_kwDOItFCws4CT3dY"
         mapping="specific"
-        term="Welcome to @giscus/react component!"
+        term="Welcome to heshibin.github.io Discussions!"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
