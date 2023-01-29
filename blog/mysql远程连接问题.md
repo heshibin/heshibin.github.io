@@ -1,5 +1,5 @@
 ---
-title: mysql远程连接问题：is not allowed to connect to this MySQL server
+title: mysql远程连接问题
 description: is not allowed to connect to this MySQL server  
 date: 2023-01-29
 tags: [java, mysql]
