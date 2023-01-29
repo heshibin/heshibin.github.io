@@ -47,7 +47,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 @media screen and (min-width: 997px) {
-  #comment {
+  .padding-bottom--lg #comment {
     max-width: 75% !important;
   }
 }
