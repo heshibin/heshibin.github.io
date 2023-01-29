@@ -1,6 +1,6 @@
 ---
 title: mysql远程连接问题 is not allowed to connect to this MySQL server
-description: message from server: "Host '192.168.7.233' is not allowed to connect to this MySQL server  
+description: message from server "Host '192.168.7.233' is not allowed to connect to this MySQL server  
 date: 2023-01-29
 authors: heshibin
 tags: [mysql]
