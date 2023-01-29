@@ -45,3 +45,9 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 .menu__link{
   word-break: break-all;
 }
+
+@media screen and (min-width: 997px) {
+  #comment {
+    max-width: 75% !important;
+  }
+}
