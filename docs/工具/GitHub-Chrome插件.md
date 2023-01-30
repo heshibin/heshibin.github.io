@@ -1,6 +1,6 @@
 ---
 title: GitHub-Chrome插件
-description: github实用谷歌插件，Octotree - GitHub code tree，生成文件菜单树
+description: github实用谷歌插件，Octotree - GitHub code tree，生成文件菜单树，GitHub Downloader，下载单个文件
 date: 2023-01-30
 authors: heshibin
 tags: [github]
