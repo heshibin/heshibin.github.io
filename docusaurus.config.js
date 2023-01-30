@@ -4,7 +4,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'Exec',
+  title: '码站',
   tagline: 'A collection of document notes',
   url: 'https://machu.top',
   baseUrl: '/',
@@ -70,7 +70,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Exec',
+        title: '码站',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
