@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col, Row, Typography, Avatar, Divider, Space, Tag } from 'antd';
 const { Title, Text, Link,Paragraph } = Typography;
-import { AntDesignOutlined } from '@ant-design/icons';
+import { SmileOutlined  } from '@ant-design/icons';
 
 export default function DocCardList() {
   return (
@@ -10,7 +10,6 @@ export default function DocCardList() {
       <Card style={{ textAlign: 'center', boxShadow: 'none' }} bordered={false}>
         <Avatar
           size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
-          icon={<AntDesignOutlined />}
         />
 
         <p></p>
