@@ -1,4 +1,3 @@
 
-`npm install`  
-`npm run start`
- 
+# Hi 🎉 Welcome to MaChu's Github Homepage!
+
