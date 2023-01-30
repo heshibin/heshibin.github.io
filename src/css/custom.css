@@ -51,3 +51,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     max-width: 75% !important;
   }
 }
+
+.hero--primary {
+  --ifm-hero-background-color: none !important;
+}

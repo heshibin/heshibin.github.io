@@ -5,28 +5,31 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-
+import DocCardList from '@site/src/components/DocCardList';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+
+        <DocCardList></DocCardList>
+
+        {/* <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        {/* <div className={styles.buttons}>
+        <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/welcome">
             Go-Kitx Tutorial - 5min ⏱️
           </Link>
-        </div> */}
+        </div>
         <img
           src={require("@site/static/img/hello-world.gif").default}
           style={{
             flex: "0 0 auto",
             borderRadius: 8,
           }}
-        />
+        /> */}
       </div>
     </header>
   );
@@ -39,9 +42,9 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <main>
+      {/* <main>
         <HomepageFeatures />
-      </main>
+      </main> */}
     </Layout>
   );
 }
