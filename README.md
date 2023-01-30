@@ -8,6 +8,5 @@
 
 ![Github Stats](https://github-readme-stats.vercel.app/api?username=heshibin&show_icons=true&theme=dark&count_private=true)
 ![](https://stats.justsong.cn/api/csdn?id=heshibin&theme=dark)
-![](https://stats.justsong.cn/api/bilibili/?id=1513364019&theme=dark)
 ![](https://activity-graph.herokuapp.com/graph?username=heshibin&theme=github)
 
