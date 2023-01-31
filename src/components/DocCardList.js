@@ -41,7 +41,7 @@ export default function DocCardList() {
           <Tag color="purple">生活</Tag>
         </Space>
 
-        <Divider />
+        <p></p>
             
         <img src="https://count.getloli.com/get/@:heshibin?theme=gelbooru-h"></img>
           
