@@ -35,50 +35,11 @@ export default function DocCardList() {
           <Tag color="purple">生活</Tag>
         </Space>
 
+        <Divider />
+            
+        <img src="https://count.getloli.com/get/@:heshibin?theme=gelbooru-h">
+          
       </Card>
-
-
-      {/* <Row gutter={16}>
-        <Col span={8}>
-          <Card title="JAVA" bordered={false}>
-            常用java工具类，知识点等
-                 <Link href="/docs/JAVA/小记/2023-01/01什么是try-with-resource">
-                  前往
-                </Link>
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card title="前端" bordered={false}>
-            javascript、jquery、html、react等
-             <Link href="/docs/前端/react相关">
-                  前往
-                </Link>
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card title="工具" bordered={false}>
-            一些开发工具等<Link href="/docs/download">
-                  前往
-                </Link>
-          </Card>
-        </Col>
-      </Row>
-
-      <Row gutter={16} style={{marginTop: '10px'}}>
-        <Col span={8}>
-          <Card title="面试题" bordered={false}>
-            java基础面试题...<Link href="/docs/面试题/zookeeper">
-                  前往
-                </Link>
-          </Card>
-        </Col>
-        <Col span={8}>
-          
-        </Col>
-        <Col span={8}>
-          
-        </Col>
-      </Row> */}
     </div>
   )
 }
