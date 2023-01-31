@@ -14,7 +14,7 @@ import Footer from '@theme/Footer';
 import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import styles from './styles.module.css';
-import { Alert, Space } from 'antd';
+import { Alert, Space, Affix } from 'antd';
 export default function Layout(props) {
   const {
     children,
@@ -27,7 +27,9 @@ export default function Layout(props) {
   useKeyboardNavigation();
   return (
     <LayoutProvider>
+      <Affix>
       <Alert message="🎉 2023新年快乐" showIcon={false} banner closable className='layout-banner' />
+      </Affix>
       <PageMetadata title={title} description={description} />
 
       <SkipToContent />
