@@ -37,7 +37,7 @@ export default function DocCardList() {
 
         <Divider />
             
-        <img src="https://count.getloli.com/get/@:heshibin?theme=gelbooru-h">
+        <img src="https://count.getloli.com/get/@:heshibin?theme=gelbooru-h"></img>
           
       </Card>
     </div>
