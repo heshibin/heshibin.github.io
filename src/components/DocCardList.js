@@ -39,7 +39,6 @@ export default function DocCardList() {
           <Tag color="cyan">js</Tag>
           <Tag color="blue">工具</Tag>
           <Tag color="geekblue">面试</Tag>
-          <Tag color="purple">生活</Tag>
         </Space>
 
         <p></p>
