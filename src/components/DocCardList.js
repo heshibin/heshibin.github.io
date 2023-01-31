@@ -45,7 +45,9 @@ export default function DocCardList() {
         <p></p>
             
         <img src="https://count.getloli.com/get/@:heshibin?theme=gelbooru-h"></img>
-          
+
+        <img src="https://github-readme-activity-graph.cyclic.app/graph?username=heshibin&theme=dracula"></img>
+         
       </Card>
     </div>
   )
