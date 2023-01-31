@@ -27,7 +27,7 @@ export default function Layout(props) {
   useKeyboardNavigation();
   return (
     <LayoutProvider>
-      <Alert message="2023新年快乐" showIcon={false} banner closable />
+      <Alert message="🎉 2023新年快乐" showIcon={false} banner closable className='layout-banner' />
       <PageMetadata title={title} description={description} />
 
       <SkipToContent />
