@@ -15,7 +15,7 @@ export default function DocCardList() {
         <p></p>
 
         <Paragraph>
-          <Title level={3}>Ma Chu</Title>
+          <Title level={3} className='index-title'>Ma Chu</Title>
 
           <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=100&size=14&pause=1000&color=699DFF&vCenter=true&multiline=true&width=435&lines=%E6%88%90%E5%8A%9F%E9%9C%80%E8%A6%81%E6%88%90%E6%9C%AC%EF%BC%8C%E6%97%B6%E9%97%B4%E4%B9%9F%E6%98%AF%E4%B8%80%E7%A7%8D%E6%88%90%E6%9C%AC%EF%BC%8C+%E5%AF%B9%E6%97%B6%E9%97%B4%E7%9A%84%E7%8F%8D%E6%83%9C%E5%B0%B1%E6%98%AF%E5%AF%B9%E6%88%90%E6%9C%AC%E7%9A%84%E8%8A%82%E7%BA%A6%E3%80%82" alt="Typing SVG" /></a>        
         
