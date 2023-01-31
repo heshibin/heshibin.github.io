@@ -27,7 +27,7 @@ export const Comment = forwardRef<HTMLDivElement>((_props, ref) => {
         <div ref={ref} id="comment" style={{ paddingTop: 50 }}>
         <Giscus
           id="comments"
-          repo="heshibin/heshibin.github.io"
+          repo="heshibin/heshibin"
           repoId="R_kgDOItFCwg"
           categoryId="DIC_kwDOItFCws4CT3dS"
           mapping="title"
