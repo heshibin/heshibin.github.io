@@ -51,6 +51,11 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 .layout-banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999 !important;
   height: 20px;
   text-align: center;
   background-color: #ffffff;

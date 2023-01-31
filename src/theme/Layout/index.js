@@ -27,9 +27,10 @@ export default function Layout(props) {
   useKeyboardNavigation();
   return (
     <LayoutProvider>
-      <Affix>
-      <Alert message="🎉 2023新年快乐" showIcon={false} banner closable className='layout-banner' />
-      </Affix>
+      {/* <Affix> */}
+        <Alert message="🎉 2023新年快乐" showIcon={false} banner closable className='layout-banner' />
+      {/* </Affix> */}
+      <div style={{height: '20px'}}></div>
       <PageMetadata title={title} description={description} />
 
       <SkipToContent />
