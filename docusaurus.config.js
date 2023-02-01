@@ -1,5 +1,5 @@
-const vsDark = require('prism-react-renderer/themes/vsDark');
-const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
+const darkTheme = require('prism-react-renderer/themes/dracula');
+const lightTheme = require('prism-react-renderer/themes/github');
 
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -14,10 +14,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
   organizationName: 'heshibin', // Usually your GitHub org/user name.
   projectName: 'document notes', // Usually your repo name.
 
-  // plugins: [
-  //   // require('path').resolve(__dirname, '../../docusaurus-search-local'),
-  //   require.resolve('@cmfcmf/docusaurus-search-local')
-  // ],
+
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
   presets: [
     [
@@ -26,7 +23,6 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
         },
         blog: {
@@ -34,9 +30,7 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
           blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/heshibin/heshibin.github.io/edit/main',
+          editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -103,16 +97,6 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
               },
             ]
           },
-
-//           {
-//             type: 'localeDropdown',
-//             position: 'right',
-//           },
-//           {
-//             href: 'https://github.com/heshibin',
-//             label: 'GitHub',
-//             position: 'right',
-//           },
         ],
       },
       footer: {
@@ -157,8 +141,8 @@ const oceanicNext = require('prism-react-renderer/themes/oceanicNext');
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: oceanicNext,
-        darkTheme: vsDark,
+        theme: lightTheme,
+        darkTheme: darkTheme,
         magicComments: [
           // 要记得复制默认的高亮类！
           {

@@ -70,3 +70,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   -webkit-background-clip: text; /* 背景被裁剪成文字的前景色 */
   -webkit-text-fill-color: transparent; /* 文字填充颜色变透明 */
 }
+
+[data-theme='dark'] .ant-card {
+  background-color: #1b1b1d;
+}
