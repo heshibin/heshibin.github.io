@@ -162,5 +162,9 @@ const lightTheme = require('prism-react-renderer/themes/github');
         minHeadingLevel: 2,
         maxHeadingLevel: 5,
       },
+      announcementBar: {
+        id: 'announcementBar-2',
+        content: '🎉 2023新年快乐',
+      }
     }),
 });
