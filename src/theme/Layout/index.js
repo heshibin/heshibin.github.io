@@ -14,7 +14,8 @@ import Footer from '@theme/Footer';
 import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import styles from './styles.module.css';
-import { Alert, Space, Affix } from 'antd';
+import { Alert, Space, Affix, FloatButton } from 'antd';
+import { GithubOutlined } from '@ant-design/icons';
 export default function Layout(props) {
   const {
     children,
@@ -52,6 +53,9 @@ export default function Layout(props) {
       </div>
 
       {!noFooter && <Footer />}
+      
+      <FloatButton icon={<GithubOutlined />} href={"https://github.com/heshibin/heshibin"} />
+    
     </LayoutProvider>
   );
 }
