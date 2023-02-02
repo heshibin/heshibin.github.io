@@ -138,7 +138,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ma Chu, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightTheme,
@@ -156,7 +156,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
           },
         ],
       },
-      metadata: [{name: 'keywords', content: 'java, 前端, 后端, 中间件, spring, doc, 博客'}],
+      metadata: [{name: 'keywords', content: '个人技术博客, java, 前端, 后端, 中间件, spring, go语言, 数据库'}],
       // 目录标题级别
       tableOfContents: {
         minHeadingLevel: 2,
@@ -164,7 +164,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
       },
       announcementBar: {
         id: 'announcementBar-2',
-        content: '🎉 2023新年快乐',
+        content: '🎉 2023新年快乐 🎉',
       }
     }),
 });
