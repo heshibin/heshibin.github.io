@@ -15,7 +15,7 @@ import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import styles from './styles.module.css';
 import { Alert, Space, Affix, FloatButton } from 'antd';
-import { GithubOutlined } from '@ant-design/icons';
+import { GithubOutlined, QqOutlined } from '@ant-design/icons';
 export default function Layout(props) {
   const {
     children,
@@ -54,6 +54,8 @@ export default function Layout(props) {
 
       {!noFooter && <Footer />}
       
+      
+      <FloatButton icon={<QqOutlined />} href={"http://wpa.qq.com/msgrd?v=3&uin=485997600&site=qq&menu=yes"} />
       <FloatButton icon={<GithubOutlined />} href={"https://github.com/heshibin/heshibin"} />
     
     </LayoutProvider>
