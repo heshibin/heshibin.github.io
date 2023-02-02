@@ -54,7 +54,7 @@ export default function Layout(props) {
 
       {!noFooter && <Footer />}
       
-      <FloatButton.Group shape="square" style={{ right: 94 }}>
+      <FloatButton.Group shape="circle">
       <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="/img/weixin.png" />}/>
       <FloatButton icon={<QqOutlined />} href={"http://wpa.qq.com/msgrd?v=3&uin=485997600&site=qq&menu=yes"} />
       <FloatButton icon={<GithubOutlined />} href={"https://github.com/heshibin/heshibin"} />
