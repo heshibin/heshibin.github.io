@@ -10,7 +10,7 @@ export default function DocCardList() {
       <Card style={{ textAlign: 'center', boxShadow: 'none' }} bordered={false}>
         <Avatar
           size={64}
-          src={"/img/avatar.jpeg"}
+          src={"http://cdn.machu.top/github/avatar.jpeg"}
         />
 
         <p></p>
