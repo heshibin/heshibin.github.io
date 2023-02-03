@@ -23,7 +23,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880859209937012',
       async: true,
     },
-    "https://unpkg.com/cursor-effects@latest/dist/browser.js"
+    "https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js",
+    "./js/mouse.js"
   ],
   presets: [
     [
