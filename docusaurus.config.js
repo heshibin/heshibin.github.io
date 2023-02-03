@@ -16,6 +16,15 @@ const lightTheme = require('prism-react-renderer/themes/github');
 
 
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
+
+  scripts: [
+    // 谷歌广告联盟
+    {
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880859209937012',
+      async: true,
+    },
+    "https://unpkg.com/cursor-effects@latest/dist/browser.js"
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

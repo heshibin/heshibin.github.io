@@ -26,22 +26,7 @@ export default function Layout(props) {
     description,
   } = props;
   useKeyboardNavigation();
-  
-  useEffect(() => {
-    // 组件挂载时，创建script标签
-    const myScript = document.createElement('script');
-    // 设置标签的src属性
-    myScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880859209937012";
-    // 明确设置为同步加载
-    myScript.async = true;
-    myScript.crossorigin = "anonymous";
-    // 追加到body标签的最下面
-    document.getElementsByTagName('head')[0].append(myScript);
-    return () => {
-       
-    };
-}, []);
-  
+
   return (
     <LayoutProvider>
       {/* <Affix> */}
