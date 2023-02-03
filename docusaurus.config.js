@@ -17,6 +17,9 @@ const lightTheme = require('prism-react-renderer/themes/github');
 
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
 
+  stylesheets: [
+    
+  ],
   scripts: [
     // 谷歌广告联盟
     {
@@ -24,7 +27,16 @@ const lightTheme = require('prism-react-renderer/themes/github');
       async: true,
     },
     "https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js",
-    "/js/mouse.js"
+    "/js/mouse.js",
+    {
+      src: '/js/emojiCursor.js',
+      async: true,
+    },
+    {
+      src: '/js/texiao.js',
+      async: true,
+    },
+    
   ],
   presets: [
     [
