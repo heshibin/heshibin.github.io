@@ -24,7 +24,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
       async: true,
     },
     "https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js",
-    "./js/mouse.js"
+    "/js/mouse.js"
   ],
   presets: [
     [
