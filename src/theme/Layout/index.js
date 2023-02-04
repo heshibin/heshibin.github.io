@@ -66,7 +66,8 @@ export default function Layout(props) {
       <FloatButton.Group shape="circle">
          <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="/img/weixin.png" />}/>
  {/*     <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="http://cdn.machu.top/github/weixin.png" />}/> */}
-       <FloatButton icon={<QqOutlined />} href={qqurl} />
+      <FloatButton icon={<QqOutlined />} href={qqurl} />
+      <FloatButton icon={<MailOutlined />} href={"mailto: 495997600@qq.com"} />
       <FloatButton icon={<GithubOutlined />} href={"https://github.com/heshibin/heshibin"} />
       </FloatButton.Group>
     </LayoutProvider>
