@@ -188,7 +188,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
       },
       announcementBar: {
         id: 'announcementBar-2',
-        content: '🎉 2023新年快乐 🎉',
+        content: ` 🎉 2023新年快乐 🎉  fork or star it on <a target="_blank" rel="noopener noreferrer" href="https://github.com/heshibin/heshibin">GitHub</a> ⭐️ `,
       }
     }),
 });
