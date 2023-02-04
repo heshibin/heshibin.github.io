@@ -6,6 +6,10 @@ authors: heshibin
 tags: [java, 大数据]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 阿里全资收购Flink的母公司，进行高度定制并取名为Blink（加了很多特性）。
 
 **阿里巴巴官方说明：**   

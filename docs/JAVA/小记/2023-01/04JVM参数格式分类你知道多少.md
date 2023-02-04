@@ -5,6 +5,9 @@ date: 2023-01-04
 tags: [java, 知识小记, JVM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
 
 
 ## 标准参数（-）

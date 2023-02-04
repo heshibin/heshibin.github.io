@@ -5,6 +5,10 @@ date: 2023-01-25
 tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 ClickHouse的分片时把数据库横向扩展（Scale Out）到多个物理节点上的一种有效的方式。
 
 

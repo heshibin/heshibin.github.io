@@ -5,6 +5,10 @@ date: 2023-01-09
 tags: [java, 知识小记, OOM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 ## 堆溢出
 `java.lang.OutOfMemoryError: java heap space`最常见，通过虚拟机参数`-Xms、-Xmx`等修改
 

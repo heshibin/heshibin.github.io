@@ -4,6 +4,9 @@ title: 带你重新认识RestTemplate
 date: 2023-01-02
 tags: [java, 知识小记, spring, 2023-01]
 ---
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
 
 # 带你重新认识RestTemplate
 

@@ -5,7 +5,9 @@ date: 2023-01-07
 tags: [java, 知识小记, JVM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
 
+> <Quote></Quote>
 
 ## Serial串行垃圾回收器
 

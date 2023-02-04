@@ -5,6 +5,10 @@ date: 2023-01-19
 tags: [java, 知识小记, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 **ETL全称是Extract-Transform-Load**
 
 抽取（extract）、转换（transform）、加载（load）缩写。

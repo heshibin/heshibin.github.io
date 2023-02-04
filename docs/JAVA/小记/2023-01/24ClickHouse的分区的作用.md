@@ -6,6 +6,10 @@ tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
 
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 
 分区是表的分区，把一张表的数据分成N多个区块。
 

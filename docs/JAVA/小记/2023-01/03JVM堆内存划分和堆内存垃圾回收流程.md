@@ -4,6 +4,9 @@ title: JVM堆内存划分和堆内存垃圾回收流程你知道吗？
 date: 2023-01-03
 tags: [java, 知识小记, JVM, 2023-01]
 ---
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
 
 ## 堆内存垃圾回收流程
 

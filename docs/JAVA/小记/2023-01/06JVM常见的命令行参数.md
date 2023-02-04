@@ -5,6 +5,10 @@ date: 2023-01-06
 tags: [java, 知识小记, JVM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 `-XX:+` 开启对应的参数
 
 ## -XX+PrintGCDetails

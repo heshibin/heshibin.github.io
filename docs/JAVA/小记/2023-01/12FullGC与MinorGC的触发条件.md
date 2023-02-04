@@ -6,6 +6,10 @@ authors: heshibin
 tags: [java, GC]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 ### Minor GC触发条件
 当Eden区满时，触发Minor GC。
 

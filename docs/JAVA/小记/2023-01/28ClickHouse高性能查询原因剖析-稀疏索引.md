@@ -5,6 +5,10 @@ date: 2023-01-28
 tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 **密集索引**  
 数据库中的每个键值都有一个索引记录，加快搜索速度，但需要更多的空间来存储索引记录本身，索引记录包含键值和指向磁盘上实际记录的指针。
 

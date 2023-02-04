@@ -5,6 +5,10 @@ date: 2023-01-21
 tags: [java, 知识小记, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 **OLTP全称OnLine Transaction Processing**
 
 **联机事务处理系统**

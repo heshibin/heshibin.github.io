@@ -5,6 +5,10 @@ date: 2023-01-10
 tags: [java, 知识小记, OOM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 ## jps
 显示本地java进程
 ## jinfo

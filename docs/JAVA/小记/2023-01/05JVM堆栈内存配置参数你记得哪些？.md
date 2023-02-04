@@ -5,6 +5,10 @@ date: 2023-01-05
 tags: [java, 知识小记, JVM, 2023-01]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 ## -Xms
 
 初始堆大小，推荐和最大堆一样

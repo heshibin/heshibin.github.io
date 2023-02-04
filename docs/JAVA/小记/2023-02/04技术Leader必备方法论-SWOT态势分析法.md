@@ -5,6 +5,10 @@ date: 2023-02-04
 tags: [java,  知识小记, 2023-02]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 用来确定企业自身的竞争优势、劣势、外部市场的机会和威胁，从而将公司的战略与公司内部资源、外部环境有机的结合起来的一种分析方法。
 
 优势：strengh  

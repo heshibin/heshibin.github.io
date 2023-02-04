@@ -5,6 +5,10 @@ date: 2023-02-03
 tags: [java,  知识小记, 2023-02]
 ---
 
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
+
 #### 什么是PEST方法论？
 1. 指的是政治（Political）、经济（Economic）、社会（Social）和技术（Technological）。
 2. 政治环境主要是看我们国家现在是否鼓励相关的业务。
