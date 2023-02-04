@@ -1,5 +1,5 @@
 ---
-title: NetworkUtil
+title: 获取ip、mac地址
 description: 获取ip、mac地址 public static String getMacAddress() {InetAddress ia = InetAddress.getLocalHost();
 date: 2023-01-07
 authors: heshibin
