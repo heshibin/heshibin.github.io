@@ -10,7 +10,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'http://cdn.machu.top/github/favicon.ico',
+//   favicon: 'http://cdn.machu.top/github/favicon.ico',
+  favicon: 'img/favicon.ico',
   organizationName: 'heshibin', // Usually your GitHub org/user name.
   projectName: 'document notes', // Usually your repo name.
 
