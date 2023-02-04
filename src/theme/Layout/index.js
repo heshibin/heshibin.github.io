@@ -27,6 +27,7 @@ export default function Layout(props) {
   } = props;
   useKeyboardNavigation();
 
+  const [qqurl, setQqurl] = useState("tencent://Message/?Uin=485997600&amp;websiteName=q-zone.qq.com&amp;Menu=yes");
   return (
     <LayoutProvider>
       {/* <Affix> */}
@@ -57,8 +58,8 @@ export default function Layout(props) {
       
       <FloatButton.Group shape="circle">
          <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="/img/weixin.png" />}/>
-//       <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="http://cdn.machu.top/github/weixin.png" />}/>
-//       <FloatButton icon={<QqOutlined />} href={"http://wpa.qq.com/msgrd?v=3&uin=485997600&site=qq&menu=yes"} />
+ {/*     <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="http://cdn.machu.top/github/weixin.png" />}/> */}
+       <FloatButton icon={<QqOutlined />} href={qqurl} />
       <FloatButton icon={<GithubOutlined />} href={"https://github.com/heshibin/heshibin"} />
       </FloatButton.Group>
     </LayoutProvider>
