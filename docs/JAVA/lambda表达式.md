@@ -17,3 +17,11 @@ list.stream().filter(m->m.getName().equals("张三")).findAny().isPresent();
 // anyMatch 只要有一条数据满足条件即返回true
 list.stream().anyMatch(m -> m.getName().equals("张三"));
 ```
+
+#### 提取对象 List 中的某一字段生成新的 List
+```java
+List<Object> newList = objectList.stream().map(Object::getVar).collect(Collectors.toList());
+
+// 提取map List 中的某一字段生成新的 List
+List<String> newList = deviceList.stream().map(e -> e.get("device_id").toString()).collect(Collectors.toList());
+```
