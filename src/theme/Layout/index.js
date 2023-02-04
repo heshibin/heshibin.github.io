@@ -15,7 +15,7 @@ import LayoutProvider from '@theme/Layout/Provider';
 import ErrorPageContent from '@theme/ErrorPageContent';
 import styles from './styles.module.css';
 import { Alert, Space, Affix, FloatButton,Image } from 'antd';
-import { GithubOutlined, QqOutlined,WechatOutlined } from '@ant-design/icons';
+import { GithubOutlined, QqOutlined,WechatOutlined,MailOutlined } from '@ant-design/icons';
 export default function Layout(props) {
   const {
     children,
