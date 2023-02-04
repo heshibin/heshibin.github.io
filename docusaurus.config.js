@@ -90,7 +90,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
         title: '码站',
         logo: {
           alt: 'My Site Logo',
-          src: 'http://cdn.machu.top/github/logo.svg',
+//           src: 'http://cdn.machu.top/github/logo.svg',
+          src: '/img/logo.svg'
         },
         items: [
           {
