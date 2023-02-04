@@ -28,6 +28,13 @@ export default function Layout(props) {
   useKeyboardNavigation();
 
   const [qqurl, setQqurl] = useState("tencent://Message/?Uin=485997600&amp;websiteName=q-zone.qq.com&amp;Menu=yes");
+  
+  useEffect(() => {
+    var userAgent = navigator.userAgent;
+    if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+      setQqurl("mqqwpa://im/chat?chat_type=wpa&uin=485997600&version=1&src_type=web&web_src=oicqzone.com");
+    }
+  }, []);
   return (
     <LayoutProvider>
       {/* <Affix> */}
