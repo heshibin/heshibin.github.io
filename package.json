@@ -26,6 +26,7 @@
     "crypto-js": "^4.1.1",
     "file-loader": "^6.2.0",
     "mitt": "^3.0.0",
+    "moment": "^2.29.4",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

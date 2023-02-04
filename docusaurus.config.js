@@ -119,6 +119,10 @@ const lightTheme = require('prism-react-renderer/themes/github');
                 label: '在线加解密工具',
                 to: '/tools/sha'
               },
+              {
+                label: 'Unix时间戳转化',
+                to: '/tools/date'
+              }
             ]
           },
         ],
@@ -149,6 +153,10 @@ const lightTheme = require('prism-react-renderer/themes/github');
               {
                 label: '在线加解密工具',
                 to: '/tools/sha'
+              },
+              {
+                label: 'Unix时间戳转化',
+                to: '/tools/date'
               },
             ],
           },
