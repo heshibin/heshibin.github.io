@@ -63,6 +63,8 @@ export default function Layout(props) {
 
       {!noFooter && <Footer />}
       
+      <p>123</p>
+       
       <FloatButton.Group shape="circle">
          <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="/img/weixin.png" />}/>
  {/*     <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="http://cdn.machu.top/github/weixin.png" />}/> */}
