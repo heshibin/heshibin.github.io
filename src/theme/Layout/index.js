@@ -96,7 +96,7 @@ export default function Layout(props) {
 
       {!noFooter && <Footer />}
       
-      <div style={{textAlign: 'center', backgroundColor: '#303846'}}>{runTimeTxt}</div>
+      <div style={{textAlign: 'center', backgroundColor: '#303846', color: '#ffffff'}}>{runTimeTxt}</div>
        
       <FloatButton.Group shape="circle">
          <FloatButton icon={<WechatOutlined />}  tooltip={<Image src="/img/weixin.png" />}/>
