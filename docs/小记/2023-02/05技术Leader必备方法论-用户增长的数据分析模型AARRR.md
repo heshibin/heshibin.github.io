@@ -1,6 +1,8 @@
 ---
 title: 技术Leader必备方法论-用户增长的数据分析模型AARRR
 description: AARRR是Acquisition、Activation、Retention、Revebue、Referral五个单词的缩写，对应用户生命周期的5个重要环节。
+keywords:
+ - 数据分析模型AARRR
 date: 2023-02-05
 tags: [java,  知识小记, 2023-02]
 ---
