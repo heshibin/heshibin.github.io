@@ -2,6 +2,8 @@
 title: mysql基本语句或命令
 description: mysql基本语句或命令
 tags: [mysql]
+keywords:
+ - mysql基本命令
 ---
 
 #### 启动或停止mysql

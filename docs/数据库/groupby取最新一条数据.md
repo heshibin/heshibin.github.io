@@ -1,8 +1,14 @@
 ---
 title: groupby取最新一条数据
 description: 使用`max`函数联表查询获得最新一条数据
+keywords:
+ - mysql取最新一条数据
+ - group by
 date: 2023-02-13
 tags: [java,  知识小记, 2023-02]
+last_update:
+  date: 2023-02-13
+  author: machu
 ---
 
 使用`max`函数联表查询获得最新一条数据。

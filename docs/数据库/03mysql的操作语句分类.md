@@ -2,6 +2,8 @@
 title: mysql的操作语句分类
 description: mysql的操作语句分类
 tags: [mysql]
+keywords:
+ - 操作语句分类
 ---
 
 1. **DDL 数据定义语言(Data Definition Language)**  

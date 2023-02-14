@@ -2,6 +2,8 @@
 title: delete、truncate、drop的区别
 description: delete、truncate、drop的区别
 tags: [mysql]
+keywords:
+ - delete、truncate、drop的区别
 ---
 
 ##### delete、truncate、drop的区别？
