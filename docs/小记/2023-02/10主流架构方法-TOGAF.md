@@ -1,8 +1,13 @@
 ---
 title: 主流架构方法-TOGAF
 description: 全称The Open Group Architecture Framework企业架构标准。  
+keywords:
+ - TOGAF
 date: 2023-02-10
 tags: [java,  知识小记, 2023-02]
+last_update:
+  date: 2023-02-10
+  author: machu
 ---
 
 import Quote from '@site/src/components/Quote';

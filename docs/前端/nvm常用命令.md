@@ -1,7 +1,13 @@
 ---
 title: nvm常用命令
 description: 一款node管理工具。 nvm install stable 安装最新稳定版 node nvm install <version> 安装指定版本
+keywords:
+ - nvm
+ - node管理工具
 date: 2023-01-29
+last_update:
+  date: 2023-01-29
+  author: machu
 authors: heshibin
 tags: [node]
 ---
