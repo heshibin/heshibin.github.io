@@ -1,6 +1,8 @@
 ---
 title: 技术Leader必备方法论-SWOT态势分析法
 description: 指的是政治（Political）、经济（Economic）、社会（Social）和技术（Technological）。
+keywords:
+ - SWOT态势分析法
 date: 2023-02-04
 tags: [java,  知识小记, 2023-02]
 ---
