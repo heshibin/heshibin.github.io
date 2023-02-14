@@ -47,6 +47,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
+          showLastUpdateTime：true
         },
         blog: {
           blogSidebarTitle: '全部博文',
