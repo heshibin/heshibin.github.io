@@ -1,10 +1,12 @@
 ---
 title: mxGraph导出svg图形
 description: 先获取mxGraph节点数据，也就是xml信息，在后端通过mxXmlUtils.parseXml将xml转换为svg。
-keywords: ["mxGraph"]
-date: 2023-01-29
-authors: heshibin
-tags: [java]
+keywords: 
+ - mxGraph
+tags: [mxGraph]
+last_update:
+  date: 2023-01-29
+  author: machu
 ---
 
 先获取mxGraph节点数据，也就是xml信息，在后端通过`mxXmlUtils.parseXml`将xml转换为svg。

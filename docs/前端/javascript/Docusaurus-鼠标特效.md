@@ -2,8 +2,14 @@
 title: Docusaurus引入cursor-effects实现鼠标特效
 description: Docusaurus鼠标特效，cursor-effects实现
 date: 2023-01-29
+keywords:
+ - Docusaurus
+ - cursor-effects
 authors: heshibin
 tags: [java]
+last_update:
+  date: 2023-01-29
+  author: machu
 ---
 
 #### 实现方式
