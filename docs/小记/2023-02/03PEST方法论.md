@@ -1,6 +1,8 @@
 ---
 title: PEST方法论-选择大于努力
 description: 指的是政治（Political）、经济（Economic）、社会（Social）和技术（Technological）。
+keywords:
+ - PEST方法论
 date: 2023-02-03
 tags: [java,  知识小记, 2023-02]
 ---
