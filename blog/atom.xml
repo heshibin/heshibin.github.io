@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://machu.top/blog</id>
     <title>码站 Blog</title>
-    <updated>2023-02-14T15:24:29.000Z</updated>
+    <updated>2023-02-14T15:25:30.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://machu.top/blog"/>
     <subtitle>码站 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[vscode下载速度过慢解决办法]]></title>
         <id>/vscode下载速度过慢解决办法</id>
         <link href="https://machu.top/blog/vscode下载速度过慢解决办法"/>
-        <updated>2023-02-14T15:24:29.000Z</updated>
+        <updated>2023-02-14T15:25:30.000Z</updated>
         <summary type="html"><![CDATA[下载地址的域名改成 vscode.cdn.azure.cn]]></summary>
         <content type="html"><![CDATA[<p>下载地址的域名改成 <code>vscode.cdn.azure.cn</code></p>]]></content>
     </entry>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[字符串匹配问题-KMP算法]]></title>
         <id>/字符串匹配问题-KMP算法</id>
         <link href="https://machu.top/blog/字符串匹配问题-KMP算法"/>
-        <updated>2023-02-14T15:24:29.000Z</updated>
+        <updated>2023-02-14T15:25:30.000Z</updated>
         <summary type="html"><![CDATA[KMP算法]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content>
     </entry>
