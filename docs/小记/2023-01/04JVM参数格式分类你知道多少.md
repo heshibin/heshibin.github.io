@@ -3,6 +3,11 @@ sidebar_position: 4
 title: JVM参数格式分类你知道多少？
 date: 2023-01-04
 tags: [java, 知识小记, JVM, 2023-01]
+keywords:
+ - JVM参数格式
+last_update:
+  date: 2023-01-04
+  author: machu
 ---
 
 import Quote from '@site/src/components/Quote';

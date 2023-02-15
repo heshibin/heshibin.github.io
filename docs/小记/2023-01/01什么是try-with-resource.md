@@ -3,6 +3,12 @@ sidebar_position: 1
 title: 什么是try-with-resource?
 date: 2023-01-01
 tags: [java, 知识小记, jdk, 2023-01]
+keywords:
+ - jdk
+ - try-with-resource
+last_update:
+  date: 2023-01-01
+  author: machu
 ---
 import Quote from '@site/src/components/Quote';
 

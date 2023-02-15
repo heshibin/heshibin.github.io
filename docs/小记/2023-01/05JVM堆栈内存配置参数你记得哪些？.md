@@ -3,6 +3,15 @@ sidebar_position: 5
 title: JVM堆栈内存配置参数你记得哪些？
 date: 2023-01-05
 tags: [java, 知识小记, JVM, 2023-01]
+keywords:
+ - JVM堆栈内存配置参数
+ - -Xms
+ - -Xmx
+ - -Xmn
+ - -Xss
+last_update:
+  date: 2023-01-05
+  author: machu
 ---
 
 import Quote from '@site/src/components/Quote';
