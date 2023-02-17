@@ -1,9 +1,16 @@
 ---
-title: 获取ip、mac地址
+title: 获取IP地址
 description: 获取ip、mac地址 public static String getMacAddress() {InetAddress ia = InetAddress.getLocalHost();
+keywords: 
+  - java
+  - InetAddress
+  - ip
 date: 2023-01-07
 authors: heshibin
 tags: [java, 代码, 工具类]
+last_update:
+  date: 2023-01-07
+  author: machu
 ---
 
 
