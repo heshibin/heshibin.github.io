@@ -101,13 +101,13 @@ const lightTheme = require('prism-react-renderer/themes/github');
             type: 'doc',
             docId: 'welcome',
             position: 'left',
-            label: '文档',
+            label: '📁 文档',
           },
-          {to: '/blog', label: '博客', position: 'left'},
-          {to: '/docs/download', label: '下载', position: 'left'},
+          {to: '/blog', label: '📖 博客', position: 'left'},
+          {to: '/docs/download', label: '💻 下载', position: 'left'},
           {
             type: 'dropdown',
-            label: '工具',
+            label: '⚙️ 工具',
             position: 'left',
             items: [
               {
