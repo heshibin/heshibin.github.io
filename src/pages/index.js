@@ -12,6 +12,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <DocCardList></DocCardList>
+      </div>
     </header>
   );
 }
@@ -23,9 +24,6 @@ export default function Home() {
       title={`首页`}
       description="个人技术博客，machu，码站，JAVA，后端，前端，中间件">
       <HomepageHeader />
-      {/* <main>
-        <HomepageFeatures />
-      </main> */}
     </Layout>
   );
 }
