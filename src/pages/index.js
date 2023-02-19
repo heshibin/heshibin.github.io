@@ -11,26 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-
         <DocCardList></DocCardList>
-
-        {/* <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/welcome">
-            Go-Kitx Tutorial - 5min ⏱️
-          </Link>
-        </div>
-        <img
-          src={require("@site/static/img/hello-world.gif").default}
-          style={{
-            flex: "0 0 auto",
-            borderRadius: 8,
-          }}
-        /> */}
-      </div>
     </header>
   );
 }
@@ -39,8 +20,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="个人技术博客，machu，码站，JAVA，后端，前端，中间件">
       <HomepageHeader />
       {/* <main>
         <HomepageFeatures />
