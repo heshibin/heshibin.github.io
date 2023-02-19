@@ -20,7 +20,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`首页`}
       description="个人技术博客，machu，码站，JAVA，后端，前端，中间件">
       <HomepageHeader />
       {/* <main>
