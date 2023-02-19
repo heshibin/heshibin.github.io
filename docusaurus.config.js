@@ -48,11 +48,11 @@ const lightTheme = require('prism-react-renderer/themes/github');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
-          blogSidebarTitle: '全部博文',
+          blogSidebarTitle: '近期文章',
           blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
           showReadingTime: true,
