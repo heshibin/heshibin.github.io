@@ -14,14 +14,12 @@ last_update:
   author: machu
 ---
 
-
 > 本文转载于[https://help.aliyun.com/document_detail/365559.html](https://help.aliyun.com/document_detail/365559.html)  
-
 
   
 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS。
 
-## 前提条件
+### 前提条件
 
 - SSL证书的加密算法为RSA或ECC，并且证书为**已签发**状态。
 
@@ -33,7 +31,7 @@ last_update:
 
 
 
-## 操作步骤
+### 操作步骤
 
 1. 登录[数字证书管理服务控制台](https://yundunnext.console.aliyun.com/?p=cas)。
 2. 在左侧导航栏，单击**SSL证书**。
@@ -89,7 +87,7 @@ last_update:
 
 9. 执行`mvn spring-boot:run`命令重启Spring Boot服务。    
 
-## 后续步骤
+### 后续步骤
 
 验证是否已启用HTTPS协议。   
 
@@ -97,7 +95,7 @@ last_update:
 
 [https://yourdomain](https://yourdomain)   #需要将yourdomain替换成证书绑定的域名。
 
-## 请求转发
+### 请求转发
 
 考虑到 Spring Boot 不支持同时启动 HTTP 和 HTTPS ，为了解决这个问题，我们这里可以配置一个请求转发，当用户发起 HTTP 调用时，自动转发到 HTTPS 上。
 
