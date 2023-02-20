@@ -1,3 +1,4 @@
+---
 title: 在Spring Boot上启用HTTPS
 description: 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS。
 keywords:
@@ -12,6 +13,7 @@ last_update:
   author: machu
 ---
 
+> 本文转载于[https://help.aliyun.com/document_detail/365559.html](https://help.aliyun.com/document_detail/365559.html)
 
 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS。
 
