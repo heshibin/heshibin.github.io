@@ -40,7 +40,7 @@ last_update:
 3. 定位到要下载的证书，单击**操作**列的**下载**。
 4. 在**证书下载**面板，单击**Tomcat**服务器**操作**列下的**下载**。
 
-**说明** Spring Boot支持配置PFX和JKS格式的证书。单击**Tomcat操作**列的**下载**即可下载PFX格式证书，本文以PFX格式证书为例介绍如何在Spring Boot上启用HTTPS。如果您需要配置JKS格式的证书，请单击**JKS操作**列的**下载**。  
+   **说明** Spring Boot支持配置PFX和JKS格式的证书。单击**Tomcat操作**列的**下载**即可下载PFX格式证书，本文以PFX格式证书为例介绍如何在Spring Boot上启用HTTPS。如果您需要配置JKS格式的证书，请单击**JKS操作**列的**下载**。  
 
 该操作会将Tomcat服务器证书压缩包下载到本地，并保存在浏览器的默认下载位置。
 
@@ -51,10 +51,10 @@ last_update:
 - 证书文件（domain_name.pfx）  
 - 密码文件（pfx-password.txt）
 
-**说明** 
+  **说明** 
 
-- 本文中证书名称以domain_name为示例。  
-- 每次下载证书都会产生新的密码。该密码仅匹配本次下载的证书。如果需要更新证书文件，同时也要更新匹配的密码。
+     - 本文中证书名称以domain_name为示例。  
+     - 每次下载证书都会产生新的密码。该密码仅匹配本次下载的证书。如果需要更新证书文件，同时也要更新匹配的密码。
 
 6. 登录您的Spring Boot应用服务器。
 
@@ -64,7 +64,7 @@ last_update:
 
 8. 修改配置文件application.properties或application.yml。  
 
-- 参考以下示例配置application.properties中的参数：
+  - 参考以下示例配置application.properties中的参数：
 
   ```properties
   server.port = 443    #HTTPS协议默认端口号为443，需要使用其他端口时，您可以在此处自定义。
@@ -73,7 +73,7 @@ last_update:
   server.ssl.keyStoreType = PKCS12
   ```
 
-- 参考以下示例配置application.yml中的参数：  
+  - 参考以下示例配置application.yml中的参数：  
 
   ```yaml
   server:
