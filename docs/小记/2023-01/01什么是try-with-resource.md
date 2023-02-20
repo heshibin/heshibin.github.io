@@ -10,18 +10,15 @@ last_update:
   date: 2023-01-01
   author: machu
 ---
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
-资源的关闭很多人停留在旧的流程上，jdk7新特性旧有，但是很多人以为是jdk8的。
 
- 
+资源的关闭很多人停留在旧的流程上，jdk7新特性旧有，但是很多人以为是jdk8的。  
 
 在try(...)里声明的资源，会在try-catch代码块结束后自动关闭掉。
 
 
-## 注意点
+#### 注意点
 
 - 实现了`AutoCloseable`接口的类，在try()里声明该类实例的时候，try结束后自动调用该实例的`close`方法。
 
@@ -29,3 +26,8 @@ import Quote from '@site/src/components/Quote';
 
 - try里面可以声明多个自动关闭的对象，`越早声明的对象，会越晚被close掉`。
 
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

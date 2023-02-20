@@ -14,22 +14,26 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
-## -Xms
+#### -Xms
 
 初始堆大小，推荐和最大堆一样
 
-## -Xmx
+#### -Xmx
 
 最大堆大小，推荐和初始堆一样
 
-## -Xmn
+#### -Xmn
 
 年轻代大小，官方推荐为整个堆的3/8
 
-## -Xss
+#### -Xss
 
 每个线程的堆栈大小
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

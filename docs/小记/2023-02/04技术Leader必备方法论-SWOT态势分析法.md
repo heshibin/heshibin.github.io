@@ -10,9 +10,7 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 用来确定企业自身的竞争优势、劣势、外部市场的机会和威胁，从而将公司的战略与公司内部资源、外部环境有机的结合起来的一种分析方法。
 
@@ -22,3 +20,9 @@ import Quote from '@site/src/components/Quote';
 威胁：threats  
 
 优势和弱势是内部环境的分析，机会和威胁是对于外部环境的分析。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

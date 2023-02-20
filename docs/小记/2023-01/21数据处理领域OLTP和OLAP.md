@@ -5,9 +5,7 @@ date: 2023-01-21
 tags: [java, 知识小记, 2023-01]
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 **OLTP全称OnLine Transaction Processing**
 
@@ -24,3 +22,9 @@ import Quote from '@site/src/components/Quote';
 1. 存储多业务历史数据，支持复杂的分析操作，侧重决策，并且提供直观易懂的查询结果。
 2. 对应的风控平台、BI平台、数据可视化等系统就数据OLAP，典型代表有Hive、ClickHouse，数据来源于生产系统中。
 3. 数据量大，常规是TB级别的，面向分析决策人员。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

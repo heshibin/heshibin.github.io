@@ -5,9 +5,7 @@ date: 2023-01-19
 tags: [java, 知识小记, 2023-01]
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 **ETL全称是Extract-Transform-Load**
 
@@ -20,3 +18,9 @@ ETL一词较常用在数据仓库，但其对象并不限于数据仓库。
 目的是将企业中的分散、零乱、标准不统一的数据整合到一起，为企业的决策提供分析依据。
 
 **ETL是BI（商业智能）项目重要的一个环节**
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

@@ -12,17 +12,14 @@ last_update:
   date: 2023-01-02
   author: machu
 ---
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
-# 带你重新认识RestTemplate
 
 RestTemplate是`Spring`提供的用于访问Rest服务的客户端，底层使用java.net。
 
 通过使用`ClientHttpRequestFactory`指定不同的HTTP请求方式。
 
-## 主要提供了两种实现
+#### 主要提供了两种实现
 
 **1、SimpleClientHttpRequestFactory（默认）：**
 
@@ -35,3 +32,9 @@ RestTemplate是`Spring`提供的用于访问Rest服务的客户端，底层使�
 底层使用HttpClient访问远程的Http服务，客户端每次请求都要和服务端建立新的连接，即三次握手将会非常耗时，通过Http连接池可以减少连接建立与释放的时间，提升Http请求的性能。
 
 Spring的restTemplate是对HttpClient进行了封装，而HttpClient支持`池化机制`。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

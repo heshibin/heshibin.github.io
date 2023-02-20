@@ -13,9 +13,7 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 #### CAS
 
@@ -30,3 +28,9 @@ import Quote from '@site/src/components/Quote';
 如果在第一轮循环中，a线程获取地址里面的值被b线程修改了，那么a线程需要自旋，到下次循环才有可能有机会执行。   
 
 **AtomicXXX等原子类底层就是CAS实现，一定程度比synchronized好，因为后者是悲观锁。**
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

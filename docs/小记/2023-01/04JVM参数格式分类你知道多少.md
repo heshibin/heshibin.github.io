@@ -10,12 +10,10 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
-
-> <Quote></Quote>
 
 
-## 标准参数（-）
+
+#### 标准参数（-）
 
 所有JVM都实现这些参数的功能
 
@@ -23,7 +21,7 @@ import Quote from '@site/src/components/Quote';
 
 打印GC简要信息
 
-## 非标准参数（-X）
+#### 非标准参数（-X）
 
 不保证所有JVM实现都满足
 
@@ -31,7 +29,7 @@ import Quote from '@site/src/components/Quote';
 
 JVM最大堆内存为2048M
 
-## 非稳定参数（-XX） 
+#### 非稳定参数（-XX） 
 
 不稳定未来可能取消，但很有用
 
@@ -39,7 +37,7 @@ JVM最大堆内存为2048M
 
 每次GC是打印详细信息
 
-## -XX:+
+#### -XX:+
 
 开启对应参数
 
@@ -47,7 +45,7 @@ JVM最大堆内存为2048M
 
 启用串行GC
 
-## -XX:-
+#### -XX:-
 
 关闭对应参数
 
@@ -55,10 +53,16 @@ JVM最大堆内存为2048M
 
 禁止调用`System.gc()`
 
-## -XX:=
+#### -XX:=
 
 设定数字参数
 
 `-XX:NewRatio=2`
 
 新生代和老年代内存比例
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

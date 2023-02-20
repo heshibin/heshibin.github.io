@@ -5,9 +5,7 @@ date: 2023-01-27
 tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 表引擎选择一般都是MergeTree系列引擎，没有最好，根据业务选择最合适的。
 
@@ -27,3 +25,8 @@ import Quote from '@site/src/components/Quote';
 
 1. 常规根据时间分区，分区字段建议是DateTime类型，不能分区粒度太细，比如秒。
 
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

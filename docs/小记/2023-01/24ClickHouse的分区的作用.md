@@ -6,9 +6,6 @@ tags: [java, ClickHouse, 知识小记, 2023-01]
 ---
 
 
-import Quote from '@site/src/components/Quote';
-
-> <Quote></Quote>
 
 
 分区是表的分区，把一张表的数据分成N多个区块。
@@ -32,3 +29,9 @@ PARTITION BY，指的是一个表按照某一列数据（比如日期）进行�
 
 
 不是所有的表引擎都可以分区，MergeTree系列的表引擎才支持，Log系列引擎不支持。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

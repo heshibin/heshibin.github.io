@@ -11,12 +11,16 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 
 1. 加锁，比如synchronize、ReentrantLock或者分布式锁。
 2. 使用volatile声明变量，轻量级同步，不能保证原子性。
 3. 使用线程安全类（原子类AtomicXXX，并发容器Copy-OnWriteArrayList/ConcurrentHashMap）等。
 4. ThreadLocal本地私有变量、信号量Semaphore等。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

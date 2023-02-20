@@ -5,9 +5,7 @@ date: 2023-01-29
 tags: [java,  知识小记, 2023-01]
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 LSM全称Log-Structured Merge-Tree，日志结构合并树。  
 不是树，而是利用磁盘顺序读写能力，实现一个多层读写的存储结构。  
@@ -15,3 +13,9 @@ LSM全称Log-Structured Merge-Tree，日志结构合并树。
 
 牺牲部分读取性能为代价，提升数据的写入能力。  
 Hase、ClickHouse这些NoSQL存储都是采用的类LSM树结构。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

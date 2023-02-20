@@ -10,9 +10,7 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 **AARRR**是Acquisition、Activation、Retention、Revebue、Referral五个单词的缩写，对应用户生命周期的5个重要环节。
 
@@ -26,3 +24,8 @@ import Quote from '@site/src/components/Quote';
 **收益**：平台广告、电商变现、付费会员、融资、软件服务。  
 **传播**：好友主力、分享抽奖、兄弟砍我一刀。  
 
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

@@ -18,9 +18,7 @@ last_update:
   author: machu
 ---
 
-import Quote from '@site/src/components/Quote';
 
-> <Quote></Quote>
 
 
 #### 悲观锁
@@ -43,3 +41,9 @@ import Quote from '@site/src/components/Quote';
 
 #### 自旋锁
 线程在获取锁的时候，如果锁已经被其他线程获取，该线程将会循环等待，不断的判断锁是否能够被成功获取。
+
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
