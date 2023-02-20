@@ -56,6 +56,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
           blogSidebarCount: 'ALL',
           postsPerPage: 'ALL',
           showReadingTime: true,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
         },
         theme: {
