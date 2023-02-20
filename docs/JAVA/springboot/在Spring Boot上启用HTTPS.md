@@ -1,10 +1,11 @@
 ---
-title: 在Spring Boot上启用HTTPS
-description: 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS。
+title: 在Spring Boot上启用HTTPS以及请求转发
+description: 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS以及http请求转发至https。
 keywords:
  - springboot
  - https
  - ssl
+ - 请求转发
 date: 2023-02-20
 authors: heshibin
 tags: [java, springboot, https]
@@ -13,8 +14,11 @@ last_update:
   author: machu
 ---
 
-> 本文转载于[https://help.aliyun.com/document_detail/365559.html](https://help.aliyun.com/document_detail/365559.html)
 
+> 本文转载于[https://help.aliyun.com/document_detail/365559.html](https://help.aliyun.com/document_detail/365559.html)  
+
+
+  
 您可以通过配置SSL证书为Spring Boot启用HTTPS，实现网络通信数据的加密传输。本文介绍如何在Spring Boot上启用HTTPS。
 
 ## 前提条件
@@ -85,12 +89,50 @@ last_update:
 
 9. 执行`mvn spring-boot:run`命令重启Spring Boot服务。    
 
-
-
 ## 后续步骤
 
 验证是否已启用HTTPS协议。   
 
 配置完成后，您可通过访问证书绑定的域名验证是否已启用HTTPS协议。    
 
-https://yourdomain   #需要将yourdomain替换成证书绑定的域名。
+[https://yourdomain](https://yourdomain)   #需要将yourdomain替换成证书绑定的域名。
+
+## 请求转发
+
+考虑到 Spring Boot 不支持同时启动 HTTP 和 HTTPS ，为了解决这个问题，我们这里可以配置一个请求转发，当用户发起 HTTP 调用时，自动转发到 HTTPS 上。
+
+```java
+@Configuration
+public class TomcatConfig {
+    @Bean
+    TomcatServletWebServerFactory tomcatServletWebServerFactory() {
+        TomcatServletWebServerFactory factory = new TomcatServletWebServerFactory(){
+            @Override
+            protected void postProcessContext(Context context) {
+                SecurityConstraint constraint = new SecurityConstraint();
+                constraint.setUserConstraint("CONFIDENTIAL");
+                SecurityCollection collection = new SecurityCollection();
+                collection.addPattern("/*");
+                constraint.addCollection(collection);
+                context.addConstraint(constraint);
+            }
+        };
+        factory.addAdditionalTomcatConnectors(createTomcatConnector());
+        return factory;
+    }
+    private Connector createTomcatConnector() {
+        Connector connector = new
+                Connector("org.apache.coyote.http11.Http11NioProtocol");
+        connector.setScheme("http");
+        connector.setPort(8081);
+        connector.setSecure(false);
+        connector.setRedirectPort(8080);
+        return connector;
+    }
+}
+```
+
+在这里，我们配置了 Http 的请求端口为 8081，所有来自 8081 的请求，将被自动重定向到 8080 这个 https 的端口上。  
+
+如此之后，我们再去访问 http 请求，就会自动重定向到 https。  
+
