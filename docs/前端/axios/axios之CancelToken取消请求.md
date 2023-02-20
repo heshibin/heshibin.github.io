@@ -1,9 +1,15 @@
 ---
 title: axios之CancelToken取消请求
 description: 在项目中切换频繁切换路由时，当上一个路由尚未有响应时，会对当前路由的页面信息渲染产生一定影响，对我们的性能会造成一定影响。
+keywords:
+ - axios
+ - CancelToken
 date: 2023-02-03
 authors: heshibin
-tags: [java]
+tags: [axios]
+last_update:
+  date: 2023-02-03
+  author: machu
 ---
 
 在项目中切换频繁切换路由时，当上一个路由尚未有响应时，会对当前路由的页面信息渲染产生一定影响，对我们的性能会造成一定影响。
