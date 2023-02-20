@@ -26,6 +26,14 @@ last_update:
 
 
 
+#### 相关文章
+
+- [当一个项目需要被重构时，需要怎么思考？](https://machu.top/docs/小记/2023-02/02当一个项目需要被重构时)
+- [PEST方法论-选择大于努力](https://machu.top/docs/小记/2023-02/03PEST方法论)
+- [技术Leader必备方法论-SWOT态势分析法](https://machu.top/docs/小记/2023-02/04技术Leader必备方法论-SWOT态势分析法)
+
+
+
 import Quote from '@site/src/components/Quote';
 
 > <Quote></Quote>

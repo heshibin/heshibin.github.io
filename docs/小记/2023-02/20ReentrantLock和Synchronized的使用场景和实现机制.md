@@ -31,6 +31,14 @@ last_update:
 
 
 
+#### 相关文章
+
+- [java中保证线程安全的几种方法](https://machu.top/docs/小记/2023-02/17java中保证线程安全的几种方法)
+- [java中的锁](https://machu.top/docs/小记/2023-02/18java中的锁)
+- [高性能的Compare and Swap](https://machu.top/docs/小记/2023-02/19高性能的Compare%20and%20Swap)
+
+
+
 
 import Quote from '@site/src/components/Quote';
 
