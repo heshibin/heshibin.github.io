@@ -1,11 +1,11 @@
 ---
-title: git默认不区分大小写
+title: Git默认不区分大小写
 description: 通过代码规范，修改了包名为全小写（修改了文件夹目录），但发现push后，git服务器的文件夹目录还是为大写
 keywords:
- - git
+ - Git
 date: 2023-02-20
 authors: heshibin
-tags: [git]
+tags: [Git]
 last_update:
   date: 2023-02-20
   author: machu
