@@ -6,7 +6,7 @@ keywords:
  - Docusaurus
  - cursor-effects
 authors: heshibin
-tags: [java]
+tags: [Docusaurus, 博客]
 last_update:
   date: 2023-01-29
   author: machu
