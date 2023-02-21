@@ -26,7 +26,7 @@ last_update:
 - [java中的锁](https://machu.top/docs/小记/2023-02/18java中的锁)
 - [高性能的Compare and Swap](https://machu.top/docs/小记/2023-02/19高性能的Compare%20and%20Swap)
 - [ReentrantLock和Synchronized的使用场景和实现机制](https://machu.top/docs/小记/2023-02/20ReentrantLock和Synchronized的使用场景和实现机制)
-
+- [使用线程池的好处](https://machu.top/docs/小记/2023-02/21使用线程池的好处)
 
 
 import Quote from '@site/src/components/Quote';
