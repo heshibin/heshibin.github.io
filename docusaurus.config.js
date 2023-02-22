@@ -5,15 +5,15 @@ const lightTheme = require('prism-react-renderer/themes/github');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: '码站',
-  tagline: 'A collection of document notes',
+  tagline: '个人技术博客笔记',
   url: 'https://machu.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 //   favicon: 'http://cdn.machu.top/github/favicon.ico',
   favicon: 'img/favicon.ico',
-  organizationName: 'heshibin', // Usually your GitHub org/user name.
-  projectName: 'document notes', // Usually your repo name.
+  organizationName: 'machu', // Usually your GitHub org/user name.
+  projectName: '个人技术博客', // Usually your repo name.
 
 
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
