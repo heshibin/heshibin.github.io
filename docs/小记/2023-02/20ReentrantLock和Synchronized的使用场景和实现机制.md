@@ -37,7 +37,7 @@ last_update:
 - [java中的锁](https://machu.top/docs/小记/2023-02/18java中的锁)
 - [高性能的Compare and Swap](https://machu.top/docs/小记/2023-02/19高性能的Compare%20and%20Swap)
 - [使用线程池的好处以及常用线程池](https://machu.top/docs/小记/2023-02/21使用线程池的好处)
-
+- [要通过ThreadPoolExecutor创建线程池的原因](https://machu.top/docs/小记/2023-02/22要通过ThreadPoolExecutor创建线程池的原因)
 
 
 import Quote from '@site/src/components/Quote';
