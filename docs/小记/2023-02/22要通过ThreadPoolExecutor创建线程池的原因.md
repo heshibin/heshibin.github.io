@@ -1,6 +1,6 @@
 ---
 title: 要通过ThreadPoolExecutor创建线程池的原因
-description: 用过线程池不？有什么好处？java里面有哪些是常用的线程池？重用存在的线程，减少对象创建销毁的开销，有效的控制最大并发线程数，提高系统资源的使用率。
+description: `Executors`创建的线程池底层也是调用`ThreadPoolExecutor`，只不过使用不同的参数、队列、拒绝策略等。如果使用不当，会造成资源耗尽问题。
 keywords:
  - java
  - 线程池
