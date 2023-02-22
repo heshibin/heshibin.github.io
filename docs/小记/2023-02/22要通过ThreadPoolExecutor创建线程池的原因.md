@@ -1,6 +1,6 @@
 ---
 title: 要通过ThreadPoolExecutor创建线程池的原因
-description: `Executors`创建的线程池底层也是调用`ThreadPoolExecutor`，只不过使用不同的参数、队列、拒绝策略等。如果使用不当，会造成资源耗尽问题。
+description: Executors创建的线程池底层也是调用`ThreadPoolExecutor`，只不过使用不同的参数、队列、拒绝策略等。如果使用不当，会造成资源耗尽问题。
 keywords:
  - java
  - 线程池
