@@ -128,51 +128,56 @@ const lightTheme = require('prism-react-renderer/themes/github');
               }
             ]
           },
+          {
+            href: 'https://github.com/heshibin/heshibin',
+            label: 'GitHub',
+            position: 'right',
+          },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: '帮助',
-            items: [
-              {
-                label: '标签',
-                to: '/docs/tags',
-              },
-            ],
-          },
-          {
-            title: '工具',
-            items: [
-              {
-                label: 'JSON在线格式化',
-                to: '/tools/json'
-              },
-              {
-                label: '字数统计',
-                to: '/tools/word'
-              },
-              {
-                label: '在线加解密工具',
-                to: '/tools/sha'
-              },
-              {
-                label: 'Unix时间戳转化',
-                to: '/tools/date'
-              },
-            ],
-          },
-          {
-            title: '更多',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/heshibin/heshibin.github.io',
-              },
-            ],
-          },
-        ],
+//         links: [
+//           {
+//             title: '帮助',
+//             items: [
+//               {
+//                 label: '标签',
+//                 to: '/docs/tags',
+//               },
+//             ],
+//           },
+//           {
+//             title: '工具',
+//             items: [
+//               {
+//                 label: 'JSON在线格式化',
+//                 to: '/tools/json'
+//               },
+//               {
+//                 label: '字数统计',
+//                 to: '/tools/word'
+//               },
+//               {
+//                 label: '在线加解密工具',
+//                 to: '/tools/sha'
+//               },
+//               {
+//                 label: 'Unix时间戳转化',
+//                 to: '/tools/date'
+//               },
+//             ],
+//           },
+//           {
+//             title: '更多',
+//             items: [
+//               {
+//                 label: 'GitHub',
+//                 href: 'https://github.com/heshibin/heshibin.github.io',
+//               },
+//             ],
+//           },
+//         ],
         copyright: `Copyright © ${new Date().getFullYear()} Ma Chu, Inc. Built with Docusaurus.`,
       },
       prism: {
