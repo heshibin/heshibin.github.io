@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import clsx from 'clsx';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/theme-common/internal';
@@ -34,6 +34,18 @@ function useDocTOC() {
 }
 export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
+
+  useEffect(() => {
+    if (process.env.NODE_ENV !== "development") {
+      if (window) {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+          console.log(error, "adsenese error");
+        }
+      }
+    }
+  }, []);
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
@@ -45,6 +57,13 @@ export default function DocItemLayout({children}) {
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
+
+            <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-6880859209937012"
+              data-ad-slot="6835935691"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
           </article>
           <DocItemPaginator />
           <Comment />
