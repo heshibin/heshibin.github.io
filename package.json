@@ -29,6 +29,7 @@
     "moment": "^2.29.4",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
+    "react-adsence": "^0.0.1",
     "react-dom": "^17.0.1",
     "react-json-view": "^1.21.3",
     "url-loader": "^4.1.1"
