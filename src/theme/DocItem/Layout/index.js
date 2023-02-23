@@ -46,12 +46,13 @@ export default function DocItemLayout({children}) {
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
-            <DocItemFooter />
 
             <Adsense
               client="ca-pub-6880859209937012"
               slot="6835935691"
             />
+                
+            <DocItemFooter />
           </article>
           <DocItemPaginator />
           <Comment />
