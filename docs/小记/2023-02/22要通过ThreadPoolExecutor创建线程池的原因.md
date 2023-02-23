@@ -21,7 +21,7 @@ last_update:
 1. **newFixedThreadPool和newSingleThreadExecutor**：  
     队列使用LinkedBlockingQueue，队列长度为Integer.MAX_VALUE，可能造成堆积，导致OOM。
 
-2. **newScheduledThreadPool和newCachedThreadPool**：
+2. **newScheduledThreadPool和newCachedThreadPool**：  
     线程池里面允许最大的线程数是Integer.MAX_VALUE，可能会创建过多线程，导致OOM。
     
 
