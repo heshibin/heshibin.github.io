@@ -12,7 +12,7 @@ import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
 import Comment from '../../../components/Comment';
-import AdSence from 'react-adsence';
+import {Adsense} from '@ctrl/react-adsense';
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -48,7 +48,10 @@ export default function DocItemLayout({children}) {
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
 
-
+            <Adsense
+              client="ca-pub-6880859209937012"
+              slot="6835935691"
+            />
           </article>
           <DocItemPaginator />
           <Comment />

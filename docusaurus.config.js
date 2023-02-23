@@ -24,7 +24,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
   scripts: [
     // 谷歌广告联盟
     {
-      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880859209937012',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+      // src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6880859209937012',
       async: true,
       crossorigin: 'anonymous'
     },

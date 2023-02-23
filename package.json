@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^0.9.3",
+    "@ctrl/react-adsense": "^1.6.1",
     "@docusaurus/core": "^2.0.0-beta.14",
     "@docusaurus/preset-classic": "^2.0.0-beta.14",
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
@@ -29,7 +30,6 @@
     "moment": "^2.29.4",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
-    "react-adsence": "^0.0.1",
     "react-dom": "^17.0.1",
     "react-json-view": "^1.21.3",
     "url-loader": "^4.1.1"
