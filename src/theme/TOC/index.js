@@ -9,19 +9,16 @@ const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight';
 const LINK_ACTIVE_CLASS_NAME = 'table-of-contents__link--active';
 export default function TOC({className, ...props}) {
   return (
-    <>
       <div className={clsx(styles.tableOfContents, 'thin-scrollbar', className)}>
-      <TOCItems
-        {...props}
-        linkClassName={LINK_CLASS_NAME}
-        linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
-      />
+        <TOCItems
+          {...props}
+          linkClassName={LINK_CLASS_NAME}
+          linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
+        />
+        <Adsense
+        client="ca-pub-6880859209937012"
+        slot="6835935691"
+        />
     </div>
-
-    <Adsense
-      client="ca-pub-6880859209937012"
-      slot="6835935691"
-    />
-    </>
   );
 }
