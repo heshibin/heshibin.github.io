@@ -35,13 +35,6 @@ function useDocTOC() {
 export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
 
-  useEffect(() => {
-            try {
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (error) {
-          console.log(error, "adsenese error");
-        }
-  }, []);
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
@@ -54,12 +47,6 @@ export default function DocItemLayout({children}) {
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
 
-            <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-client="ca-pub-6880859209937012"
-              data-ad-slot="6835935691"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
           </article>
           <DocItemPaginator />
           <Comment />
