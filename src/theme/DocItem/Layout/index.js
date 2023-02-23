@@ -36,15 +36,11 @@ export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== "development") {
-      if (window) {
-        try {
+            try {
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         } catch (error) {
           console.log(error, "adsenese error");
         }
-      }
-    }
   }, []);
   return (
     <div className="row">
