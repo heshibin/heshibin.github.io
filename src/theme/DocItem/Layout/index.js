@@ -12,6 +12,7 @@ import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
 import Comment from '../../../components/Comment';
+import AdSence from 'react-adsence';
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
