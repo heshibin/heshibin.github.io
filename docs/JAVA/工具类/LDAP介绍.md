@@ -31,12 +31,6 @@ public static void main(String[] args) {
 }
 
 public boolean connect(String userName, String password) {
-    if (userName.contains(",")){
-        String s = userName.split(",")[0];
-        if (s.contains("cn=")){
-            userName = s.substring(3);
-        }
-    }
     boolean result = false;
     LdapContext ldapContext = null;
     env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
