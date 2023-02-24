@@ -18,7 +18,7 @@ last_update:
 - CN：common name为用户名或者服务器名，最长可以到80个字符，可以为中文
 - DN：distinguished name为一条LDAP记录项的名字，有唯一性，例如：dc:"cn=admin,ou=developer,dc=163,dc=com"
 
-#### java连接LDAP
+#### 连接LDAP
 ```java
 public static void main(String[] args) {
     LdapConfig ldapConfig = new LdapConfig();
