@@ -48,7 +48,7 @@ export default function FooterLayout({style, links, logo, copyright}) {
           <div className="footer__bottom text--center">
             {logo && <div className="margin-bottom--sm">{logo}</div>}
             {copyright}
-            <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2022003734号</a>
+            <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2022003734号-1</a>
             {runTimeTxt}
           </div>
         )}
