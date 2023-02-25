@@ -4,8 +4,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: '码站',
-  tagline: '个人技术博客笔记',
+  title: 'JAVA码站',
+  tagline: 'JAVA个人技术博客笔记',
   url: 'https://machu.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -13,7 +13,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
 //   favicon: 'http://cdn.machu.top/github/favicon.ico',
   favicon: 'img/favicon.ico',
   organizationName: 'machu', // Usually your GitHub org/user name.
-  projectName: '个人技术博客', // Usually your repo name.
+  projectName: 'JAVA个人技术博客', // Usually your repo name.
 
 
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
@@ -91,7 +91,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '码站',
+        title: 'JAVA码站',
         logo: {
           alt: 'My Site Logo',
 //           src: 'http://cdn.machu.top/github/logo.svg',
