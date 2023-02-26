@@ -198,7 +198,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
         ],
       },
       metadata: [{name: 'keywords', content: '个人技术博客, JAVA, 前端, 后端, 中间件, go语言, 数据库, machu，码站，码农之家'},
-        {name: 'baidu_union_verify', content: 'db584214c143d5de9ba93e4303988105'}
+        {name: 'baidu_union_verify', content: '5a4881e4aa9adaa74376747fbccb4a0c'}
       ],
       // 目录标题级别
       tableOfContents: {
