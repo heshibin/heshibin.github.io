@@ -13,7 +13,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
 //   favicon: 'http://cdn.machu.top/github/favicon.ico',
   favicon: 'img/favicon.ico',
   organizationName: 'machu', // Usually your GitHub org/user name.
-  projectName: 'JAVA个人技术博客', // Usually your repo name.
+  projectName: 'JAVA 个人技术博客', // Usually your repo name.
 
 
   clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
