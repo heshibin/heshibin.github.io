@@ -1,6 +1,10 @@
 ---
 slug: github-pages如何去掉子域名
 title: github-pages如何去掉子域名
+description: 使用github新建仓库通过github pages发布后，url必须携带仓库名才能访问否则404。
+keywords:
+ - github-pages
+ - 子域名
 date: 2023-01-07
 authors: heshibin
 tags: [github]

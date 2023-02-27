@@ -1,7 +1,9 @@
 ---
-slug: 报错only_full_group_by的解决办法
 title: 报错only_full_group_by的解决办法
+description: 报错only_full_group_by的解决办法
 date: 2023-01-03
+keywords:
+ - only_full_group_by
 authors: heshibin
 tags: [java, mysql]
 ---
