@@ -25,3 +25,7 @@ last_update:
 
 #### DiscardOldestPolicy
 丢弃队列中最老的任务，队列满了会将最早进入队列的任务删掉腾出空间，再尝试加入队列。
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

@@ -27,3 +27,7 @@ CompletableFuture<Void> supplyAsync(Supplier<U> supplier)
 // 有返回值，可以自定i有线程池
 CompletableFuture<Void> supplyAsync(Supplier<U> supplier, Executor executor)
 ```
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
