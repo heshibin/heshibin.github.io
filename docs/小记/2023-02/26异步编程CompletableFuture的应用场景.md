@@ -4,7 +4,7 @@ description: JDK1.5有了Future贺Callable的实现，想要异步获取结果�
 keywords:
  - java
  - 线程池
- - 拒绝策略
+ - CompletableFuture
 date: 2023-02-26
 tags: [java,  知识小记, 2023-02]
 last_update:
