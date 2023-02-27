@@ -31,7 +31,7 @@ jobs:
         # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
         SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
         # 复制操作的参数。"-avzr --delete"象征部署时清空服务器目标目录下的文件
-        ARGS: "-avzr --delete"
+        # ARGS: "-avzr --delete"
         # 源目录，绝对于仓库内容根目录的门路
         SOURCE: "build"
         # 近程服务器地址
