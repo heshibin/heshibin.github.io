@@ -71,6 +71,10 @@ div[class^=announcementBar_] {
 html {
   font-family: Arial,sans-serif !important;
 }
+.tableOfContents_src-theme-TOC-styles-module {
+  max-height: none !important;
+  overflow-y: hidden !important;
+}
 
 .tableOfContents_jeP5 {
   overflow-y: hidden !important;
