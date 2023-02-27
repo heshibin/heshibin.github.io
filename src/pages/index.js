@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Layout
       title={`首页`}
-      description="个人技术博客，machu，码站，JAVA，后端，前端，中间件">
+      description="个人技术博客，machu，码站，JAVA，后端，前端，中间件, java machu">
       <HomepageHeader />
     </Layout>
   );
