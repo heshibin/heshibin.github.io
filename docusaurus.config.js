@@ -6,7 +6,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
 (module.exports = {
   title: 'JAVA码站',
   tagline: 'JAVA个人技术博客笔记',
-  url: 'http://machu.top',
+  url: 'https://machu.top',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
