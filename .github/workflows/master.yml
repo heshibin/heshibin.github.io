@@ -33,7 +33,7 @@ jobs:
         # 复制操作的参数。"-avzr --delete"象征部署时清空服务器目标目录下的文件
         ARGS: "-avzr --delete"
         # 源目录，绝对于仓库内容根目录的门路
-        SOURCE: "build/"
+        SOURCE: "assets/"
         # 近程服务器地址
         REMOTE_HOST: 116.205.143.91
         # 近程服务器用户名
