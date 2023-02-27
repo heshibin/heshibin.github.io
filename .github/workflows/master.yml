@@ -26,7 +26,7 @@ jobs:
         publish_dir: build
     # 部署到腾讯云服务器
     - name: 上传到华为云
-      uses: easingthemes/ssh-deploy@main
+      uses: easingthemes/ssh-deploy@master
       env:
         # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
         SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
