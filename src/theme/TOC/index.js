@@ -3,6 +3,10 @@ import clsx from 'clsx';
 import TOCItems from '@theme/TOCItems';
 import styles from './styles.module.css';
 // import {Adsense} from '@ctrl/react-adsense';
+//  <Adsense
+//         client="ca-pub-6880859209937012"
+//         slot="6835935691"
+//         />
 // Using a custom className
 // This prevents TOCInline/TOCCollapsible getting highlighted by mistake
 const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight';
@@ -15,13 +19,6 @@ export default function TOC({className, ...props}) {
           linkClassName={LINK_CLASS_NAME}
           linkActiveClassName={LINK_ACTIVE_CLASS_NAME}
         />
-            <! -- 
-                    <Adsense
-        client="ca-pub-6880859209937012"
-        slot="6835935691"
-        />
-            -->
-
     </div>
   );
 }
