@@ -1,4 +1,5 @@
 ---
+slug: /q/antd/custom-upload-missing-progress-bar
 title: antd自定义上传缺失进度条解决方法
 description: 使用自定义上传覆盖原有上传方式，虽然实现了上传终止的功能，但却发现进度条一动不动了
 keywords: 
