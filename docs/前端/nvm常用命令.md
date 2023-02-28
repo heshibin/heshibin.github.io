@@ -1,4 +1,5 @@
 ---
+slug: /q/nvm
 title: nvm常用命令
 description: 一款node管理工具。 nvm install stable 安装最新稳定版 node nvm install <version> 安装指定版本
 keywords:
@@ -12,7 +13,7 @@ authors: heshibin
 tags: [node]
 ---
 
-一款node管理工具。
+一款实用的Node管理工具。
 
 ```
 nvm install stable ## 安装最新稳定版 node
