@@ -60,7 +60,7 @@ Termius Mac版是一款最具创新性和流行的跨平台SSH客户端，可以
 
 - 内置辅助和故障排除。随时随地提出问题！
 
-<img width="1300" alt="image" src="https://user-images.githubusercontent.com/49633468/221781970-0b5cb62c-3fa2-4d0a-bb42-580d4462afe5.png">
+<img width="1300" alt="image" src="https://user-images.githubusercontent.com/49633468/221781970-0b5cb62c-3fa2-4d0a-bb42-580d4462afe5.png"></img>
 
 
 #### 下载地址
