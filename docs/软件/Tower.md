@@ -1,6 +1,6 @@
 ---
 slug: /s/tower
-title: Tower Pro 9.2
+title: Tower Pro 9.2 mac平台最强大的Git 客户端
 description: Tower Pro 9.2 mac平台最强大的Git 客户端。
 keywords: 
   - mac
