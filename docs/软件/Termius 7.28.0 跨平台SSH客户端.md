@@ -6,6 +6,7 @@ keywords:
   - mac
   - termius
   - linux
+  - ssh
 date: 2023-02-28
 tags: [Termius, git, 2023-02]
 last_update:
