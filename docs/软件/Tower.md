@@ -16,7 +16,6 @@ last_update:
 
 
 #### 应用介绍
-![image](https://user-images.githubusercontent.com/49633468/221731794-8da418b6-fe4f-4d59-9cd7-53eacdb53851.png)
 
 The best Git client just got even better.  
 Tower 号称 mac平台最强大的Git 客户端。   
