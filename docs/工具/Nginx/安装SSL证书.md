@@ -1,5 +1,5 @@
 ---
-slug: /t/nginx/ssl
+slug: /t/nginx/instal-ssl-cert
 title: Nginx服务器上安装SSL证书
 description: 本文介绍如何下载SSL证书并在Nginx服务器上安装证书。
 keywords: 
@@ -50,7 +50,8 @@ mkdir cert  #创建证书目录，命名为cert。
 vim /usr/local/nginx/conf/nginx.conf
 ```
 
-nginx.conf默认保存在/usr/local/nginx/conf目录下。如果您修改过nginx.conf的位置，请将`/usr/local/nginx/conf/nginx.conf`替换成修改后的位置。您可以执行`nginx -t`，查看nginx的配置文件路径。  
+nginx.conf默认保存在/usr/local/nginx/conf目录下。  
+如果您修改过nginx.conf的位置，请将`/usr/local/nginx/conf/nginx.conf`替换成修改后的位置。您可以执行`nginx -t`，查看nginx的配置文件路径。  
 
 - 在nginx.conf中定位到HTTP协议代码片段（`http{}`），并在HTTP协议代码里，按照以下代码示例，修改server属性配置。	
 
@@ -87,7 +88,7 @@ server {
 }
 ```
 
-- **可选：**设置HTTP请求自动跳转HTTPS。
+- **可选：** 设置HTTP请求自动跳转HTTPS。
 
   如果您希望所有的HTTP访问自动跳转到HTTPS页面，则可以在需要跳转的HTTP站点下添加以下`rewrite`语句。
 
@@ -104,7 +105,7 @@ server {
 }
 ```
 
-- 修改完成后，按`**Esc**`键、输入**`:wq`**并按`**Enter**`键，保存修改后的配置文件并退出编辑模式。
+- 修改完成后，按 **`Esc`** 键、输入 **`:wq`** 并按 **`Enter`** 键，保存修改后的配置文件并退出编辑模式。
 
 5. 执行以下命令，重启Nginx服务。
 
