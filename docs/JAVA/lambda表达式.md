@@ -1,4 +1,5 @@
 ---
+slug: /java/lambda
 title: lambda表达式
 description: Lambda表达式(也叫做闭包)，是jdk8中的新语法，它允许我们将函数当成参数传递给某个方法或者将代码本身作为数据进行处理。
 keywords:
