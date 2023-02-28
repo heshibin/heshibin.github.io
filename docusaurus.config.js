@@ -130,11 +130,11 @@ const lightTheme = require('prism-react-renderer/themes/github');
               }
             ]
           },
-          {
-            href: 'https://github.com/heshibin/heshibin',
-            label: 'GitHub',
-            position: 'right',
-          },
+//           {
+//             href: 'https://github.com/heshibin/heshibin',
+//             label: 'GitHub',
+//             position: 'right',
+//           },
         ],
       },
       footer: {
