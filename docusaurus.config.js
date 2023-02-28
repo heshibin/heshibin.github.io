@@ -106,7 +106,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
           },
           {to: '/blog', label: '📖 博客', position: 'left'},
           // {to: '/docs/download', label: '💻 下载', position: 'left'},
-          {to: '/tools/moyu', label: '🐟 摸鱼人日历', position: 'left'},
+          {to: '/tools/moyurli', label: '🐟 摸鱼人日历', position: 'left'},
           {
             type: 'dropdown',
             label: '⚙️ 在线工具',
