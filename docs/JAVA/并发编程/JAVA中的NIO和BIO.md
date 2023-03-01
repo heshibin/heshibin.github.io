@@ -25,7 +25,7 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 6. `Buffer` 就是一个内存块，底层是有一个数组。
 7. 数据的读取和写入是通过 `Buffer`，但是需要 `flip()` 切换读写模式，而 `BIO` 是单向的，要么输入流要么输出流。
 
-#### Channel
+#### Channel（通道）
 `Channel`是一个对象,作用是用于源节点和目标节点的连接,在java NIO中负责**缓冲区数据的传递**。Channel本身**不存储**数据，因此需要**配合缓冲区**进行传输。  
 
 ![image](https://user-images.githubusercontent.com/49633468/222172615-372fd569-6e96-4f3c-8ca1-a4b8e426d3a1.png)
