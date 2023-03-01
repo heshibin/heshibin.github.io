@@ -16,9 +16,14 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 
 <img width="445" alt="image" src="https://user-images.githubusercontent.com/49633468/222098759-dc73f231-e24b-47d3-84f3-56890d70f52c.png"></img>
 
+**关系图说明：**
 1. 每个 `Channel` 对应一个 `Buffer` 。
 2. 一个 `Selector` 对应一个线程，一个线程对应多个 `Channel`。
-3. 
+3. 上图反应了有三个 `Channel` 注册到该 `Selector`。
+4. 程序切换到那个 `Channel` 是由事件决定的（Event）。
+5. `Selector` 会根据不同的事件，在各个通道上切换。
+6. `Buffer` 就是一个内存块，底层是有一个数组。
+7. 数据的读取和写入是通过 `Buffer`，但是需要 `flip()` 切换读写模式，而 `BIO` 是单向的，要么输入流要么输出流。
 
 #### 什么是JAVA BIO?
 
