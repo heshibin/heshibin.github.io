@@ -43,6 +43,15 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 
 传统的IO是基于流操作的，Channel和它类似，但又有不同。
 
+|  区别   |  传统IO   |  通过Channel   |  
+| :--:  | :--: | :--:  |  
+|  支持异步   |  不支持   |  支持   |
+|  是否可双向传输数据   |  不能，只能单向   |  可以，既可以从通道读取数据，也可以向通道写入数据   |
+|  是否结合 Buffer 使用   |  否   |  必须结合 Buffer 使用   |
+|  性能   |  较低   |  较高   |
+
+Channel 必须要配合 Buffer 一起使用，我们永远不可能将数据直接写入到 Channel 中，同样也不可能直接从 Channel 中读取数据。都是通过从 Channel 读取数据到 Buffer 中或者从 Buffer 写入数据到 Channel 中。
+
 
 #### 主要实现类
 主要的实现类有：`FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel`。
@@ -70,12 +79,14 @@ Buffer 是一个**数据对象**，我们可以把它理解为固定数量的数
 每一个 Java 基本类型都对应着一种 Buffer，他们都包含这相同的操作，只不过是所处理的数据类型不同而已。
 
 
+
 ### Selector（多路复用器）
 多路复用器 Selector，它是 Java NIO 编程的基础，它提供了选择已经就绪的任务的能力。    
 从底层来看，Selector 提供了询问通道是否已经准备好执行每个 I/O 操作的能力。    
 简单来讲，Selector 会不断地轮询注册在其上的 Channel，如果某个 Channel 上面发生了读或者写事件，这个 Channel 就处于就绪状态，会被 Selector 轮询出来，然后通过 SelectionKey 可以获取就绪 Channel 的集合，进行后续的 I/O 操作。   
 
 Selector 允许一个线程处理多个 Channel ，也就是说只要一个线程复杂 Selector 的轮询，就可以处理成千上万个 Channel ，相比于多线程来处理势必会**减少线程的上下文切换问题**。
+
 
 # 什么是JAVA BIO?
 
