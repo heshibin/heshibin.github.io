@@ -14,12 +14,12 @@ last_update:
   author: machu
 ---
 
-## 什么是JAVA NIO？
+# 什么是JAVA NIO？
 N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线程处理多个请求(连接)，即客户端发送的连接请求都会注册到多路复用器上，**多路复用器**轮询到连接有I/O请求就进行处理。   
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/49633468/222096775-401675e3-4d6b-4d78-a524-e4b87e83d8e5.png"></img>
 
-### NIO的核心组件 
+## NIO的核心组件 
 
   - Channel（通道）
   - Buffer（缓冲区）
@@ -36,18 +36,37 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 6. `Buffer` 就是一个内存块，底层是有一个数组。
 7. 数据的读取和写入是通过 `Buffer`，但是需要 `flip()` 切换读写模式，而 `BIO` 是单向的，要么输入流要么输出流。
 
-#### Channel（通道）
+### Channel（通道）
 `Channel`是一个对象,作用是用于源节点和目标节点的连接,在java NIO中负责**缓冲区数据的传递**。Channel本身**不存储**数据，因此需要**配合缓冲区**进行传输。  
 
 ![image](https://user-images.githubusercontent.com/49633468/222172615-372fd569-6e96-4f3c-8ca1-a4b8e426d3a1.png)
 
-##### 主要实现类
+#### 主要实现类
 主要的实现类有：`FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel`。
 
 ![image](https://user-images.githubusercontent.com/49633468/222175843-e343ef8c-fe5f-4b37-9ae3-c9cb5cbb49c2.png)
 
+##### FileChannel
+本地文件IO通道，用于读取、写入、映射和操作文件的通道。
 
-## 什么是JAVA BIO?
+##### SocketChannel
+网络套接字IO通道，TCP协议，针对面向流的连接套接字的可选择通道（一般用在客户端）。
+
+##### ServerSocketChannel
+网络通信IO操作，TCP协议，针对面向流的监听套接字的可选择通道（一般用于服务端）。
+
+##### DatagramChannel
+数据报通道，能通过 UDP 读写网络中的数据。
+
+### Buffer（缓冲区）
+Buffer 是一个**数据对象**，我们可以把它理解为固定数量的数据的容器，它包含一些要写入或者读出的数据。  
+在 Java NIO 中，任何时候访问 NIO 中的数据，都需要通过缓冲区（Buffer）进行操作。读取数据时，直接从缓冲区中读取，写入数据时，写入至缓冲区。NIO 最常用的缓冲区则是 `ByteBuffer`。
+
+<img width="1150" alt="image" src="https://user-images.githubusercontent.com/49633468/222324394-55b8a2db-a4d4-4142-91d9-91cdeb7cfcee.png"></img>
+
+每一个 Java 基本类型都对应着一种 Buffer，他们都包含这相同的操作，只不过是所处理的数据类型不同而已。
+
+# 什么是JAVA BIO?
 
 
 
