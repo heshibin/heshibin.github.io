@@ -52,6 +52,10 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 
 Channel 必须要配合 Buffer 一起使用，我们永远不可能将数据直接写入到 Channel 中，同样也不可能直接从 Channel 中读取数据。都是通过从 Channel 读取数据到 Buffer 中或者从 Buffer 写入数据到 Channel 中。
 
+<img width="342" alt="image" src="https://user-images.githubusercontent.com/49633468/222383358-ba9a6e51-395d-479e-b852-e0b653f10cf2.png"></img>
+
+简单点说，Channel 是数据的源头或者数据的目的地，用于向 buffer 提供数据或者读取 buffer 数据，并且对 I/O 提供异步支持。
+
 
 #### 主要实现类
 主要的实现类有：`FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel`。
