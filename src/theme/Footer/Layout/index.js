@@ -48,7 +48,6 @@ export default function FooterLayout({style, links, logo, copyright}) {
           <div className="footer__bottom text--center">
             {logo && <div className="margin-bottom--sm">{logo}</div>}
             {copyright}
-            <br></br>
             {runTimeTxt}
           </div>
         )}
