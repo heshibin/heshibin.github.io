@@ -66,7 +66,21 @@ Buffer 是一个**数据对象**，我们可以把它理解为固定数量的数
 
 每一个 Java 基本类型都对应着一种 Buffer，他们都包含这相同的操作，只不过是所处理的数据类型不同而已。
 
+
+### Selector（多路复用器）
+多路复用器 Selector，它是 Java NIO 编程的基础，它提供了选择已经就绪的任务的能力。    
+从底层来看，Selector 提供了询问通道是否已经准备好执行每个 I/O 操作的能力。    
+简单来讲，Selector 会不断地轮询注册在其上的 Channel，如果某个 Channel 上面发生了读或者写事件，这个 Channel 就处于就绪状态，会被 Selector 轮询出来，然后通过 SelectionKey 可以获取就绪 Channel 的集合，进行后续的 I/O 操作。   
+
+Selector 允许一个线程处理多个 Channel ，也就是说只要一个线程复杂 Selector 的轮询，就可以处理成千上万个 Channel ，相比于多线程来处理势必会**减少线程的上下文切换问题**。
+
 # 什么是JAVA BIO?
 
+
+
+> 参考: 
+> 
+> 版权声明：本文为CSDN博主「chenssy」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+> 原文链接：https://blog.csdn.net/chenssy/article/details/120191076
 
 
