@@ -10,29 +10,29 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - run: npm install && npm run build
+#     - run: npm install && npm run build
 
-    - name: Build and Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      #uses: JamesIves/github-pages-deploy-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: master
-        publish_dir: build
-    # 部署到华为云服务器
-    - name: 上传到华为云
-      uses: easingthemes/ssh-deploy@main
-      env:
-        # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
-        SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
-        # 复制操作的参数。"-avzr --delete"象征部署时清空服务器目标目录下的文件
-        ARGS: "-rlgoDzvc -i --delete"
-        # 源目录，绝对于仓库内容根目录的门路
-        SOURCE: "build"
-        # 近程服务器地址
-        REMOTE_HOST: 116.205.143.91
-        # 近程服务器用户名
-        REMOTE_USER: "root"
-        # 目标目录（近程服务器门路）
-        TARGET: "/home/www"
+#     - name: Build and Deploy
+#       uses: peaceiris/actions-gh-pages@v3
+#       #uses: JamesIves/github-pages-deploy-action@master
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         publish_branch: master
+#         publish_dir: build
+#     # 部署到华为云服务器
+#     - name: 上传到华为云
+#       uses: easingthemes/ssh-deploy@main
+#       env:
+#         # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
+#         SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
+#         # 复制操作的参数。"-avzr --delete"象征部署时清空服务器目标目录下的文件
+#         ARGS: "-rlgoDzvc -i --delete"
+#         # 源目录，绝对于仓库内容根目录的门路
+#         SOURCE: "build"
+#         # 近程服务器地址
+#         REMOTE_HOST: 116.205.143.91
+#         # 近程服务器用户名
+#         REMOTE_USER: "root"
+#         # 目标目录（近程服务器门路）
+#         TARGET: "/home/www"
         
