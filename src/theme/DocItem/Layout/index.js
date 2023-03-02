@@ -42,7 +42,7 @@ export default function DocItemLayout({children}) {
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
-          <Watermark content="Ma chu">
+          <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
             <article>
               <DocBreadcrumbs />
               <DocVersionBadge />
