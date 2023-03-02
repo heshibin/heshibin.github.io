@@ -12,6 +12,7 @@ import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import styles from './styles.module.css';
 import Comment from '../../../components/Comment';
+import { Watermark } from 'antd';
 // import {Adsense} from '@ctrl/react-adsense';
 
 /**
@@ -41,19 +42,21 @@ export default function DocItemLayout({children}) {
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
-          <article>
-            <DocBreadcrumbs />
-            <DocVersionBadge />
-            {docTOC.mobile}
-            <DocItemContent>{children}</DocItemContent>
+          <Watermark content="Ma chu">
+            <article>
+              <DocBreadcrumbs />
+              <DocVersionBadge />
+              {docTOC.mobile}
+              <DocItemContent>{children}</DocItemContent>
 
-            {/* <Adsense
-              client="ca-pub-6880859209937012"
-              slot="6835935691"
-            /> */}
-                
-            <DocItemFooter />
-          </article>
+              {/* <Adsense
+                client="ca-pub-6880859209937012"
+                slot="6835935691"
+              /> */}
+
+              <DocItemFooter />
+            </article>
+          </Watermark>
           <DocItemPaginator />
           <Comment />
         </div>
