@@ -41,6 +41,9 @@ N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线
 
 ![image](https://user-images.githubusercontent.com/49633468/222172615-372fd569-6e96-4f3c-8ca1-a4b8e426d3a1.png)
 
+传统的IO是基于流操作的，Channel和它类似，但又有不同。
+
+
 #### 主要实现类
 主要的实现类有：`FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel`。
 
@@ -92,9 +95,5 @@ Selector 允许一个线程处理多个 Channel ，也就是说只要一个线�
 
 
 
-> 参考: 
-> 
-> 版权声明：本文为CSDN博主「chenssy」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-> 原文链接：https://blog.csdn.net/chenssy/article/details/120191076
 
 
