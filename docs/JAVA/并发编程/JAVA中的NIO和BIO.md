@@ -62,11 +62,18 @@ IO对于计算机而言有两层意思：
 2. 数据拷贝阶段：将数据从内核缓冲区拷贝到用户空间缓冲区；
 
 # 五种IO模型
-同步IO操作：**阻塞IO模型、非阻塞IO模型、IO复用模型、信号驱动IO模型**   
-异步IO操作：**异步IO模型**
+同步IO操作：**阻塞IO、非阻塞IO、IO复用、信号驱动式IO**   
+异步IO操作：**异步IO**
 
+## 阻塞IO（Blocking IO）
 
+## 非阻塞IO（Nonblocking IO）
 
+## IO复用（IO Multiplexing）
+
+## 信号驱动式IO（Signal Driven IO）
+
+## 异步IO（Asynchromous IO）
 
 
 
