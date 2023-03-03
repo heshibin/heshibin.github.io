@@ -29,10 +29,10 @@ jobs:
         ARGS: "-rlgoDzvc -i --delete"
         # 源目录，绝对于仓库内容根目录的门路
         SOURCE: "build"
-        # 近程服务器地址
+        # 服务器地址
         REMOTE_HOST: 116.205.143.91
-        # 近程服务器用户名
+        # 服务器用户名
         REMOTE_USER: "root"
-        # 目标目录（近程服务器门路）
+        # 目标目录（服务器门路）
         TARGET: "/home/www"
         
