@@ -86,3 +86,7 @@ code {
   border-radius: 2px !important;
   border: none !important;
 }
+
+pre code {
+  background-color: var(--ifm-code-background) !important;
+}
