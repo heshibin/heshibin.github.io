@@ -62,39 +62,42 @@ const MoyuView = () => {
     // 当前日
     let day = moment().date();
     // 当前月
-    let month = moment().day();
+    let month = moment().month()+1;
     // 下个月月份
     let nextMonth = moment().add(1,'M').format("MM");
 
 
+    console.log(day);
+
     if(day >= 5) {
       setMonth5Days(moment(year + "-"+nextMonth+"-05 09:00").diff(new Date, 'days'));
     } else {
-      setMonth5Days(moment(year + "-"+(month-1)+"-05 09:00").diff(new Date, 'days'));
+      console.log(month);
+      setMonth5Days(moment(year + "-"+(month)+"-05 09:00").diff(new Date, 'days'));
     }
     
     if(day >= 10) {
       setMonth10Days(moment(year + "-"+nextMonth+"-10 09:00").diff(new Date, 'days'));
     } else {
-      setMonth10Days(moment(year + "-"+(month-1)+"-10 09:00").diff(new Date, 'days'));
+      setMonth10Days(moment(year + "-"+(month)+"-10 09:00").diff(new Date, 'days'));
     }
 
     if(day >= 15) {
       setMonth15Days(moment(year + "-"+nextMonth+"-15 09:00").diff(new Date, 'days'));
     } else {
-      setMonth15Days(moment(year + "-"+(month-1)+"-15 09:00").diff(new Date, 'days'));
+      setMonth15Days(moment(year + "-"+(month)+"-15 09:00").diff(new Date, 'days'));
     }
 
     if(day >= 20) {
       setMonth20Days(moment(year + "-"+nextMonth+"-20 09:00").diff(new Date, 'days'));
     } else {
-      setMonth20Days(moment(year + "-"+(month-1)+"-20 09:00").diff(new Date, 'days'));
+      setMonth20Days(moment(year + "-"+(month)+"-20 09:00").diff(new Date, 'days'));
     }
 
     if(day >= 25) {
       setMonth25Days(moment(year + "-"+nextMonth+"-25 09:00").diff(new Date, 'days'));
     } else {
-      setMonth25Days(moment(year + "-"+(month-1)+"-25 09:00").diff(new Date, 'days'));
+      setMonth25Days(moment(year + "-"+(month)+"-25 09:00").diff(new Date, 'days'));
     }
     
     //计算今天是这周第几天
@@ -142,7 +145,7 @@ const MoyuView = () => {
           离【15号发工资】：{month15Days}天<br></br>
           离【20号发工资】：{month20Days}天<br></br>
           离【25号发工资】：{month25Days}天<br></br>
-          距离【周末】还有：{saturdayDays}天<br></br>
+          距离【周末】还有：{saturdayDays-1}天<br></br>
           距离【清明假期】还有：{qingmingDays+1}天<br></br>
           距离【五一假期】还有：{wuyiDays+1}天<br></br>
           距离【端午假期】还有：{duanwuDays+1}天<br></br>
