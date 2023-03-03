@@ -1,0 +1,29 @@
+---
+slug: /note/2023-02/mysql-explain-type
+title: Mysql执行计划Explain中的Type
+description: Mysql执行计划Explain中的Type
+keywords:
+ - java
+ - mysql
+ - 执行计划
+ - explain
+date: 2023-03-03
+tags: [java, mysql,  知识小记, 2023-03]
+last_update:
+  date: 2023-03-03
+  author: machu
+---
+
+
+|  执行计划   |  概述   |  
+| :--  | :-- |
+|  all   |  全表扫描，MYSQL扫描全表来找到匹配的行。   |
+|  index   |  索引全扫描，MYSQL遍历整个索引来找到匹配的行；<br/>Extra字段里面出现 Using index , 则是覆盖索引，不用二次回表查询。   |
+|  range   |  索引范围扫描，常见于<、<=、>、>=、between、in等操作符；<br/>相对于index的全索引扫描，它有范围限制，因此要优于index。   |
+|  ref   |  使用非唯一性索引或者唯一索引的前缀扫描，返回匹配某个单独值的记录行；<br/>虽使用了索引但该索引列的值并不唯一，进行目标值附近的小范围扫描，不扫描全表。   |
+|  eq_ref   |  ref_eq与ref对比结果集只有一个，使用主键或者唯一索引进行查找，不用扫描更多行。   |
+|  const   |  最多只有一条匹配行，查询非常迅速，用到primary key或者unique key，性能最高。   |
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>

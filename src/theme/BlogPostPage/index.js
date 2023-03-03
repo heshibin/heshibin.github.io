@@ -44,7 +44,7 @@ export default function BlogPostPage(props) {
   const BlogPostContent = props.content;
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>
-      <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
+      {/* <Watermark content={['Ma chu', 'JAVA个人技术博客']}> */}
       <HtmlClassNameProvider
         className={clsx(
           ThemeClassNames.wrapper.blogPages,
@@ -55,7 +55,7 @@ export default function BlogPostPage(props) {
           <BlogPostContent />
         </BlogPostPageContent>
       </HtmlClassNameProvider>
-      </Watermark>
+      {/* </Watermark> */}
     </BlogPostProvider>
   );
 }

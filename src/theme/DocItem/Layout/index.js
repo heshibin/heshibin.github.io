@@ -50,11 +50,6 @@ export default function DocItemLayout({children}) {
               {docTOC.mobile}
               <DocItemContent>{children}</DocItemContent>
 
-              {/* <Adsense
-                client="ca-pub-6880859209937012"
-                slot="6835935691"
-              /> */}
-
               <DocItemFooter />
             </article>
           

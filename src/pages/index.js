@@ -24,9 +24,9 @@ export default function Home() {
     <Layout
       title={`首页-Machu-JAVA个人技术博客`}
       description="个人技术博客，machu，码站，JAVA，后端，前端，中间件, java machu">
-      <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
+      {/* <Watermark content={['Ma chu', 'JAVA个人技术博客']}> */}
         <HomepageHeader />
-      </Watermark>
+      {/* </Watermark> */}
     </Layout>
   );
 }

@@ -30,3 +30,8 @@ binlog 全称是 binary log 二进制日志，以二进制形式存在。
 #### mixed
 混合模式  
 根据sql语句灵活选择statement还是row。
+
+
+import Quote from '@site/src/components/Quote';
+
+> <Quote></Quote>
