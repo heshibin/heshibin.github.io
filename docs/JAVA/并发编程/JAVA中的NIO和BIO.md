@@ -8,7 +8,7 @@ keywords:
  - BIO
 date: 2023-03-02
 authors: heshibin
-tags: [java, 并发编程]
+tags: [java, 并发编程, IO]
 last_update:
   date: 2023-03-02
   author: machu
@@ -26,7 +26,7 @@ last_update:
 - 非阻塞：在不能立即得到执行结果之前，该函数不会阻碍当前线程执行，而是会立即返回。
 
 # 同步阻塞、同步非阻塞、异步阻塞、异步非阻塞
-
+TODO
 
 # 什么是JAVA NIO？
 N就是 Non-blocking，**同步非阻塞IO**，服务器实现模式为一个线程处理多个请求(连接)，即客户端发送的连接请求都会注册到多路复用器上，**多路复用器**轮询到连接有I/O请求就进行处理。   
