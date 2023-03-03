@@ -40,9 +40,10 @@ export default function DocItemLayout({children}) {
   return (
     <div className="row">
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+      <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
-          <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
+         
             <article>
               <DocBreadcrumbs />
               <DocVersionBadge />
@@ -56,10 +57,11 @@ export default function DocItemLayout({children}) {
 
               <DocItemFooter />
             </article>
-          </Watermark>
+          
           <DocItemPaginator />
           <Comment />
         </div>
+      </Watermark>
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
     </div>

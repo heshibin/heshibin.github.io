@@ -8,6 +8,7 @@ import BlogPostPaginator from '@theme/BlogPostPaginator';
 import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
 import Comment from '../../components/Comment';
+import { Watermark } from 'antd';
 
 function BlogPostPageContent({sidebar, children}) {
   const {metadata, toc} = useBlogPost();
@@ -43,6 +44,7 @@ export default function BlogPostPage(props) {
   const BlogPostContent = props.content;
   return (
     <BlogPostProvider content={props.content} isBlogPostPage>
+      <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
       <HtmlClassNameProvider
         className={clsx(
           ThemeClassNames.wrapper.blogPages,
@@ -53,6 +55,7 @@ export default function BlogPostPage(props) {
           <BlogPostContent />
         </BlogPostPageContent>
       </HtmlClassNameProvider>
+      </Watermark>
     </BlogPostProvider>
   );
 }

@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import DocCardList from '@site/src/components/DocCardList';
+import { Watermark } from 'antd';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -23,7 +24,9 @@ export default function Home() {
     <Layout
       title={`首页-Machu-JAVA个人技术博客`}
       description="个人技术博客，machu，码站，JAVA，后端，前端，中间件, java machu">
-      <HomepageHeader />
+      <Watermark content={['Ma chu', 'JAVA个人技术博客']}>
+        <HomepageHeader />
+      </Watermark>
     </Layout>
   );
 }
