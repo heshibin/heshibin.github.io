@@ -1,5 +1,5 @@
 ---
-slug: /java/concurrent/nio-with-bio
+slug: /java/concurrent/io-detail
 tilte: JAVA中的NIO和BIO
 description: N就是 Non-blocking，同步非阻塞IO，服务器实现模式为一个线程处理多个请求(连接)，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求就进行处理。   
 keywords:
