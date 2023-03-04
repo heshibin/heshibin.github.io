@@ -156,6 +156,9 @@ IO对于计算机而言有两层意思：
 4. 模型复杂，实现、开发难度较大。
 
 
+#### 总结
+
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/49633468/222882079-2dc548c5-9776-4aec-ac8b-aea88ee760cd.png"></img>
 
 
 
