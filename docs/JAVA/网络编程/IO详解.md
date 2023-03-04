@@ -85,7 +85,8 @@ IO对于计算机而言有两层意思：
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/49633468/222872349-f3e0a73c-780e-4b5c-8317-36ef32b26c7f.png"></img>
 
 ##### 典型应用
-阻塞socket、Java BIO  
+`阻塞socket`;   
+`Java BIO`。  
 
 ##### 特点
 1. 进程阻塞挂起不消耗CPU资源，及时响应每个操作。
@@ -100,7 +101,7 @@ IO对于计算机而言有两层意思：
 <img width="571" alt="image" src="https://user-images.githubusercontent.com/49633468/222873385-28b60b63-1d59-4750-b5d4-0b1de3f1a4c4.png"></img>
 
 ##### 典型应用
-socket（设置为NONBLOCK）
+`socket`（设置为NONBLOCK）
 
 ##### 特点
 1. 进程轮询（重复）调用，消耗CPU的资源。
@@ -109,8 +110,27 @@ socket（设置为NONBLOCK）
 
 
 #### IO复用（IO Multiplexing）
+基于非阻塞IO模型，我们知道，它需要进程不断轮询发起`recvfrom`系统调用，十分消耗CPU。  
+而IO复用模型则不需要所有进程轮询，而是由`复用器（select）`来询问内核。    
+
+<img width="679" alt="image" src="https://user-images.githubusercontent.com/49633468/222879823-34830d08-7c6f-4f41-adb5-433950126844.png"></img>
+
+多个进程的IO注册到一个`复用器（select）`上，然后用一个进程监听该select，select会监听所有注册进来的IO。  
+如果内核数据报没有准备好，select调用进程会被阻塞，而当任一IO在内核缓冲区中有数据，select调用就会返回可读条件；
+而后select调用进程可以自己或通知另外的进程（注册进程）来再次发起读取IO，读取内核中准备的数据。   
+
+##### 典型应用
+`select、poll、epoll`三种方案，nginx都可以选择使用这三个方案;    
+`Java NIO`。
+
+##### 特点
+1. 专一进程解决多个进程IO的阻塞问题，性能好；
+2. 适用于高并发服务应用开发：一个进程（线程）响应多个请求；
+3. 模型复杂，实现、开发应用难度大。
 
 #### 信号驱动式IO（Signal Driven IO）
+
+
 
 #### 异步IO（Asynchromous IO）
 
