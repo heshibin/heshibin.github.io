@@ -82,6 +82,7 @@ IO对于计算机而言有两层意思：
 
 > **我们之前所学过的所有的套接字，默认都是阻塞方式**。
 
+<img width="547" alt="image" src="https://user-images.githubusercontent.com/49633468/222872349-f3e0a73c-780e-4b5c-8317-36ef32b26c7f.png"></img>
 
 
 #### 非阻塞IO（Nonblocking IO）
