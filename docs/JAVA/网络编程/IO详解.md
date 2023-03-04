@@ -223,7 +223,7 @@ Channel 必须要配合 Buffer 一起使用，我们永远不可能将数据直�
 数据报通道，能通过 UDP 读写网络中的数据。
 
 #### Buffer（缓冲区）
-Buffer 是一个**数据对象**，我们可以把它理解为固定数量的数据的容器，它包含一些要写入或者读出的数据。  
+`Buffer` 是一个**数据对象**，我们可以把它理解为固定数量的数据的容器，它包含一些要写入或者读出的数据。  
 在 Java NIO 中，任何时候访问 NIO 中的数据，都需要通过缓冲区（Buffer）进行操作。读取数据时，直接从缓冲区中读取，写入数据时，写入至缓冲区。NIO 最常用的缓冲区则是 `ByteBuffer`。
 
 <img width="1150" alt="image" src="https://user-images.githubusercontent.com/49633468/222324394-55b8a2db-a4d4-4142-91d9-91cdeb7cfcee.png"></img>
@@ -231,11 +231,11 @@ Buffer 是一个**数据对象**，我们可以把它理解为固定数量的数
 每一个 Java 基本类型都对应着一种 Buffer，他们都包含这相同的操作，只不过是所处理的数据类型不同而已。
 
 #### Selector（多路复用器）
-多路复用器 Selector，它是 Java NIO 编程的基础，它提供了选择已经就绪的任务的能力。    
-从底层来看，Selector 提供了询问通道是否已经准备好执行每个 I/O 操作的能力。    
-简单来讲，Selector 会不断地轮询注册在其上的 Channel，如果某个 Channel 上面发生了读或者写事件，这个 Channel 就处于就绪状态，会被 Selector 轮询出来，然后通过 SelectionKey 可以获取就绪 Channel 的集合，进行后续的 I/O 操作。   
+多路复用器 `Selector`，它是 Java NIO 编程的基础，它提供了选择已经就绪的任务的能力。    
+从底层来看，`Selector` 提供了询问通道是否已经准备好执行每个 I/O 操作的能力。    
+简单来讲，`Selector` 会不断地轮询注册在其上的 Channel，如果某个 Channel 上面发生了读或者写事件，这个 Channel 就处于就绪状态，会被 `Selector` 轮询出来，然后通过 SelectionKey 可以获取就绪 Channel 的集合，进行后续的 I/O 操作。   
 
-Selector 允许一个线程处理多个 Channel ，也就是说只要一个线程复杂 Selector 的轮询，就可以处理成千上万个 Channel ，相比于多线程来处理势必会**减少线程的上下文切换问题**。
+`Selector` 允许一个线程处理多个 Channel ，也就是说只要一个线程复杂 `Selector` 的轮询，就可以处理成千上万个 Channel ，相比于多线程来处理势必会**减少线程的上下文切换问题**。
 
 
 ## 什么是JAVA BIO?
