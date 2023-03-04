@@ -84,8 +84,19 @@ IO对于计算机而言有两层意思：
 
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/49633468/222872349-f3e0a73c-780e-4b5c-8317-36ef32b26c7f.png"></img>
 
+**典型应用：阻塞socket、Java BIO**   
+
+**特点：**
+1. 进程阻塞挂起不消耗CPU资源，及时响应每个操作。
+2. 实现难度低，开发应用较容易。
+3. 使用并发量小的网络应用开发。
+
+不适用并发量大的应用：  
+因为一个请求IO会阻塞进程，所以得为每个请求分配一个处理进程（线程）以及时响应，系统开销大。
+
 
 #### 非阻塞IO（Nonblocking IO）
+与阻塞IO不同的是，当内核数据还没准备好之前，进程不会被阻塞，内核会返回一个error给进程，进程在收到error后，可以去处理其他业务逻辑，
 
 #### IO复用（IO Multiplexing）
 
