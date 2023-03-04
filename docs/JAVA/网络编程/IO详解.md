@@ -84,10 +84,10 @@ IO对于计算机而言有两层意思：
 
 <img width="547" alt="image" src="https://user-images.githubusercontent.com/49633468/222872349-f3e0a73c-780e-4b5c-8317-36ef32b26c7f.png"></img>
 
-**典型应用：**   
+##### 典型应用
 阻塞socket、Java BIO  
 
-**特点：**
+##### 特点
 1. 进程阻塞挂起不消耗CPU资源，及时响应每个操作。
 2. 实现难度低，开发应用较容易。
 3. 使用并发量小的网络应用开发。
@@ -99,10 +99,10 @@ IO对于计算机而言有两层意思：
 
 <img width="571" alt="image" src="https://user-images.githubusercontent.com/49633468/222873385-28b60b63-1d59-4750-b5d4-0b1de3f1a4c4.png"></img>
 
-**典型应用：**   
+##### 典型应用
 socket（设置为NONBLOCK）
 
-**特点：**
+##### 特点
 1. 进程轮询（重复）调用，消耗CPU的资源。
 2. 实现难度低、开发应用相对阻塞IO模式较难。
 3. 适用并发量较小、且不需要及时响应的网络应用开发。
