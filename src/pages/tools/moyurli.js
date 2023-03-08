@@ -122,9 +122,9 @@ const MoyuView = () => {
   }, []);
 
   return (
-    <Layout
-      title={`摸鱼人日历`}
-      description={`今天是`+{date}+`，`+{week}+`。你好，摸鱼人！即使今天是开工第 `+{workDays}+` 天，也一定不要忘记摸鱼哦！有事没事起身去茶水间，去厕所，去廊道走走，别总在工位上坐着，钱是老板的，但健康是自己的。`}>
+    // <Layout
+    //   title={`摸鱼人日历`}
+    //   description={`今天是`+{date}+`，`+{week}+`。你好，摸鱼人！即使今天是开工第 `+{workDays}+` 天，也一定不要忘记摸鱼哦！有事没事起身去茶水间，去厕所，去廊道走走，别总在工位上坐着，钱是老板的，但健康是自己的。`}>
         <Row style={{marginTop: '30px'}}>
           <Col  xs={3} sm={4} md={6} lg={6} xl={6}>
           <Image
@@ -157,7 +157,7 @@ const MoyuView = () => {
           <Col xs={2} sm={4} md={6} lg={6} xl={6}></Col>
         </Row>
       
-    </Layout>
+    // </Layout>
   )
 };
 
