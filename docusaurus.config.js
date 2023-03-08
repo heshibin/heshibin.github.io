@@ -4,7 +4,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'Ma chu',
+  title: 'Ma chu-码站',
   tagline: 'JAVA个人技术博客笔记',
   url: 'http://machu.top',
   baseUrl: '/',
@@ -91,7 +91,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Ma chu',
+        title: 'Ma chu-码站',
         logo: {
           alt: 'My Site Logo',
 //           src: 'http://cdn.machu.top/github/logo.svg',
