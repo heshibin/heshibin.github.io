@@ -1,7 +1,7 @@
 ---
 slug: /note/2023-02/aliyin-ram
 title: RBAC-ACL模式应用之阿里云RAM访问控制
-description:  Percona-toolkit是MySQL的高级运维工具集合，更高效执行各种通过手工非常复杂和麻烦的mysql任务，包括开发、性能分析、监控、数据备份复制、系统管理等。
+description: ACL:以前盛行的一种权限设计，它的核心在于用户直接和权限挂钩。RBAC:基于角色的访问控制系统，权限与角色相关联，用户通过成为适当角色的成员而得到这些角色的权限。
 keywords:
  - java
  - RBAC-ACL模式应用
