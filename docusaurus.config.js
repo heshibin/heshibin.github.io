@@ -180,7 +180,7 @@ const lightTheme = require('prism-react-renderer/themes/github');
 //             ],
 //           },
 //         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Ma Chu, Inc. Built with Docusaurus. <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2022003734号-1</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} Ma Chu, Inc. Built with Docusaurus. <a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2022003734号</a>`,
       },
       prism: {
         theme: lightTheme,
