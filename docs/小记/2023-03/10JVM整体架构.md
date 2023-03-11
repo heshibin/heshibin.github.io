@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/aliyin-ram
+slug: /note/2023-02/jvm-framework
 title: JVM整体架构
 description: 类加载子系统CLass Loader SubSystem：加载Class文件到系统，校验、解析、初始化等 ，运行时数据区Runtime Data Area：java程序的执行过程中会把所管理的内存划分为若干个不同的数据区域，方便管理和维护
 keywords:
