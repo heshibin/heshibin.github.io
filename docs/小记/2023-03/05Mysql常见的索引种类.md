@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-index-type
+slug: /note/mysql-index-type
 title: Mysql常见的索引种类
 description: 主键索引：是一种特殊的唯一索引，一个表只能有一个主键，不允许有空值。普通索引：最基本的索引，它没有任何限制，仅加速查询，值可以为空。
 keywords:

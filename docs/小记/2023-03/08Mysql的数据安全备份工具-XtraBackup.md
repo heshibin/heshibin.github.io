@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-xtrabackup
+slug: /note/mysql-xtrabackup
 title: Mysql的数据安全备份工具-XtraBackup
 description:  实际生产环境为了数据库安全，需要对数据库做定期全量备份，短期做增量备份。Percona公司开发的用于MySQL数据库物理热备的工具Xtrabackup支持MySQL、Percona server和MariaDB，开源免费，是实现增量备份而出现的一款主流工具。
 keywords:

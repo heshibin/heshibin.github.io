@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/binlog-three-mode
+slug: /note/binlog-three-mode
 title: Mysql主从复制中binlog的多种模式
 description: redo log、bin log、undo log、slow query log、relay log
 keywords:

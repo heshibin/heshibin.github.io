@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-log
+slug: /note/mysql-log
 title: Mysql常见的几种日志
 description: redo log、bin log、undo log、slow query log、relay log
 keywords:

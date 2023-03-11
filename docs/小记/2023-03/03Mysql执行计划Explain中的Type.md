@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-explain-type
+slug: /note/mysql-explain-type
 title: Mysql执行计划Explain中的Type
 description: Mysql执行计划Explain中的Type
 keywords:

@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-percona-toolkit
+slug: /note/mysql-percona-toolkit
 title: Mysql的瑞士军刀-Percona toolkit
 description:  Percona-toolkit是MySQL的高级运维工具集合，更高效执行各种通过手工非常复杂和麻烦的mysql任务，包括开发、性能分析、监控、数据备份复制、系统管理等。
 keywords:

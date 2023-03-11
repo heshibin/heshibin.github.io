@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/mysql-master-slave
+slug: /note/mysql-master-slave
 title: Mysql主从复制架构图
 description:  存在几个线程：主库一个线程，从库两个线程。主库生成一个log dump线程，和从库IO线程交互。
 keywords:
