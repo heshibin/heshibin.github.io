@@ -1,5 +1,5 @@
 ---
-slug: /note/2023-02/aliyin-ram
+slug: /note/aliyin-ram
 title: RBAC-ACL模式应用之阿里云RAM访问控制
 description: ACL:以前盛行的一种权限设计，它的核心在于用户直接和权限挂钩。RBAC:基于角色的访问控制系统，权限与角色相关联，用户通过成为适当角色的成员而得到这些角色的权限。
 keywords:
