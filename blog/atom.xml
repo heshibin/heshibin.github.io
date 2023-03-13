@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://machu.top/blog</id>
     <title>Ma chu-码站 Blog</title>
-    <updated>2023-03-13T15:01:50.000Z</updated>
+    <updated>2023-03-13T15:02:16.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://machu.top/blog"/>
     <subtitle>Ma chu-码站 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[vscode下载速度过慢解决办法]]></title>
         <id>/vscode下载速度过慢解决办法</id>
         <link href="http://machu.top/blog/vscode下载速度过慢解决办法"/>
-        <updated>2023-03-13T15:01:50.000Z</updated>
+        <updated>2023-03-13T15:02:16.000Z</updated>
         <summary type="html"><![CDATA[下载地址的域名改成 vscode.cdn.azure.cn]]></summary>
         <content type="html"><![CDATA[<p>下载地址的域名改成 <code>vscode.cdn.azure.cn</code></p>]]></content>
     </entry>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[字符串匹配问题-KMP算法]]></title>
         <id>/字符串匹配问题-KMP算法</id>
         <link href="http://machu.top/blog/字符串匹配问题-KMP算法"/>
-        <updated>2023-03-13T15:01:50.000Z</updated>
+        <updated>2023-03-13T15:02:16.000Z</updated>
         <summary type="html"><![CDATA[KMP算法]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content>
     </entry>
@@ -29,7 +29,7 @@
         <link href="http://machu.top/blog/webmagic-https-error"/>
         <updated>2023-03-13T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[No appropriate protocol (protocol is disabled or cipher suites are inappropriate)，原因是：jdk1.8高版本对`ssl`做了限制。]]></summary>
-        <content type="html"><![CDATA[<p>在使用webmagic爬取页面时，在download的时候，提示<code>No appropriate protocol (protocol is disabled or cipher suites are inappropriate)</code>。  </p><p>原因是：jdk1.8高版本对<code>ssl</code>做了限制。     </p><p>解决办法：  </p><p>在<code>C:\Program Files\Java\jdk1.8.0_291\jre\lib\security</code>目录下修改<code>java.security</code>文件。    </p><p>找到<code>jdk.tls.disabledAlgorithms</code>，去除 <code>SSLv3, TLSv1, TLSv1.1</code> 三项即可。</p>]]></content>
+        <content type="html"><![CDATA[<p>在使用webmagic爬取页面时，在download的时候，提示<code>No appropriate protocol (protocol is disabled or cipher suites are inappropriate)</code>。  </p><p>原因是：jdk1.8高版本对<code>ssl</code>做了限制。     </p><p>解决办法：  </p><p>在<code>C:\Program Files\Java\jdk1.8.0_291\jre\lib\security</code>目录下修改<code>java.security</code>文件。    </p><p><img loading="lazy" src="https://user-images.githubusercontent.com/49633468/224741423-69e392a5-190e-49d4-bd23-2b9e79e411e1.png" alt="image" class="img_ev3q"></p><p>找到<code>jdk.tls.disabledAlgorithms</code>，去除 <code>SSLv3, TLSv1, TLSv1.1</code> 三项即可。</p>]]></content>
         <author>
             <name>Ma Chu</name>
             <email>heshibina@gmail.com</email>
