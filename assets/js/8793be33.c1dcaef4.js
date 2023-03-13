@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3664],{35532:e=>{e.exports=JSON.parse('{"label":"webmagic","permalink":"/blog/tags/webmagic","allTagsPath":"/blog/tags","count":1}')}}]);
