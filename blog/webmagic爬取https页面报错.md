@@ -17,4 +17,4 @@ tags: [java, webmagic]
 
 ![image](https://user-images.githubusercontent.com/49633468/224741423-69e392a5-190e-49d4-bd23-2b9e79e411e1.png)
 
-找到`jdk.tls.disabledAlgorithms`，去除 `SSLv3, TLSv1, TLSv1.1` 三项即可。
+找到`jdk.tls.disabledAlgorithms`，去除 `SSLv3` 即可（代表允许https）。
