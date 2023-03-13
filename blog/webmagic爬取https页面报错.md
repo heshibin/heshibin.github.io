@@ -15,5 +15,6 @@ tags: [java, webmagic]
 
 在`C:\Program Files\Java\jdk1.8.0_291\jre\lib\security`目录下修改`java.security`文件。    
 
+![image](https://user-images.githubusercontent.com/49633468/224741423-69e392a5-190e-49d4-bd23-2b9e79e411e1.png)
 
 找到`jdk.tls.disabledAlgorithms`，去除 `SSLv3, TLSv1, TLSv1.1` 三项即可。
