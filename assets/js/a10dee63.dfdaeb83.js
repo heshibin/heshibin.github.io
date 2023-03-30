@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1135],{78317:e=>{e.exports=JSON.parse('{"label":"gradle","permalink":"/blog/tags/gradle","allTagsPath":"/blog/tags","count":1}')}}]);
