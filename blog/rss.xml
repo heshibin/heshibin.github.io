@@ -4,7 +4,7 @@
         <title>Ma chu-码站 Blog</title>
         <link>http://machu.top/blog</link>
         <description>Ma chu-码站 Blog</description>
-        <lastBuildDate>Thu, 30 Mar 2023 15:12:10 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Mar 2023 03:30:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[vscode下载速度过慢解决办法]]></title>
             <link>http://machu.top/blog/vscode下载速度过慢解决办法</link>
             <guid>/vscode下载速度过慢解决办法</guid>
-            <pubDate>Thu, 30 Mar 2023 15:12:10 GMT</pubDate>
+            <pubDate>Fri, 31 Mar 2023 03:30:04 GMT</pubDate>
             <description><![CDATA[下载地址的域名改成 vscode.cdn.azure.cn]]></description>
             <content:encoded><![CDATA[<p>下载地址的域名改成 <code>vscode.cdn.azure.cn</code></p>]]></content:encoded>
         </item>
@@ -20,9 +20,20 @@
             <title><![CDATA[字符串匹配问题-KMP算法]]></title>
             <link>http://machu.top/blog/字符串匹配问题-KMP算法</link>
             <guid>/字符串匹配问题-KMP算法</guid>
-            <pubDate>Thu, 30 Mar 2023 15:12:10 GMT</pubDate>
+            <pubDate>Fri, 31 Mar 2023 03:30:04 GMT</pubDate>
             <description><![CDATA[KMP算法]]></description>
             <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[span自动换行]]></title>
+            <link>http://machu.top/blog/span-auto-line-feed</link>
+            <guid>/span-auto-line-feed</guid>
+            <pubDate>Fri, 31 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[在HTML中，可以使用CSS属性来控制文本的自动换行。其中，word-wrap 和 white-space 属性可以用来实现自动换行。]]></description>
+            <content:encoded><![CDATA[<p>在HTML中，可以使用CSS属性来控制文本的自动换行。其中，<code>word-wrap</code> 和 <code>white-space</code> 属性可以用来实现自动换行。      </p><p><code>word-wrap</code> 属性可以强制文本在单词内换行，避免长单词溢出容器边界。可以将其设置为 <code>break-word</code>，如下所示：</p><div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">span</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">word-wrap</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> break-word</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p><code>white-space</code> 属性可以控制如何处理空格和换行符。可以将其设置为 <code>normal</code> 或 <code>pre-wrap</code> 来启用自动换行，如下所示：  </p><div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">span</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">white-space</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> normal</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* 或者 pre-wrap */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>同时，也可以使用 <code>max-width</code> 属性来限制span的宽度，超出的内容会自动换行。例如：</p><div class="language-css codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-css codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token selector" style="color:#00009f">span</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">max-width</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> </span><span class="token number" style="color:#36acaa">200</span><span class="token unit">px</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">/* 将span的最大宽度设置为200像素 */</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>使用这些属性可以实现span的自动换行。</p>]]></content:encoded>
+            <author>heshibina@gmail.com (Ma Chu)</author>
+            <category>java</category>
+            <category>css</category>
         </item>
         <item>
             <title><![CDATA[java解析build.gradle文件并获取依赖信息]]></title>
