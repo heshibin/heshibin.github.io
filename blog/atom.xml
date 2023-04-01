@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://machu.top/blog</id>
     <title>Ma chu-码站 Blog</title>
-    <updated>2023-03-31T03:30:04.000Z</updated>
+    <updated>2023-04-01T04:52:54.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://machu.top/blog"/>
     <subtitle>Ma chu-码站 Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[vscode下载速度过慢解决办法]]></title>
         <id>/vscode下载速度过慢解决办法</id>
         <link href="http://machu.top/blog/vscode下载速度过慢解决办法"/>
-        <updated>2023-03-31T03:30:04.000Z</updated>
+        <updated>2023-04-01T04:52:54.000Z</updated>
         <summary type="html"><![CDATA[下载地址的域名改成 vscode.cdn.azure.cn]]></summary>
         <content type="html"><![CDATA[<p>下载地址的域名改成 <code>vscode.cdn.azure.cn</code></p>]]></content>
     </entry>
@@ -19,9 +19,26 @@
         <title type="html"><![CDATA[字符串匹配问题-KMP算法]]></title>
         <id>/字符串匹配问题-KMP算法</id>
         <link href="http://machu.top/blog/字符串匹配问题-KMP算法"/>
-        <updated>2023-03-31T03:30:04.000Z</updated>
+        <updated>2023-04-01T04:52:54.000Z</updated>
         <summary type="html"><![CDATA[KMP算法]]></summary>
         <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="kmp算法">KMP算法<a class="hash-link" href="#kmp算法" title="Direct link to heading">​</a></h2><p>KMP算法是一种高效的字符串匹配算法，在传统暴力遍历匹配的基础上做了一定的优化。</p><p>首先，KMP算法的实现也是使用了回退思想，不过与暴力遍历不同，KMP的回退是让子串进行匹配，而不是主串。</p><p>主要思想是：<strong>当出现字符串不匹配，可以知道一部分之前已经匹配的文本内容，利用这些信息避免从头再去匹配</strong>。</p>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[java中long转int]]></title>
+        <id>/long-to-int</id>
+        <link href="http://machu.top/blog/long-to-int"/>
+        <updated>2023-04-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Java中的long类型是64位的，而int类型是32位的，因此在将long转换为int时，需要注意可能会发生数据截断]]></summary>
+        <content type="html"><![CDATA[<p>Java中的long类型是64位的，而int类型是32位的，因此在将long转换为int时，需要注意可能会发生数据截断。<br>
+<!-- -->如果long类型的值超出了int类型的范围，转换后的值可能会失真或者出现错误。下面是两种可能的方法来将long类型转换为int类型：</p><ol><li>使用强制类型转换<br>可以使用强制类型转换将long类型转换为int类型，但需要注意可能会出现数据截断的问题，如下所示：</li></ol><div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">long l = 1234567890L;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">int i = (int) l; // 数据截断，i的值为-53922298</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><ol start="2"><li>使用Math类的方法<br>Java提供了Math类来处理数学运算，其中有一些方法可以将long类型转换为int类型，如下所示： </li></ol><div class="language-java codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-java codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">long l = 1234567890L;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">int i = Math.toIntExact(l); // i的值为1234567890</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>其中，Math.toIntExact()方法会将long类型的值转换为int类型，如果long类型的值超出了int类型的范围，会抛出ArithmeticException异常。</p>]]></content>
+        <author>
+            <name>Ma Chu</name>
+            <email>heshibina@gmail.com</email>
+            <uri>https://github.com/heshibin</uri>
+        </author>
+        <category label="java" term="java"/>
+        <category label="long" term="long"/>
+        <category label="int" term="int"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[span自动换行]]></title>
