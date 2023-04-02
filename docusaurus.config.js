@@ -54,8 +54,8 @@ const lightTheme = require('prism-react-renderer/themes/github');
         },
         blog: {
           blogSidebarTitle: '近期文章',
-          blogSidebarCount: 'ALL',
-          postsPerPage: 'ALL',
+          blogSidebarCount: '20',
+          postsPerPage: '20',
           showReadingTime: true,
           editUrl: 'https://github.com/heshibin/heshibin.github.io/edit/main',
         },
